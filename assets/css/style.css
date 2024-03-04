@@ -45,11 +45,11 @@ body{
 /*...........................................................................................Scroll Bar Start*/
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 
 ::-moz-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -73,12 +73,12 @@ body{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #6944d2;
+    background-color: #11364e;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
 ::-moz-scrollbar-thumb:hover {
-    background-color: #6944d2;
+    background-color: #11364e;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
@@ -88,7 +88,7 @@ a:focus {
     text-decoration: none;
     outline: none;
 }
-/*...........................................................................................Scroll Bar Start End*/
+/*...........................................................................................Scroll Bar End*/
 input,
 input:focus,
 input:hover,
@@ -1372,7 +1372,7 @@ p {
     width: calc(100% - 60px);
 }
 
-.contact-us ul li .contact-text a {
+.contact-us ul li .contact-text  {
     color: #ffffff;
     line-height: 24px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
