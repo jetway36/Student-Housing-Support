@@ -1,0 +1,1941 @@
+
+/* =========
+--- CSS INDEX ---
+1.Fonts CSS
+2.Common CSS
+3.Loader CSS
+4.Navbar CSS
+5.banner css
+6.about us css
+7.service css
+8.Vision CSS
+9.Goal CSS
+10.Looking Ahead
+============*/
+
+/*..........................................................................................Fonts CSS Start*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), 
+    url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), 
+    url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), 
+    url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), 
+    url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*...........................................................................................Fonts CSS End*/
+
+
+/*...........................................................................................Common CSS Start*/
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden !important;
+    font-size: 15px;
+    line-height: 24px;
+    color: #11364e;
+}
+
+/*...........................................................................................Scroll Bar Start*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-moz-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #bfbfbf;
+}
+
+::-moz-scrollbar-track {
+    background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff6a32;
+    border-radius: 10px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #ff6a32;
+    border-radius: 10px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6944d2;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+::-moz-scrollbar-thumb:hover {
+    background-color: #6944d2;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+/*...........................................................................................Scroll Bar Start End*/
+input,
+input:focus,
+input:hover,
+button,
+button:hover,
+button:focus {
+    outline: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #777777;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.dark-bg {
+    background-color: #252439;
+}
+
+.h1-title {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.h2-title{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 65px;
+    line-height: 80px;
+    font-weight: 800;
+    padding-bottom: 25px;
+    padding-top: 12px;
+}
+
+.h3-title {
+    font-family: 'Epilogue', sans-serif;
+    color: #11364e;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.h2-subtitle {
+    position: relative;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 22px;
+    color: #dd6a13;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.container{
+    position: relative;
+    z-index: 5;
+}
+
+/*...........................................................................................Donate and Submit Now Button*/
+.sec-btn {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    height: 60px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    background-color: #dd6a13;
+    padding: 18px 40px;
+    border-radius: 100px;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sec-btn:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 100px;
+    background-color: #11364e;
+    transition: all 0.3s ease;
+}
+
+.sec-btn:hover {
+     color: #fff;
+}
+
+.sec-btn:hover:after {
+    top: 0;
+    height: 100%;
+}
+
+.link-btn {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #ffffff;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.link-btn:hover {
+    color: #dd6a13;
+    text-decoration: underline;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.link-btn span {
+    margin-right: 8px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+    transform: scale(0.80);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+    transform: scale(0.60);
+}
+
+.swiper-pagination-bullet {
+    background-color: #dd6a13;
+}
+
+.form-input {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 24px;
+    color: #10161b;
+    border: solid 1px #777777;
+    border-radius: 50px;
+    outline: none;
+    padding: 12px 30px;
+    box-shadow: none;
+}
+
+.form-box textarea {
+    height: 120px;
+    border-radius: 10px;
+}
+
+.form-box {
+    display: block;
+    position: relative;
+    font-size: 0;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+    padding: 0 15px;
+    background-color: #dd6a13;
+    border-radius: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    display: none;
+    z-index: 110;
+  }
+  
+.toggle-button span {
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    display: block;
+    margin: 0 auto 6px auto;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    float: right;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  
+/*.................................................................................Hamburger Button Mobile Start*/
+.ham {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.toggle-menu .hamRotate {
+    transform: rotate(45deg);
+  }
+
+.toggle-menu .hamRotate180 {
+    transform: rotate(180deg);
+  }
+
+.line-ham {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #ffffff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+
+.ham8 .top {
+    stroke-dasharray: 40 160;
+  }
+
+.ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+
+.toggle-menu .ham8 .top {
+    stroke-dashoffset: -64px;
+  }
+
+.toggle-menu .ham8 .middle {
+    transform: rotate(90deg);
+  }
+
+.toggle-menu .ham8 .bottom {
+    stroke-dashoffset: -64px;
+ }
+
+.black-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 90;
+    display: none;
+}
+/*.................................................................................Hamburger Button Mobile end*/
+
+/*.................................................................................Donation Modal Start*/
+.modal-header {
+    border-bottom: none;
+    text-align: center;
+    display: block;
+}
+
+.modal-header .h3-title {
+    text-align: center;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: #dd6a13;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    border-radius: 0;
+    color: #ffffff;
+    content: none;
+}
+
+.modal-header .btn-close:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+/*..................Donation Button*/
+.sticky-btn {
+    position:fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    display: block;
+}
+/*.................................................................................Donation Modal End*/
+
+/*.................................................................................Common CSS End*/
+
+
+/*.................................................................................Loader CSS Start*/
+.loader-box-one {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.loader {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .loader .center {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #6944d2;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    animation: center 3.2s ease-in-out infinite;
+  }
+  .loader .item {
+    position: absolute;
+    z-index: 0;
+    width: 10px;
+    height: 10px;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #ff6a32;
+    border-radius: 50%;
+  }
+
+  .loader-main ul {
+    list-style: none;
+  }
+  /*
+  .item-1 {
+    animation: anim-1 3.2s ease-in-out infinite 0.2s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-1 {
+    0%, 60%, 100% {
+      transform: rotate(45deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(45deg) translateX(0) scale(1.5);
+    }
+  }
+  .item-2 {
+    animation: anim-2 3.2s ease-in-out infinite 0.4s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-2 {
+    0%, 60%, 100% {
+      transform: rotate(90deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(90deg) translateX(0) scale(1.5);
+    }
+  }
+  .item-3 {
+    animation: anim-3 3.2s ease-in-out infinite 0.6s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-3 {
+    0%, 60%, 100% {
+      transform: rotate(135deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(135deg) translateX(0) scale(1.5);
+    }
+  }
+  .item-4 {
+    animation: anim-4 3.2s ease-in-out infinite 0.8s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-4 {
+    0%, 60%, 100% {
+      transform: rotate(180deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(180deg) translateX(0) scale(1.5);
+    }
+  }
+  .item-5 {
+    animation: anim-5 3.2s ease-in-out infinite 1s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-5 {
+    0%, 60%, 100% {
+      transform: rotate(225deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(225deg) translateX(0) scale(1.5);
+    }
+  }
+  .item-6 {
+    animation: anim-6 3.2s ease-in-out infinite 1.2s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-6 {
+    0%, 60%, 100% {
+      transform: rotate(270deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(270deg) translateX(0) scale(1.5);
+    }
+  }
+  .item-7 {
+    animation: anim-7 3.2s ease-in-out infinite 1.4s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-7 {
+    0%, 60%, 100% {
+      transform: rotate(315deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(315deg) translateX(0) scale(1.5);
+    }
+  }
+  .item-8 {
+    animation: anim-8 3.2s ease-in-out infinite 1.6s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes anim-8 {
+    0%, 60%, 100% {
+      transform: rotate(360deg) translateX(40px) scale(1);
+    }
+    10%, 50% {
+      transform: rotate(360deg) translateX(0) scale(1.5);
+    }
+  }
+  @keyframes center {
+    0%, 10%, 90%, 100% {
+      transform: scale(0.7);
+    }
+    45%, 55% {
+      transform: scale(1);
+    }
+  }
+  */
+/*.................................................................................Loader CSS End*/
+
+/*.................................................................................Header CSS Start*/
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.site-header.sticky-header {
+    background-color: rgb(255,255,255,0.8);
+    box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -ms-backdrop-filter: blur(20px);
+    transition: 0.3s;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+.header-bottom {
+    width: 100%;
+    padding: 20px 0;
+    transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
+}
+
+.site-branding a {
+    display: inline-block;
+    position: relative;
+}
+
+.site-branding a img {
+    width: 100%;
+}
+
+.header-menu{
+    position: relative;
+    text-align: right;
+}
+.main-navigation{
+    display: inline-block;
+}
+
+.main-navigation ul {
+    list-style: none;
+    font-size: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.main-navigation ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.main-navigation ul li {
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: 24px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.main-navigation ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #11364e;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.header-btn {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.main-navigation ul li.sub-items:hover>a, .main-navigation ul li a:hover, .main-navigation ul li.active>a {
+    color: #dd6a13;
+}
+
+.main-navigation ul li.sub-items>a:before {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.site-header.sticky-header .main-navigation ul li a, .site-header.sticky-header .search-icon a, .site-header.sticky-header .main-navigation ul li.sub-items>a:before {
+    color: #11364e;
+}
+
+.main-navigation ul li.sub-items>a {
+    padding-right: 15px;
+    position: relative;
+}
+
+.main-navigation ul li.sub-items:hover>a:before, .main-navigation ul li a:hover:before {
+    transform: translate(0,-50%) rotate(-180deg);
+    transition: 0.3s;
+}
+
+.main-navigation ul li:first-child {
+    margin-left: 0;
+    padding: 0;
+}
+
+.main-navigation ul li ul.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    width: 280px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 60px rgba(0,0,0,0.1);
+    display: none;
+    transition: 0.3s;
+    z-index: 150;
+}
+
+.main-navigation ul li:hover ul.sub-menu {
+    display: block;
+    animation: swip_up 0.3s linear 1;
+}
+
+@keyframes swip_up {
+    from {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.main-navigation ul li ul.sub-menu li {
+    display: block !important;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.main-navigation ul li ul.sub-menu li:first-child {
+   padding-left: 24px;
+}
+
+.main-navigation ul li ul.sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.main-navigation ul li ul.sub-menu li a {
+    display: block;
+    padding: 10px 7px;
+}
+
+.main-navigation ul li ul.sub-menu li a {
+    display: block;
+    color: #050d36;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.main-navigation ul li ul.sub-menu li a:hover {
+    color: #dd6a13;
+    transition: 0.3s;
+}
+
+.main-navigation ul li.sub-items:hover>a, .main-navigation ul li a:hover, .main-navigation ul li.active>a {
+    color: #dd6a13;
+}
+
+.site-header.sticky-header .main-navigation ul li.sub-items:hover>a, .site-header.sticky-header .main-navigation ul li a:hover, .site-header.sticky-header .main-navigation ul li.active>a, .site-header.sticky-header .main-navigation ul li.sub-items:hover>a:before, .site-header.sticky-header .main-navigation ul li a:hover:before, .site-header.sticky-header .main-navigation ul li.active>a:before, .site-header.sticky-header .main-navigation ul li ul.sub-menu li a:hover {
+    color: #dd6a13;
+}
+
+.sticky-header .header-top {
+    margin-top: -45px;
+    transition: 0.3s;
+}
+
+.sticky-header .header-bottom {
+    padding: 20px 0px;
+    animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
+    transition: 0.3s;
+}
+
+@keyframes headerSlideDown {
+    0% {
+      margin-top: -150px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+.sticky-header .main-navigation ul li a {
+    color: #051136;
+    transition: 0.3s;
+}
+
+.site-branding a img.sticky-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.site-header.sticky-header .site-branding a img.sticky-logo {
+    opacity: 1;
+    transition: 0.3s;
+}
+/*.......................................................................................Header CSS End*/
+
+/*.......................................................................................Banner First Section Front page CSS Start*/
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-banner::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(21, 25, 45,0.68);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-content .h1-title, .banner-content p {
+    color: #ffffff;
+}
+
+.banner-content {
+    padding: 300px 0;
+    text-align: center;
+
+}
+
+.banner-content p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*.......................................................................................Banner CSS End*/
+
+/*.......................................................................................About Us Start*/
+.main-about-us {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.about-img {
+    display: flex;
+}
+
+.about-img2 {
+    margin-top: 0px;
+}
+
+.about-img4 {
+    margin-top: 0px;
+}
+
+.about-img-box {
+    position: relative;
+}
+
+.about-experience {
+    position: absolute;
+    background-color: #032640;
+    border-radius: 100%;
+    padding: 20px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 6px 6px 60px 0px rgba(17,54,78,0.3);
+}
+
+.about-experience .h2-title {
+    font-size: 50px;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 0;
+}
+
+.about-experience .h2-title span {
+    font-size: 18px;
+    line-height: 0px;
+    color: #ffffff;
+}
+
+.about-content-box {
+    padding-left: 30px;
+}
+/*.......................................................................................About Us End*/
+
+/*.......................................................................................Service CSS Start*/
+.main-service {
+    background-color: #f9f9f9;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-service .subtitle, .service-title {
+    text-align: center;
+}
+
+.service-box {
+    background-color: #ffffff;
+    box-shadow: 0px 18px 26px -10px rgba(0,0,0,0.1);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+    width: 100%;
+    min-height: 580px;
+}
+
+.service-box:hover {
+    box-shadow: 0px 18px 26px -10px rgba(0,0,0,0.2);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.service-text-box{
+    padding: 30px;
+}
+
+.service-title-box {
+    display: flex;
+    align-items: center;
+}
+
+.service-icon {
+    margin-right: 25px;
+}
+
+.service-text-box p {
+    margin-top: 10px;
+}
+
+.service-slider {
+    padding-bottom: 50px;
+}
+
+.service-img {
+    overflow: hidden;
+    display: block;
+}
+
+.service-img>img {
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
+}
+
+.service-box:hover .service-img>img {
+    transform: scale(1.05);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
+}
+
+.service-box .service-text-box a .h2-title {
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
+}
+
+.service-box:hover .h3-title {
+    color: #dd6a13 !important;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+/*.......................................................................................Service CSS End*/
+
+/*.......................................................................................Vision CSS Start*/
+.main-vision{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.vision-video {
+    margin-left: 20px;
+    background-color: #dd6a13;
+    padding: 30px;
+    box-shadow: 20px 30px 60px 0px rgba(221,106,19,0.4);
+}
+
+.vision-content p {
+    margin-bottom: 0;
+}
+/*.......................................................................................Vision CSS End*/
+
+/*.......................................................................................Goal CSS Start*/
+.main-goal {
+    position: relative;
+}
+
+.main-goal:before {
+    content: "";
+    position: absolute;
+    background-color: #11364e;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.goal-content-box {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 30px;
+}
+
+.goal-title .h2-title {
+    color: #ffffff;
+}
+
+.goal-content-box ul {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.goal-content-box ul li {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.goal-content-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.goal-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    background-color: #dd6a13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal-content-box ul li:hover .goal-icon svg {
+    animation: hvr-buzz-out 0.75s linear 1;
+}
+
+.goal-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes hvr-buzz-out {
+    10% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    20% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    40% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    70% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    80% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    90% {
+        -webkit-transform: translateX(1px) rotate(0);
+        transform: translateX(1px) rotate(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-1px) rotate(0);
+        transform: translateX(-1px) rotate(0);
+    }
+}
+
+.goal-text-box .h3-title, .goal-text-box p {
+    color: #ffffff;
+}
+
+.goal-text-box {
+    width: calc(100% - 100px);
+}
+/*.......................................................................................Goal CSS End*/
+
+/*.......................................................................................Looking Ahead CSS Start
+.main-look-adead {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.look-content {
+    margin-right: 30px;
+}
+
+.look-bar-box {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.look-bar-box {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.look-bar-box {
+    border-bottom: 2px solid #d7d7d7;
+}
+
+.look-bar-percent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.look-bar-percent {
+    color: #10161b;
+}
+
+.look-bar-percent .h3-title {
+    margin-bottom: 0;
+}
+
+.look-bar {
+    width: 100%;
+    position: relative;
+}
+
+.look-bar {
+    height: 10px;
+}
+
+.look-bar:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 100%;
+}
+
+.look-bar:before {
+    background-color: rgb(221,106,19,0.2);
+}
+
+.look-bar-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 0;
+    height: 100%;
+    overflow: visible;
+    box-shadow: 0px 10px 30px 0px rgb(221,106,19,0.5);
+}
+
+.look-bar-inner:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #dd6a13;
+}
+
+.look-shape {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%,-50%);
+}
+/*.......................................................................................Looking Ahead CSS End*/
+
+/*.......................................................................................Join Now CSS Start*/
+.main-join-now {
+    background-color: #f4f6fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.join-now-content {
+    margin-left: 30px;
+}
+
+.join-now-content p {
+    margin-bottom: 0;
+}
+/*.......................................................................................Join Now CSS End*/
+
+/*.......................................................................................Footer CSS Start*/
+.main-footer {
+    background-color: #11364e;
+    padding-top: 120px;
+}
+
+.footer-about p {
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.social-media ul li {
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: #dd6a13;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.social-media ul li a:hover {
+    color: #dd6a13;
+    background-color: #ffffff;
+}
+
+.our-links .h3-title, .contact-us .h3-title, .map .h3-title {
+    color: #ffffff;
+}
+
+.our-links ul,.contact-us ul {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.our-links ul li {
+    margin-bottom: 20px;
+}
+
+.contact-us ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.our-links ul li:last-child {
+    margin-bottom: 0;
+}
+
+.our-links ul li a {
+    color: #ffffff;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.our-links ul li a:hover {
+    color: #dd6a13;
+    padding-left: 8px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: #dd6a13;
+}
+
+.our-links {
+    padding: 0 80px;
+}
+
+.our-links.service {
+    padding: 0 50px;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #dd6a13;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact-icon i {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.contact-us ul li .contact-text {
+    width: calc(100% - 60px);
+}
+
+.contact-us ul li .contact-text a {
+    color: #ffffff;
+    line-height: 24px;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.contact-us ul li:hover .contact-text a {
+    color: #dd6a13;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.contact-us ul li:hover .contact-icon i {
+    animation: hvr-buzz-out 0.75s linear 1;
+}
+
+.map-box {
+    margin-top: 30px;
+}
+
+.copyright {
+    padding: 20px 0;
+    margin-top: 120px;
+    background-color: #032640;
+    text-align: center;
+}
+
+.copyright span {
+    color: #ffffff;
+}
+
+.copyright span a {
+    text-decoration: underline;
+    color: #dd6a13;
+}
+/*.......................................................................................Footer CSS End*/
+
+/*.......................................................................................Responsive CSS Start*/
+
+@media screen and (max-width: 1399px) {
+    .main-navigation ul li {
+        margin-left: 16px;
+        padding-left: 16px;
+    }
+
+    .h1-title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .banner-content p {
+        width: 70%;
+    }
+
+    .h2-title {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .our-links {
+        padding: 0 60px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .main-navigation ul li {
+        margin-left: 12px;
+        padding-left: 12px;
+    }
+
+    .h1-title {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .banner-content p {
+        margin-top: 20px;
+    }
+
+    .parallax-bg {
+        padding: 370px 0;
+    }
+
+    .h2-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .h3-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .service-icon svg {
+        width: 100%;
+    }
+
+    .vision-video {
+        padding: 20px;
+    }
+
+    .h2-subtitle {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .our-links {
+        padding: 0 50px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+.site-header, .site-header.sticky-header {
+    background: rgb(255,255,255,0.8);
+    height: 100px;
+    padding: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -ms-backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.header-bottom {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.site-branding a img {
+    width: auto;
+}
+
+.sticky-header .header-bottom {
+    padding: 23px 0px;
+    animation: none;
+    transition: 0.3s;
+}
+
+.site-header .container {
+    max-width: 100%;
+    padding: 0 30px;
+}
+
+.toggle-button {
+    display: block;
+}
+
+.site-branding {
+    position: fixed;
+    top: 15px;
+    left: 30px;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.site-branding a {
+    width: 100%;
+}
+
+.main-navigation ul {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 320px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+    background: #11364e;
+    text-align: center;
+    padding: 100px 0 30px;
+    box-shadow: -30px 0 30px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 100;
+}
+
+.main-navigation ul li ul::before {
+  content: "";
+  position: relative;
+}
+
+.main-navigation ul li ul::after {
+  content: "";
+  position: relative;
+}
+
+.header-bottom {
+    height: 100%;
+}
+
+.main-navigation.toggle-menu ul {
+    right: 0;
+    opacity: 1;
+    z-index: 100;
+}
+
+.main-navigation>ul::-webkit-scrollbar-thumb {
+    width: 0;
+    background: transparent;
+}
+
+.main-navigation>ul::-webkit-scrollbar {
+    width: 0;
+}
+
+.main-navigation>ul::-webkit-scrollbar-track {
+    width: 0;
+    background: transparent;
+}
+
+.main-navigation ul li {
+    display: block;
+    margin: -50px 0 10px 0;
+    padding: 10px 40px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.main-navigation ul li:first-child {
+    padding: 10px 40px 20px 40px;
+}
+
+.main-navigation.toggle-menu ul li {
+    text-align: left;
+    border-bottom: solid 1px rgb(225, 225, 225,0.2);
+    margin-top: 0;   
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+
+.main-navigation ul li:last-child {
+    border-bottom: none;
+}
+
+.main-navigation ul li:last-child a {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.site-header.sticky-header .main-navigation ul li a, .site-header.sticky-header .search-icon a, .site-header.sticky-header .main-navigation ul li.sub-items>a:before {
+    color: #ffffff;
+}
+.main-navigation ul li a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.main-navigation ul li.sub-items>a:before {
+    color: #ffffff;   
+}
+
+.main-navigation ul li.sub-items.active>a:before {
+    color: #ff5219;   
+}
+
+.main-navigation ul li ul.dropdown-menu,
+.main-navigation ul li:hover ul.dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    display: block;
+    animation: none;
+    padding: 0;
+    margin-top: 10px;
+    transition: 0s;
+    display: none;
+}
+
+.main-navigation ul li ul.dropdown-menu li {
+    text-align: left;
+    border: none;
+    padding: 0 16px;
+    margin-bottom: 10px;
+}
+
+.main-navigation ul li ul.dropdown-menu li:first-child {
+    padding-left: 16px;
+}
+
+.main-navigation ul li ul.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.main-navigation ul li ul.dropdown-menu li a {
+    color: #ffffff;
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.main-navigation ul li.sub-items:hover>a:before, 
+.main-navigation ul li a:hover:before {
+    transform: translate(0,-50%) rotate(0deg);
+    color: #ff5219;
+}
+
+.main-navigation ul li.sub-items.active-dropdown-menu>a:before {
+    transform: translate(0,-50%) rotate(-180deg);
+    color: #ff5219;
+}
+
+.header-top {
+    display: none;
+}
+
+.Social-midea {
+    display: none;
+}
+
+.header-contact {
+    display: none;
+}
+
+.header-btn {
+    display: none;
+}
+
+.toggle-button {
+    display: block;
+}
+
+.main-navigatione.toggle-menu ul li {
+    text-align: left;
+    border-bottom: solid 1px rgb(225, 225, 225,0.2);
+    margin-top: 0;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+
+.main-navigation ul li ul.sub-menu, .main-navigation ul li:hover ul.sub-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    display: block;
+    animation: none;
+    padding: 0;
+    margin-top: 10px;
+    transition: 0s;
+    display: none;
+}
+
+.main-navigation ul li ul.sub-menu li {
+    border-bottom: none;
+}
+
+.main-navigation ul li ul.sub-menu li:first-child, .main-navigation ul li ul.sub-menu li {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main-navigation ul li ul.sub-menu li a {
+    color: #ffffff;
+}
+
+.main-navigation ul li ul.sub-menu li a:hover {
+    color:#dd6a13;
+}
+
+.h1-title {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.banner-content p {
+    width: 100%;
+}
+
+.sec-btn {
+    height: 50px;
+    padding: 12px 35px;
+}
+
+.main-about-us, .main-vision, .main-look-adead, .main-join-now {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.about-content-box {
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.h2-title {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.h2-subtitle {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.vision-video, .join-now-content {
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+.goal-img {
+    position: relative;
+    width: 100%;
+    height: 892px;
+}
+
+.goal-content-box {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0;
+}
+
+.look-content {
+    margin-right: 0;
+    margin-bottom: 50px;
+}
+
+.sticky-btn {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.contact-us, .map {
+    margin-top: 50px;
+}
+
+.main-footer {
+    padding-top: 80px;
+}
+
+.copyright {
+    margin-top: 80px;
+}
+
+.service-box {
+    margin-bottom: 30px;
+}
+
+.main-service {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+    .footer-about {
+        margin-bottom: 50px;
+    }
+
+    .our-links {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .banner-content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .h3-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .main-banner .swiper-button-prev, .main-banner .swiper-button-next {
+        height: 30px;
+        width: 30px;
+    }
+
+    .main-banner .swiper-button-prev:after, .main-banner .swiper-button-next:after {
+        font-size: 15px;
+        color: #11364e;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .h1-title {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .h2-title {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .goal-content-box ul li {
+        display: block;
+    }
+
+    .goal-icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .goal-text-box {
+        width: 100%;
+    }
+
+}
+
+/*.......................................................................................Responsive CSS End*/
+
+.main-navigation button i{
+    color: white;
+}
+.main-navigation i.fa-times{
+    display: none;
+}
+.main-navigation i.fa-bars{
+    display: block;
+}
+.main-navigation.toggle-menu i.fa-times{
+    display: block;
+}
+.main-navigation.toggle-menu i.fa-bars{
+    display: none;
+}
+
+#location-iframe{
+    border:0;
+}
+#operator-sign-up-iframe{
+    background: transparent; border: 1px solid #ccc;
+}
+
+.main-banner{
+    background-image: url(../images/slide-1.jpg);
+}
+
+.main-service{
+    background-image: url(../images/service-bg.jpg);
+}
+
+.main-goal .goal-img{
+    background-image: url(../images/goal-img.jpg);
+}

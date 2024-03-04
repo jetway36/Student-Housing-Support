@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Housing Support Program</title>
+    <meta name="keywords" content="Shivka" />
+    <meta name="description" content="Shivka" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- ........................................................................FavIcon CSS -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!--.........................................................................Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!--.........................................................................Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--.........................................................................Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+
+    <!-- ........................................................................Wow Animation CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+
+    <!-- ........................................................................Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+ <!-- ...........................................................................Loader Start -->
+<div class="loader-box-one">
+    <div class="loader-main">
+        <ul class="loader">
+            <li class="center"></li>
+            <li class="item item-1"></li>
+            <li class="item item-2"></li>
+            <li class="item item-3"></li>
+            <li class="item item-4"></li>
+            <li class="item item-5"></li>
+            <li class="item item-6"></li>
+            <li class="item item-7"></li>
+            <li class="item item-8"></li>
+          </ul>
+    </div>
+</div>
+<!-- ............................................................................Loder End -->
+
+<!--.............................................................................Donation Button-->
+<div class="sticky-btn">
+    <a href="#staticBackdrop" class="sec-btn" data-bs-toggle="modal" title="Book Now">Donation</a>
+</div>
+<!--.............................................................................Donation Button End-->
+
+<!--.............................................................................Header Start-->
+<div
+    div class="site-header">
+    <!--.........................................................................Navbar Start  -->
+    <div class="header-bottom">
+       <div class="container">
+           <div class="row align-items-center">
+               <div class="col-lg-2">
+                   <!-- .........................................................Site Logo Start -->
+                   <div class="site-branding">
+                        <a href="index.html" title="Shivka">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                   </div>
+                   <!-- .........................................................Sit Logo End -->
+               </div>
+               <!--..............................................................Header Hambuger Menu Mobile-->
+               <div class="col-lg-10">
+                   <div class="header-menu">
+                       <nav class="main-navigation">
+                           <button class="toggle-button">
+                                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                           </button>
+                           <div class="mobile-menu-box">
+                            <i class="menu-background one top"></i>
+                            <i class="menu-background one middle"></i>
+                            <i class="menu-background one bottom"></i>
+                            <ul class="menu">
+                                <li><a href="index.html" title="Home">Home</a></li>
+                                <li><a href="#about_us" title="About Us">About Us</a></li>
+                                <li class="sub-items">
+                                    <a href="javascript:void(0);" title="Services">Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#service" title="Secure Data Management">Secure Data Management</a></li>
+                                        <li><a href="#service" title="Streamlined Operations">Streamlined Operations</a></li>
+                                        <li><a href="#service" title="Strategic Insights">Strategic Insights</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="#join_now" title="Join Us">Join Us</a></li>
+                                <li class="sub-items">
+                                    <a href="javascript:void(0);" title="Contct Us">Contact Us</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="mailto:mikejhiggins@smccme.edu" title="Michael Higgins">Michael Higgins</a></li>
+                                        <li><a href="mailto:xinqian@smccme.edu" title="Xin Qian">Xin Qian</a></li>
+                                        <li><a href="mailto:blakemilliano@smccme.edu" title="Blake Illiano">Blake Illiano</a></li>
+                                        <li><a href="mailto:joycesimbi@smccme.edu" title="Joyce Simbi">Joyce Simbi</a></li>
+                                        <li><a href="mailto:Petercrosasco@smccme.edu" title="Peter Rosasco (Manager)">Peter Rosasco (Manager)</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="javascript:void(0);" onclick="promptPassword()" title="Student Entry">Student Entry</a></li>
+                                <li> <a href="#sign-up" data-bs-toggle="modal" title="Operator Sign up">Operator Sign Up</a></li>
+                            </ul>
+                        </div>
+                       </nav>
+                       <div class="black-shadow"></div>
+                   </div>
+               </div>
+               <!--....................................................................Header Hambuger Menu Mobile End-->
+           </div>
+       </div>
+   </div>
+   <!--................................................................................Navbar End-->
+     
+</div>
+<!--...................................................................................Header End-->
+
+ <!--..................................................................................Modal Donation Button-->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="h3-title" id="staticBackdropLabel">Make A Donation</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-box">
+                                        <input type="text" name="FirstName" class="form-input" placeholder="First Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-box">
+                                        <input type="text" name="LastName" class="form-input" placeholder="Last Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-box">
+                                        <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-box">
+                                        <input type="text" name="PhoneNo" class="form-input" placeholder="Phone No." required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-box">
+                                        <input type="text" name="Donation Amount" class="form-input" placeholder="Donation Amount" aria-label="Amount (to the nearest dollar)" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-box">
+                                        <textarea class="form-input" placeholder="Message..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-box mb-0">
+                                        <button type="submit" class="sec-btn"><span>Donate Now</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--...................................................................................End Modal Donation Button-->
+
+<!--...................................................................................Modal operator Sign Up -->
+ <div class="modal fade" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sign-up-to" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="h3-title" id="sign-up-to">Operator Sign Up</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                        <iframe id="operator-sign-up-iframe" class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shrK6wZQ0lS0L0ohZ?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" height="1018.090909"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--...................................................................................End Modal operator Sign Up -->
+
+<!--...................................................................................Home Page Banner Start -->
+<section class="main-banner">
+    <div class="banner-overlay">
+        <img src="assets/images/banner-overlay.png" alt="Banner Overly">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-content">
+                    <h1 class="h1-title">Building strength, stability, and self-reliance through shelter</h1>
+                    <p>Supporting students with housing solutions cultivates an environment conducive to academic success and personal development. It alleviates one of the major stressors in student life, allowing them to focus more fully on their studies and future aspirations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--...................................................................................End Home PageBanner End -->
+
+<!--...................................................................................About Us Start-->
+<section class="main-about-us" id="about_us">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img-box" data-tilt data-tilt-max="3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="about-img1 wow fadeInUp animated" data-wow-delay=".4s">
+                                <img src="assets/images/about-img-1.jpg" alt="about us">
+                            </div>  
+                        </div>
+                        <div class="col-6">
+                            <div class="about-img2 wow fadeInUp animated" data-wow-delay=".5s">
+                                <img src="assets/images/about-img-2.jpg" alt="about us">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="about-img3 wow fadeInUp animated" data-wow-delay=".6s">
+                                <img src="assets/images/about-img-3.jpg" alt="about us">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="about-img4 wow fadeInUp animated" data-wow-delay=".7s">
+                                <img src="assets/images/about-img-4.jpg" alt="about us">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-experience">
+                        <img src="assets/images/about_logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".4s">
+                <div class="about-content-box">
+                    <div class="subtitle">
+                        <h2 class="h2-subtitle">About Us</h2>
+                    </div>
+                    <h2 class="h2-title">Welcome to Student Housing Support Program</h2>
+                    <p>This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home. At the heart of our mission lies the commitment to alleviate the housing burden on students, ensuring they can focus on their academic and personal growth without the stress of securing safe, reliable accommodation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--...................................................................................About Us End-->
+
+<!--...................................................................................What We Do Start-->
+<section class="main-service" id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="service-title">
+                    <div class="subtitle">
+                        <h2 class="h2-subtitle">Services</h2>
+                    </div>
+                    <h2 class="h2-title">What We Do</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="assets/images/service-1.jpg" alt="Service">
+                    </div>
+                    <div class="service-text-box">
+                        <div class="service-title-box">
+                            <div class="service-icon">
+                                <img src="./assets/icons/secure-data.svg" alt="">
+                            </div>
+                            <a href="javascript:void(0);"><h3 class="h3-title">Secure Data Management</h2></a>
+                        </div>
+                        <p>We prioritize the confidentiality and integrity of data with a secure client data entry portal, safeguarding information in compliance with the highest data protection standards.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="assets/images/service-2.jpg" alt="Service">
+                    </div>
+                    <div class="service-text-box">
+                        <div class="service-title-box">
+                            <div class="service-icon">
+                                <img src="./assets/icons/streamlined.svg" alt="">
+                            </div>
+                            <a href="javascript:void(0);"><h3 class="h3-title">Streamlined Operations</h2></a>
+                        </div>
+                        <p>Through an efficient backend database powered by Airtable and automated financial processes, we ensure that housing support organizations can operate more effectively, focusing their resources on what truly matters – helping students.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="assets/images/service-3.jpg" alt="Service">
+                    </div>
+                    <div class="service-text-box">
+                        <div class="service-title-box">
+                            <div class="service-icon">
+                                <img src="./assets/icons/accessible.svg" alt="">
+                            </div>
+                            <a href="javascript:void(0);"><h3 class="h3-title">Accessible Technology</h2></a>
+                        </div>
+                        <p>Our platform is designed with every user in mind. With an intuitive interface and Fillout Forms for easy data entry, we cater to users of all technical backgrounds, including those with disabilities, ensuring no one is left behind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--...................................................................................End What We Do-->
+
+<!-- ..................................................................................Our Vision Start -->
+<section class="main-vision" id="vision">
+    <div class="container">
+        <div class="row align-item-center">
+            <div class="col-lg-6">
+                <div class="vision-content wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="vision-title">
+                        <div class="subtitle">
+                            <h2 class="h2-subtitle">Our Vision</h2>
+                        </div>
+                        <h2 class="h2-title">We Aim To Create More connection</h2>
+                    </div>
+                    <p>To empower student housing support organizations with state-of-the-art technology, simplifying and enhancing the way they operate. By integrating innovative tools with a human-centered approach, we aim to create a more connected, supportive community for students in need of housing assistance.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="vision-video wow fadeInRight" data-wow-delay="0.5s">
+                    <video width="100%" height="100%" autoplay loop muted>
+                        <source src="assets/images/1746917_Dormitory_Dorm_Housing_1280x720.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--...................................................................................End Our Vision -->
+
+<!--...................................................................................Our Goals Start-->
+<section class="main-goal" id="goal">
+    <div class="goal-img"></div>
+    <div class="container">
+        <div class="row">
+             <div class="col-lg-6 offset-lg-6">
+                <div class="goal-content-box wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="goal-title">
+                        <div class="subtitle">
+                            <h2 class="h2-subtitle">Our Goals</h2>
+                        </div>
+                        <h2 class="h2-title">What Is Our Motto</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="goal-icon">
+                                <img src="./assets/icons/goal-1.svg" alt="">
+                            </div>
+                            <div class="goal-text-box">
+                                <h3 class="h3-title">Ease of Use</h3>
+                                <p>We're dedicated to providing a straightforward, efficient registration process for organizations, making it easier than ever to join our cause.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goal-icon">
+                                <img src="./assets/icons/goal-2.svg" alt="">
+                            </div>
+                            <div class="goal-text-box">
+                                <h3 class="h3-title">Accuracy and Integrity</h3>
+                                <p>By automating tracking and implementing rigorous data accuracy audits, we maintain the reliability of client and financial data, a cornerstone of our trustworthiness.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goal-icon">
+                                <img src="./assets/icons/goal-3.svg" alt="">
+                            </div>
+                            <div class="goal-text-box">
+                                <h3 class="h3-title">Informed Decision-Making</h3>
+                                <p>Our commitment to delivering real-time data and flexible reporting tools enables organizations to make insightful decisions that directly benefit students.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goal-icon">
+                                <img src="./assets/icons/goal-4.svg" alt="">
+                            </div>
+                            <div class="goal-text-box">
+                                <h3 class="h3-title">Universal Accessibility</h3>
+                                <p>The Program is crafted to be as accessible as it is useful, ensuring everyone can navigate and utilize our system with ease.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--....................................................................................End Our Goals-->
+
+<!--....................................................................................Join Now Start-->
+<section class="main-join-now" id="join_now">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="join-now-form wow fadeInLeft" data-wow-delay="0.5s">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-box">
+                                    <input type="text" name="FirstName" class="form-input" placeholder="First Name" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box">
+                                    <input type="text" name="LastName" class="form-input" placeholder="Last Name" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box">
+                                    <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-box">
+                                    <input type="text" name="PhoneNo" class="form-input" placeholder="Phone No." required="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box">
+                                    <textarea class="form-input" placeholder="Message..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-box mb-0">
+                                    <button type="submit" class="sec-btn"><span>Submit Now</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="join-now-content wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="join-now-title">
+                        <div class="subtitle">
+                            <h2 class="h2-subtitle">Join Now</h2>
+                        </div>
+                        <h2 class="h2-title">Get The Latest Updates</h2>
+                    </div>
+                    <p>Your support can transform lives, offering students the stability they need to succeed academically. Together, we can build a future where every student has access to safe, affordable housing. Explore how you can contribute to the Student Housing Support Program today and make a lasting impact on the lives of students.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--.....................................................................................End Join Now-->
+
+<!--.....................................................................................Footer Start-->
+<section class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-about">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                    <p>This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home.</p>
+                    <div class="social-media">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="our-links">
+                    <h3 class="h3-title">Our Links</h3>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about_us">About Us</a></li>
+                        <li><a href="#vision">Our vision</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#goal">Our Goal</a></li>
+                        <li><a href="#join_now">Join Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-us">
+                    <h3 class="h3-title">Contact Us</h3>
+                    <div class="line"></div>
+                    <ul>
+                        <li>
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <a href="https://www.google.com/maps/" target="_blank">2 Fort Road. South Portland, Maine 207-741-5927</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="map">
+                    <h3 class="h3-title">Location</h3>
+                    <div class="line"></div>
+                    <div class="map-box">
+                        <iframe id="location-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52834941.00343647!2d-161.38749990119985!3d36.074253219753444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1709013350645!5m2!1sen!2sin" width="100%" height="270" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <span>© 2024 Senior Capstone Team 1. All Rights Reserved.  <a href="index.html">Student Housing.</a> All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--.....................................................................................End Footer-->
+
+<!-- Jquery JS Link -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap JS Link -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+
+<!-- Custom JS Link -->
+<script src="assets/js/custom.js"></script>
+
+<!--Tilt JS-->
+<script src="assets/js/tilt.jquery.js"></script>
+
+<!-- Wow Animation JS -->
+<script src="assets/js/wow.min.js"></script>
+
+<!-- ...................................................................................Student Entry Password-->
+<script>
+    function promptPassword() {
+        var password = prompt("Please enter the password to access the Student Entry page:");
+        if (password != null && password == "p@ssw0rd") { // Replace 'yourpassword' with the actual password
+            window.open('student-entry.html', '_blank').focus(); // Opens the specified page in a new tab or window
+        } else {
+            alert("Incorrect password.");
+        }
+    }
+    </script>
+
+</div>
+
+<!-- ...................................................................................End Student Entry Password-->
+</body>
+</html>
