@@ -794,7 +794,7 @@ p {
 }
 
 .sticky-header .header-bottom {
-    padding: 20px 0px;
+    padding: 5px 0px;
     animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
     transition: 0.3s;
 }
