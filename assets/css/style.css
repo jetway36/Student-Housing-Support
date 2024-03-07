@@ -1934,11 +1934,19 @@ p {
     background: transparent; border: 1px solid #ccc;
 }
 /*............................................new new new for Learn More form..........................*/
+/*
 .iframe-scroll-container {
     height: 460px; 
     overflow-y: auto; 
     overflow-x: hidden; 
 }
+*/
+.iframe-scroll-container {
+    height: auto; /* Or adjust to the original height if different */
+    overflow-y: hidden; /* This will remove the vertical scrollbar */
+    overflow-x: hidden; /* Keeps the horizontal scrollbar hidden */
+}
+
 
 
 .main-banner{

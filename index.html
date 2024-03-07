@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <title>Student Housing Support Program</title>
-    <meta name="keywords" content="Shivka" />
-    <meta name="description" content="Shivka" />
+    
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- ........................................................................FavIcon CSS -->
@@ -91,7 +90,8 @@
                                         <li><a href="#service" title="Strategic Insights">Strategic Insights</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#join_now" title="Learn More">Learn More</a></li>
+                                <li> <a href="#learnMoreModal" data-bs-toggle="modal" title="Learn More">Learn More</a></li>
+
                                 <li class="sub-items">
                                     <a href="javascript:void(0);" title="Contct Us">Contact Us</a>
                                     <ul class="sub-menu">
@@ -421,32 +421,14 @@
 <!--....................................................................................End Our Goals-->
 
 <!--....................................................................................Learn More Start-->
-<section class="main-join-now" id="join_now">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="join-now-form wow fadeInLeft" data-wow-delay="0.5s">
-                    <div class="iframe-scroll-container">
-                        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-                        <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shr1BiGhiDho0bg6i?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-lg-6">
-                <div class="join-now-content wow fadeInRight" data-wow-delay="0.5s">
-                    <div class="join-now-title">
-                        <div class="subtitle">
-                            <h2 class="h2-subtitle">Learn More</h2>
-                        </div>
-                        <h2 class="h2-title">Get The Latest Updates</h2>
-                    </div>
-                    <p>Your support can transform lives, offering students the stability they need to succeed academically. Together, we can build a future where every student has access to safe, affordable housing. Explore how you can contribute to the Student Housing Support Program today and make a lasting impact on the lives of students.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shreCTQTimoURb6gu?backgroundColor=greenDusty&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
+
+
+
+
 <!--.....................................................................................End Join Now-->
 
 <!--.....................................................................................Footer Start-->
@@ -542,6 +524,26 @@
 
 <!-- Wow Animation JS -->
 <script src="assets/js/wow.min.js"></script>
+
+<!--....................................................................................MODAL LEARN MORE-->
+<!-- Learn More Modal Structure -->
+<div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="learnMoreModalTitle">Learn More Details</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Embed your new content here -->
+          <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shr1BiGhiDho0bg6i?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 <!-- ...................................................................................Student Entry Password-->
 <!--
