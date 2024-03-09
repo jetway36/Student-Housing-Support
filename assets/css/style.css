@@ -1940,14 +1940,57 @@ p {
     overflow-y: auto; 
     overflow-x: hidden; 
 }
-*/
+
 .iframe-scroll-container {
-    height: auto; /* Or adjust to the original height if different */
-    overflow-y: hidden; /* This will remove the vertical scrollbar */
-    overflow-x: hidden; /* Keeps the horizontal scrollbar hidden */
+    height: auto; 
+    overflow-y: hidden; 
+    overflow-x: hidden; 
 }
-
-
+*/
+.iframe-container {
+    float: left; /* This will align the container to the left */
+    background-color: #dd6a13; /* Your current background color */
+    width: 60%; /* Adjust to how much width you want the iframe to take */
+    padding: 30px;
+    box-sizing: border-box; /* Includes padding in the width */
+  }
+  
+ /* This container holds both the iframe and text containers side by side */
+.content-wrapper {
+    width: 100%;
+    overflow: hidden; /* This will clear the floats within this container */
+  }
+  
+  /* This container is for the iframe */
+  .iframe-container {
+    float: left;
+    width: 60%; /* Adjusted to 60% as per your requirement */
+    padding: 30px;
+    box-sizing: border-box; /* Padding is included in the width */
+    background-color: #dd6a13; /* Your chosen background color */
+  }
+  
+  /* This container is for the text content */
+  .text-container {
+    float: right;
+    width: 40%; /* Adjusted to take the remaining space beside the iframe container */
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically in the container */
+    align-items: center; /* Centers content horizontally in the container */
+    height: 533px; /* Should match the height of your iframe for alignment */
+  }
+  
+  
+  .iframe-title {
+    font-size: 64px; /* Change this value to the desired font size */
+    margin: 0; /* Removes default margin */
+  }
+  
+  
+  
 
 .main-banner{
     background-image: url(../images/slide-1.jpg);
