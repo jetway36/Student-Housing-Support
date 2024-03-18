@@ -659,22 +659,24 @@ p {
 }
 
 .main-navigation ul li {
-    font-size: 16px;
+    font-size: 14px; /* Slightly smaller */
     line-height: 24px;
     display: inline-block;
-    margin-left: 16px;
-    padding-left: 16px;
+    margin-left: 10px; /* Reduced */
+    padding-left: 10px; /* Reduced */
     position: relative;
 }
 
+
 .main-navigation ul li a {
-    font-size: 16px;
+    font-size: 15px; /* Matched with li font-size */
     line-height: 24px;
     color: #11364e;
     font-weight: 500;
     transition: 0.3s;
     font-family: 'Epilogue', sans-serif;
 }
+
 
 .header-btn {
     display: inline-block;
@@ -826,6 +828,8 @@ p {
     opacity: 1;
     transition: 0.3s;
 }
+
+
 /*.......................................................................................Header CSS End*/
 
 /*.......................................................................................Banner First Section Front page CSS Start*/
@@ -1414,7 +1418,7 @@ p {
 }
 /*.......................................................................................Footer CSS End*/
 
-/*.......................................................................................Responsive CSS Start*/
+/*.....................................................................Media Query Responsive CSS Start*/
 
 @media screen and (max-width: 1399px) {
     .main-navigation ul li {
@@ -1834,8 +1838,8 @@ p {
     padding-top: 80px;
     padding-bottom: 90px;
 }
-
 }
+
 
 @media screen and (max-width: 767px) {
     .footer-about {
@@ -1908,8 +1912,12 @@ p {
     }
 
 }
-
 /*.......................................................................................Responsive CSS End*/
+
+/*.....................................participationg houses Mobile................*/
+
+
+
 
 .main-navigation button i{
     color: white;
@@ -1948,9 +1956,7 @@ p {
 }
 */
 .iframe-container {
-    float: left; /* This will align the container to the left */
     background-color: #dd6a13; /* Your current background color */
-    width: 60%; /* Adjust to how much width you want the iframe to take */
     padding: 30px;
     box-sizing: border-box; /* Includes padding in the width */
   }
@@ -2003,3 +2009,21 @@ p {
 .main-goal .goal-img{
     background-image: url(../images/goal-img.jpg);
 }
+
+@media screen and (max-width: 768px) {
+    .iframe-container, .text-container {
+      width: 100%; /* Make both elements full width */
+      float: none; 
+      padding: 15px; /* Add some padding for better spacing */
+    }
+    .iframe-container {
+      order: 2; /* Ensure the iframe is positioned after the text on smaller screens */
+    }
+    .text-container {
+      order: 1; /* Ensure the text is positioned before the iframe on smaller screens */
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: column; /* Stack the child elements vertically */
+    }
+  }
