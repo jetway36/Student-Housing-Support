@@ -1,100 +1,117 @@
 <!DOCTYPE html>
+<!-- The DOCTYPE declaration defines the document type and version of HTML.
+Here, it specifies that the document is an HTML5 document. -->
+
 <html lang="en">
+<!-- The <html> tag represents the root of an HTML document. 
+The lang attribute specifies the language of the document's content, in this case, English. -->
+
+
+
 <head>
+    <!-- The <head> section contains meta-information about the document, 
+    like its title and links to CSS files. -->
+
     <title>Student Housing Support Program</title>
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- The <title> tag specifies the title of the document, 
+    shown in the browser's title bar or tab. -->
 
-    <!-- ........................................................................FavIcon CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- The <meta> viewport element ensures the website is displayed
+    correctly on all devices by controlling the page's dimensions and scaling. -->
+
+    <!-------------------------------------------------------------------------------------FavIcon CSS -->
     <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+    <!-- The <link> tag defines a link between the document and an 
+    external resource. This line links the website's favicon. -->
 
-    <!--.........................................................................Bootstrap CSS-->
+    <!-------------------------------------------------------------------------------------Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- This <link> imports the Bootstrap library's CSS, 
+    which is used for designing responsive and mobile-first web pages. -->
 
-    <!--.........................................................................Google Fonts CSS-->
+    <!-------------------------------------------------------------------------------------Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900;1,100..900&family=Rubik:wght@300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- These <link> tags connect the document to Google Fonts, 
+    allowing the document to use the Epilogue and Rubik font families. -->
 
-    <!--.........................................................................Font Awesome Icon CSS-->
+    <!-------------------------------------------------------------------------------------Font Awesome Icon CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <!-- This <link> imports the Font Awesome library, 
+    which provides scalable vector icons that can be customized with CSS. -->
 
-    <!-- ........................................................................Wow Animation CSS -->
+    <!--------------------------------------------------------------------------------------Wow Animation CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <!-- This <link> imports the WOW.js library's CSS, 
+    which is used to animate elements when scrolling. -->
 
-    <!-- ........................................................................Main Style CSS  -->
+    <!--------------------------------------------------------------------------------------Main Style CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- This <link> imports the main stylesheet for the website, 
+    defining the primary visual style of the web pages. -->
 </head>
+
+
+
 <body>
-
- <!-- ...........................................................................Loader Start -->
-<div class="loader-box-one">
-    <div class="loader-main">
-        <ul class="loader">
-            <li class="center"></li>
-            <li class="item item-1"></li>
-            <li class="item item-2"></li>
-            <li class="item item-3"></li>
-            <li class="item item-4"></li>
-            <li class="item item-5"></li>
-            <li class="item item-6"></li>
-            <li class="item item-7"></li>
-            <li class="item item-8"></li>
-          </ul>
-    </div>
-</div>
-<!-- ............................................................................Loder End -->
-
-<!--.............................................................................Donation Button-->
+<!------------------------------------------------------------------------------------------Donation Button Section -->
 <div class="sticky-btn">
     <a href="#staticBackdrop" class="sec-btn" data-bs-toggle="modal" title="Book Now">Donation</a>
 </div>
-<!--.............................................................................Donation Button End-->
+<!-- This section creates a sticky donation button that's always 
+visible to users. When clicked, it opens a modal for donations. -->
+<!-- End of Donation Button Section -->
 
-<!--.............................................................................Header Start-->
-<div
-    div class="site-header">
-    <!--.........................................................................Navbar Start  -->
+<!-----------------------------------------------------------------------------------------Start of Header Section -->
+<div class="site-header">
+<!-- This section includes the website's header, 
+containing the navigation bar and the site logo. -->
+
+<!-----------------------------------------------------------------------------------------Start of Navbar Section -->
     <div class="header-bottom">
-       <div class="container">
-           <div class="row align-items-center">
-               <div class="col-lg-2">
-                   <!-- .........................................................Site Logo Start -->
-                   <div class="site-branding">
-                        <a href="index.html" title="Shivka">
-                            <img src="assets/images/logo.png" alt="Logo">
-                        </a>
-                   </div>
-                   <!-- .........................................................Sit Logo End -->
-               </div>
-               <!--..............................................................Header Hambuger Menu Mobile-->
-               <div class="col-lg-10">
+    <div class="container">
+        <div class="row align-items-center">
+        <!-- This part contains the main navigation menu of the website, 
+        featuring a hamburger menu for mobile versions. -->
+
+<!-----------------------------------------------------------------------------------------Start of Site Logo Section -->
+            <div class="col-lg-2">
+                <div class="site-branding">
+                    <a href="index.html" title="Student Housing Project">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <!-- Displays the website's logo and serves 
+            as a link back to the homepage. -->
+<!----------------------------------------------------------------------------------------End of Site Logo Section -->
+
+<!----------------------------------------------------------------------------------------Start Header Hamburger Menu Mobile Section -->
+            <div class="col-lg-10">
                 <div class="header-menu">
                     <nav class="main-navigation">
                         <button class="toggle-button">
                             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                             <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                         </button>
+                        <!-- The mobile menu box contains the navigation links
+                        and ensures a responsive design. -->
                         <div class="mobile-menu-box">
-                            <i class="menu-background one top"></i>
-                            <i class="menu-background one middle"></i>
-                            <i class="menu-background one bottom"></i>
                             <ul class="menu">
-                                <li class="sub-items">
-                                    <a href="index.html" title="Home">Home</a>
+                        <!-- The menu list includes links to various sections of the site like Home, About Us, Services, and more. Sub-menus provide additional navigation options. -->
+                                <li class="sub-items"><a href="index.html" title="Home">Home</a>
                                     <ul class="sub-menu">
                                         <li><a href="#about_us" title="About Us">About Us</a></li>
                                         <li><a href="#service" title="Services">Services</a></li>
-
                                         <li><a href="#vision" title="Our Vision">Our Vision</a></li>
                                         <li><a href="#goal" title="Our Goals">Our Goal</a></li>
                                         <li><a href="#participating_houses">Participating Houses</a></li>
                                     </ul>
                                 </li>
-                                
                                 <li><a href="#learnMoreModal" data-bs-toggle="modal" title="Learn More">Learn More</a></li>
-                                <li class="sub-items">
-                                    <a href="javascript:void(0);" title="Contact Us">Contact Us</a>
+                                <li class="sub-items"><a href="javascript:void(0);" title="Contact Us">Contact Us</a>
                                     <ul class="sub-menu">
                                         <li><a href="mailto:mikejhiggins@smccme.edu" title="Michael Higgins">Michael Higgins</a></li>
                                         <li><a href="mailto:xinqian@smccme.edu" title="Xin Qian">Xin Qian</a></li>
@@ -109,373 +126,676 @@
                         </div>
                     </nav>
                     <div class="black-shadow"></div>
+                    <!-- This div acts as a semi-transparent black overlay covering 
+                    the entire viewport. It darkens the background.-->
                 </div>
             </div>
-            
-            
-            
-            
-               <!--....................................................................Header Hambuger Menu Mobile End-->
-           </div>
-       </div>
-   </div>
-   <!--................................................................................Navbar End-->
-     
-</div>
-<!--...................................................................................Header End-->
+            <!-- This section is for the mobile version of the navigation bar, 
+            featuring a toggle button to show or hide the menu. -->
+            <!----------------------------------------------------------------------------End of Header Hamburger Menu Mobile Section -->
 
- <!--..................................................................................Modal Donation Button-->
- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        </div>
+    </div>
+    </div>
+<!---------------------------------------------------------------------------------------End of Navbar Section -->
+
+</div>
+<!---------------------------------------------------------------------------------------End of Header Section -->
+
+
+
+<!---------------------------------------------------------------------------------------Start of Modal Donation Button -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- This div defines a modal that fades into view and is 
+    centered on the screen. It is not dismissible by clicking outside of it  
+    or by pressing the escape key. It is hidden by 
+    default and can be triggered to display. -->
+  
     <div class="modal-dialog modal-dialog-centered">
+      <!-- This div specifies the modal dialog box's style 
+      and centering on the page. -->
+  
       <div class="modal-content">
+        <!-- This div contains the content of the modal, including header, 
+        body, and potentially a footer. -->
+  
         <div class="modal-header">
           <h3 class="h3-title" id="staticBackdropLabel">Make A Donation</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <!-------------------------------------------------------------------------------Start of Modal Header -->
+          <!-- This section contains the title of the modal and 
+          a button to close the modal. -->
+          <!-- Button to close the modal, with an aria-label 
+          for accessibility purposes. -->
+          <!-- End of Modal Header -->
         </div>
+  
         <div class="modal-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="FirstName" class="form-input" placeholder="First Name" required="">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="LastName" class="form-input" placeholder="Last Name" required="">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="PhoneNo" class="form-input" placeholder="Phone No." required="">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="Donation Amount" class="form-input" placeholder="Donation Amount" aria-label="Amount (to the nearest dollar)" required="">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-box">
-                                        <textarea class="form-input" placeholder="Message..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-box mb-0">
-                                        <button type="submit" class="sec-btn"><span>Donate Now</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <form>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-box">
+                        <input type="text" name="FirstName" class="form-input" placeholder="First Name" required="">
+                        <!-- Form field for entering the first name. -->
+                      </div>
                     </div>
-                </div>
+  
+                    <div class="col-md-12">
+                      <div class="form-box">
+                        <input type="text" name="LastName" class="form-input" placeholder="Last Name" required="">
+                        <!-- Form field for entering the last name. -->
+                      </div>
+                    </div>
+  
+                    <div class="col-md-12">
+                      <div class="form-box">
+                        <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="">
+                        <!-- Form field for entering the email address. -->
+                      </div>
+                    </div>
+  
+                    <div class="col-md-12">
+                      <div class="form-box">
+                        <input type="text" name="PhoneNo" class="form-input" placeholder="Phone No." required="">
+                        <!-- Form field for entering the phone number. -->
+                      </div>
+                    </div>
+  
+                    <div class="col-md-12">
+                      <div class="form-box">
+                        <input type="text" name="Donation Amount" class="form-input" placeholder="Donation Amount" aria-label="Amount (to the nearest dollar)" required="">
+                        <!-- Form field for entering the donation amount. -->
+                      </div>
+                    </div>
+  
+                    <div class="col-12">
+                      <div class="form-box">
+                        <textarea class="form-input" placeholder="Message..."></textarea>
+                        <!-- Text area for additional messages from the donor. -->
+                      </div>
+                    </div>
+  
+                    <div class="col-12">
+                      <div class="form-box mb-0">
+                        <button type="submit" class="sec-btn"><span>Donate Now</span></button>
+                        <!-- Submission button for the form. -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!-------------------------------------------------------------------------End of Donation Form -->
+                <!-- This form is used for collecting donation 
+                information from the user. -->
+              </div>
             </div>
+          </div>
+          <!-------------------------------------------------------------------------------Start of Modal Body -->
+          <!-- This section contains the form users will fill out to make a donation. -->
+          <!-- This container holds the form elements structured in a grid. -->
+          <!-- End of Modal Body -->
         </div>
       </div>
     </div>
   </div>
-<!--...................................................................................End Modal Donation Button-->
+<!---------------------------------------------------------------------------------------End of Modal Donation Button -->
+  
+  
 
-<!--...................................................................................Modal operator Sign Up -->
- <div class="modal fade" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sign-up-to" aria-hidden="true">
+<!---------------------------------------------------------------------------------------Start of Modal Operator Sign Up -->
+<div class="modal fade" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sign-up-to" aria-hidden="true">
+    <!-- This div defines a modal for operator sign-up. 
+    It's set to not close when clicking outside  or pressing escape, 
+    ensuring users intentionally close it, likely after completing a sign-up form. -->
+  
     <div class="modal-dialog modal-dialog-centered">
+      <!-- This div centers the modal dialog vertically and horizontally 
+        in the viewport, making it more accessible and visually appealing. -->
+  
       <div class="modal-content">
+        <!-- This div contains the content of the modal, structured 
+        into header and body sections for clarity and organization. -->
+  
         <div class="modal-header">
           <h3 class="h3-title" id="sign-up-to">Operator Sign Up</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <!-- The modal header contains the title 'Operator Sign Up' 
+          and a button to close the modal. The close button improves user 
+          experience by allowing an easy way to exit the sign-up process. -->
         </div>
+        
         <div class="modal-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-                        <iframe id="operator-sign-up-iframe" class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shrK6wZQ0lS0L0ohZ?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" height="1018.090909"></iframe>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- The modal body houses an embedded iframe, 
+                typically used for embedding external content like 
+                forms or other web pages directly within the modal. -->
+
+                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                <!-- This script tag is necessary for embedding content 
+                from Airtable, which can dynamically resize based 
+                on the content's height. -->
+
+                <iframe id="operator-sign-up-iframe" class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shrK6wZQ0lS0L0ohZ?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" height="1018.090909"></iframe>
+                <!-- The iframe embeds a form from Airtable for operator sign-up. 
+                It is styled to match the modal's design and is set to 
+                be responsive to screen size changes. -->
+              </div>
             </div>
+          </div>
         </div>
+  
       </div>
     </div>
   </div>
-<!--...................................................................................End Modal operator Sign Up -->
+<!-----------------------------------------------------------------------------------End of Modal Operator Sign Up -->
+  
 
-<!--...................................................................................Home Page Banner Start -->
+<!--.................................................................................Start Home Page Banner Start -->
 <section class="main-banner">
+    <!-- This section is the main banner of the home page, 
+    typically used to showcase key messages or values prominently. -->
+  
     <div class="banner-overlay">
-        <img src="assets/images/banner-overlay.png" alt="Banner Overly">
+      <img src="assets/images/banner-overlay.png" alt="Banner Overlay">
+      <!-- The banner overlay is an image that adds visual interest 
+    or branding to the banner background. -->
     </div>
+    
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="banner-content">
-                    <h1 class="h1-title">Building strength, stability, and self-reliance through shelter</h1>
-                    <p>Supporting students with housing solutions cultivates an environment conducive to academic success and personal development. It alleviates one of the major stressors in student life, allowing them to focus more fully on their studies and future aspirations.</p>
-                </div>
-            </div>
+      <!-- This container holds the content of the banner, ensuring it 
+      aligns well with the rest of the page's layout. -->
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- This column ensures that the banner content spans the full 
+          width of the row, making it centrally located. -->
+          
+          <div class="banner-content">
+            <h1 class="h1-title">Building strength, stability, and self-reliance through shelter</h1>
+            <p>Supporting students with housing solutions cultivates an environment conducive to academic success and personal development. It alleviates one of the major stressors in student life, allowing them to focus more fully on their studies and future aspirations.</p>
+            <!-- The banner content houses the main message and supporting text, 
+            designed to engage visitors and convey the core message or value 
+            proposition of the site or organization. -->
+          </div>
         </div>
+      </div>
     </div>
-</section>
-<!--...................................................................................End Home PageBanner End -->
+  </section>
+<!-----------------------------------------------------------------------------------End of Home Page Banner -->
+  
 
-<!--...................................................................................About Us Start-->
+<!-----------------------------------------------------------------------------------Start About Us Section-->
+
 <section class="main-about-us" id="about_us">
+    <!-- This section is dedicated to providing information 
+    about the organization or initiative, marked with an 
+    "about_us" ID for direct linking. -->
+  
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about-img-box" data-tilt data-tilt-max="3">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="about-img1 wow fadeInUp animated" data-wow-delay=".4s">
-                                <img src="assets/images/about-img-1.jpg" alt="about us">
-                            </div>  
-                        </div>
-                        <div class="col-6">
-                            <div class="about-img2 wow fadeInUp animated" data-wow-delay=".5s">
-                                <img src="assets/images/about-img-2.jpg" alt="about us">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="about-img3 wow fadeInUp animated" data-wow-delay=".6s">
-                                <img src="assets/images/about-img-3.jpg" alt="about us">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="about-img4 wow fadeInUp animated" data-wow-delay=".7s">
-                                <img src="assets/images/about-img-4.jpg" alt="about us">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-experience">
-                        <img src="assets/images/about_logo.png" alt="">
-                    </div>
+      <!-- A container to hold the content, ensuring it's aligned 
+    and responsive within the website's layout. -->
+      
+      <div class="row align-items-center">
+        <!-- A row that aligns its items vertically at the center, 
+        containing two main columns for text and images respectively. -->
+        
+        <div class="col-lg-6">
+          <!-- Column for about us images, using a grid to display 
+          multiple images in a structured layout. -->
+          
+          <div class="about-img-box" data-tilt data-tilt-max="3">
+            <!-- An image container with a tilt effect on hover, 
+            enhancing interactivity. "data-tilt-max" controls the maximum tilt. -->
+            
+            <div class="row">
+              <!-- Nested row to structure the individual image elements. -->
+              
+              <!-- Individual images are wrapped in their own columns with 
+              animations to enhance visual appeal. -->
+              <div class="col-6">
+                <div class="about-img1 wow fadeInUp animated" data-wow-delay=".4s">
+                  <img src="assets/images/about-img-1.jpg" alt="about us">
+                </div>  
+              </div>
+              <div class="col-6">
+                <div class="about-img2 wow fadeInUp animated" data-wow-delay=".5s">
+                  <img src="assets/images/about-img-2.jpg" alt="about us">
                 </div>
-            </div>
-            <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".4s">
-                <div class="about-content-box">
-                    <div class="subtitle">
-                        <h2 class="h2-subtitle">About Us</h2>
-                    </div>
-                    <h2 class="h2-title">Welcome to Student Housing Support Program</h2>
-                    <p>This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home. At the heart of our mission lies the commitment to alleviate the housing burden on students, ensuring they can focus on their academic and personal growth without the stress of securing safe, reliable accommodation.</p>
+              </div>
+              <div class="col-6">
+                <div class="about-img3 wow fadeInUp animated" data-wow-delay=".6s">
+                  <img src="assets/images/about-img-3.jpg" alt="about us">
                 </div>
+              </div>
+              <div class="col-6">
+                <div class="about-img4 wow fadeInUp animated" data-wow-delay=".7s">
+                  <img src="assets/images/about-img-4.jpg" alt="about us">
+                </div>
+              </div>
             </div>
+            
+            <div class="about-experience">
+              <!-- A section possibly highlighting experience or a significant 
+              aspect of the organization, accompanied by a logo or relevant image. -->
+              <img src="assets/images/about_logo.png" alt="">
+            </div>
+          </div>
         </div>
+        
+        <div class="col-lg-6 wow fadeInRight animated" data-wow-delay=".4s">
+          <!-- Column for the textual content about the organization, 
+          with animation for visual engagement. -->
+          
+          <div class="about-content-box">
+            <!-- Container for the about us text, including title and description. -->
+            
+            <div class="subtitle">
+              <h2 class="h2-subtitle">About Us</h2>
+              <!-- Subtitle for the section. -->
+            </div>
+            
+            <h2 class="h2-title">Welcome to Student Housing Support Program</h2>
+            <!-- Main title welcoming visitors and introducing the program. -->
+            
+            <p>This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home. At the heart of our mission lies the commitment to alleviate the housing burden on students, ensuring they can focus on their academic and personal growth without the stress of securing safe, reliable accommodation.</p>
+            <!-- Paragraph detailing the mission and objectives of the program. -->
+            
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!--...................................................................................About Us End-->
+  </section>
+<!------------------------------------------------------------------------------------End of About Us Section -->
+  
 
-<!--...................................................................................What We Do Start-->
+
+<!------------------------------------------------------------------------------------Start of What We Do Section -->
 <section class="main-service" id="service">
+    <!-- This section is dedicated to showcasing the various services 
+    offered by the organization. It is identified by the "service" 
+    ID for easy navigation. -->
+
     <div class="container">
+        <!-- A container to center the content within the section and 
+        align it with the overall website layout. -->
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="service-title">
+                    <!-- Holds the main title and subtitle for the services section. -->
+
                     <div class="subtitle">
                         <h2 class="h2-subtitle">Services</h2>
+                        <!-- The subtitle provides an introductory context to the services offered. -->
+
                     </div>
                     <h2 class="h2-title">What We Do</h2>
+                    <!-- The main title that introduces the section's focus on the organization's services. -->
                 </div>
             </div>
         </div>
         <div class="row">
+            <!-- A row that organizes service boxes into a grid layout. -->
+
             <div class="col-lg-4">
                 <div class="service-box">
+                    <!-- The container for the first service, 
+                    detailing one of the specific services offered. -->
+
                     <div class="service-img">
                         <img src="assets/images/service-1.jpg" alt="Service">
+                        <!-- An image that visually represents the service. -->
+
                     </div>
                     <div class="service-text-box">
+                        <!-- Contains the text description and title of the service. -->
+
                         <div class="service-title-box">
+                            <!-- This box contains the service title and accompanying icon. -->
+
                             <div class="service-icon">
                                 <img src="./assets/icons/secure-data.svg" alt="">
+                                <!-- The icon symbolizes the service theme, 
+                                in this case, data security. -->
+
                             </div>
-                            <a href="javascript:void(0);"><h3 class="h3-title">Secure Data Management</h2></a>
+                            <a href="javascript:void(0);"><h3 class="h3-title">Secure Data Management</h3></a>
+                            <!-- The title of the service, clickable for potentially 
+                            expanding the information or linking to more details. -->
+
                         </div>
                         <p>We prioritize the confidentiality and integrity of data with a secure client data entry portal, safeguarding information in compliance with the highest data protection standards.</p>
+                        <!-- Describes the service, emphasizing its focus on data security and confidentiality. -->
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="service-box">
+                    <!-- Container for the second service, following the 
+                    same structure as the first for consistency. -->
+
                     <div class="service-img">
                         <img src="assets/images/service-2.jpg" alt="Service">
+                        <!-- Image associated with the second service, 
+                        aiding visual identification. -->
+
                     </div>
                     <div class="service-text-box">
                         <div class="service-title-box">
                             <div class="service-icon">
                                 <img src="./assets/icons/streamlined.svg" alt="">
+                                <!-- Icon for the second service, indicating a 
+                                focus on efficiency or process improvement. -->
+
                             </div>
-                            <a href="javascript:void(0);"><h3 class="h3-title">Streamlined Operations</h2></a>
+                            <a href="javascript:void(0);"><h3 class="h3-title">Streamlined Operations</h3></a>
+                            <!-- Title for the second service, potentially linkable for more information. -->
+
                         </div>
                         <p>Through an efficient backend database powered by Airtable and automated financial processes, we ensure that housing support organizations can operate more effectively, focusing their resources on what truly matters – helping students.</p>
+                        <!-- Details the objectives and methods of the service, 
+                        highlighting operational efficiency. -->
+
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="service-box">
+                    <!-- Third service box, maintaining the structural 
+                    theme for service presentation. -->
+
                     <div class="service-img">
                         <img src="assets/images/service-3.jpg" alt="Service">
+                        <!-- Visual representation for the third service. -->
+
                     </div>
                     <div class="service-text-box">
                         <div class="service-title-box">
                             <div class="service-icon">
                                 <img src="./assets/icons/accessible.svg" alt="">
+                                <!-- Icon depicting the theme of accessibility, 
+                                relevant to the service provided. -->
+
                             </div>
-                            <a href="javascript:void(0);"><h3 class="h3-title">Accessible Technology</h2></a>
+                            <a href="javascript:void(0);"><h3 class="h3-title">Accessible Technology</h3></a>
+                            <!-- Service title, suggesting the use of 
+                            technology to enhance accessibility. -->
+
                         </div>
                         <p>Our platform is designed with every user in mind. With an intuitive interface and Fillout Forms for easy data entry, we cater to users of all technical backgrounds, including those with disabilities, ensuring no one is left behind.</p>
+                        <!-- Explains how the service makes technology accessible 
+                        to a wide range of users, emphasizing inclusivity. -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--...................................................................................End What We Do-->
+<!------------------------------------------------------------------------------------End of What We Do Section -->
+
+  
 
 <!-- ..................................................................................Our Vision Start -->
+
 <section class="main-vision" id="vision">
+    <!-- This section is designated for presenting the organization's vision. 
+    It's uniquely identified by "vision" for targeted navigation. -->
+
     <div class="container">
+        <!-- Centers the content within the section, ensuring 
+        it aligns with the rest of the site's layout. -->
+
         <div class="row align-item-center">
+            <!-- Creates a flexible row that aligns its items vertically at the center, 
+            providing a balanced display of text and multimedia content. -->
+
             <div class="col-lg-6">
                 <div class="vision-content wow fadeInLeft" data-wow-delay="0.5s">
+                    <!-- The container for the vision's textual content, animated to 
+                    fade in from the left with a slight delay for added visual interest. -->
+
                     <div class="vision-title">
+                        <!-- Holds the title and subtitle for the vision section. -->
+
                         <div class="subtitle">
                             <h2 class="h2-subtitle">Our Vision</h2>
+                            <!-- Provides a heading that introduces the subject of the vision. -->
                         </div>
                         <h2 class="h2-title">We Aim To Create More connection</h2>
+                        <!-- The main statement of the vision, emphasizing the 
+                        goal of creating more connections. -->
                     </div>
                     <p>To empower student housing support organizations with state-of-the-art technology, simplifying and enhancing the way they operate. By integrating innovative tools with a human-centered approach, we aim to create a more connected, supportive community for students in need of housing assistance.</p>
+                    <!-- A detailed explanation of the vision, outlining how technology 
+                    and a human-centered approach can improve student housing support. -->
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="vision-video wow fadeInRight" data-wow-delay="0.5s">
+                    <!-- Container for a video that complements the vision statement, 
+                    also animated to enhance engagement. -->
+
                     <video width="100%" height="100%" autoplay loop muted>
+                        <!-- The video element set to autoplay in a loop and muted to 
+                        not disrupt the user's browsing experience. -->
+
                         <source src="assets/images/1746917_Dormitory_Dorm_Housing_1280x720.mp4" type="video/mp4">
+                        <!-- Specifies the source of the video file, which 
+                        should visually support the vision statement. -->
                       </video>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <!--...................................................................................End Our Vision -->
 
+
 <!--...................................................................................Our Goals Start-->
+
 <section class="main-goal" id="goal">
+    <!-- The main container for the "Our Goals" section, 
+    identifiable by 'goal' ID for easy navigation/linking. -->
+
     <div class="goal-img"></div>
+    <!-- Placeholder div for a background or theme image related 
+    to the goals, which could be styled using CSS. -->
+
     <div class="container">
+        <!-- Centers the content and ensures it aligns 
+        well with the rest of the page's layout. -->
+
         <div class="row">
+            <!-- A standard row to align the 
+            columns within the container. -->
+
              <div class="col-lg-6 offset-lg-6">
+                <!-- Column that contains the actual content of the 
+                "Our Goals" section, offset to start at the midpoint 
+                of the container for a distinctive layout. -->
+
                 <div class="goal-content-box wow fadeInRight" data-wow-delay="0.5s">
+                    <!-- Content box with animation effects for engaging presentation. 
+                    'fadeInRight' makes the element appear from the right. -->
+
                     <div class="goal-title">
+                        <!-- Container for the title of the goals section. -->
+
                         <div class="subtitle">
                             <h2 class="h2-subtitle">Our Goals</h2>
+                            <!-- Subtitle of the section, providing 
+                            an introductory heading. -->
                         </div>
+
                         <h2 class="h2-title">What Is Our Motto</h2>
+                        <!-- Main title expressing the overarching 
+                        motto or principle guiding the goals. -->
                     </div>
+
                     <ul>
+                        <!-- Unordered list to outline each goal with 
+                        a corresponding icon and description. -->
+
                         <li>
+                            <!-- Each list item represents a specific goal with 
+                            a visual icon and descriptive text. -->
+
                             <div class="goal-icon">
                                 <img src="./assets/icons/goal-1.svg" alt="">
+                                <!-- Icon for the first goal, visually symbolizing 
+                                the concept of 'Ease of Use.' -->
                             </div>
+
                             <div class="goal-text-box">
                                 <h3 class="h3-title">Ease of Use</h3>
+                                <!-- Title for the first goal. -->
+
                                 <p>We're dedicated to providing a straightforward, efficient registration process for organizations, making it easier than ever to join our cause.</p>
+                                <!-- Description of the first goal, 
+                                emphasizing simplicity and efficiency. -->
                             </div>
                         </li>
                         <li>
                             <div class="goal-icon">
                                 <img src="./assets/icons/goal-2.svg" alt="">
+                                <!-- Icon representing the second goal -->
                             </div>
                             <div class="goal-text-box">
                                 <h3 class="h3-title">Accuracy and Integrity</h3>
+                                <!-- Title of the second goal -->
                                 <p>By automating tracking and implementing rigorous data accuracy audits, we maintain the reliability of client and financial data, a cornerstone of our trustworthiness.</p>
+                            <!-- Description of the second goal -->
                             </div>
                         </li>
                         <li>
-                            <div class="goal-icon">
-                                <img src="./assets/icons/goal-3.svg" alt="">
-                            </div>
-                            <div class="goal-text-box">
-                                <h3 class="h3-title">Informed Decision-Making</h3>
-                                <p>Our commitment to delivering real-time data and flexible reporting tools enables organizations to make insightful decisions that directly benefit students.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="goal-icon">
-                                <img src="./assets/icons/goal-4.svg" alt="">
-                            </div>
-                            <div class="goal-text-box">
-                                <h3 class="h3-title">Universal Accessibility</h3>
-                                <p>The Program is crafted to be as accessible as it is useful, ensuring everyone can navigate and utilize our system with ease.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        <div class="goal-icon">
+                            <img src="./assets/icons/goal-3.svg" alt="">
+                            <!-- Icon representing the third goal -->
+                        </div>
+                        <div class="goal-text-box">
+                            <h3 class="h3-title">Informed Decision-Making</h3>
+                            <!-- Title of the third goal -->
+                            <p>Our commitment to delivering real-time data and flexible reporting tools enables organizations to make insightful decisions that directly benefit students.</p>
+                            <!-- Description of the third goal -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goal-icon">
+                            <img src="./assets/icons/goal-4.svg" alt="">
+                            <!-- Icon representing the fourth goal -->
+                        </div>
+                        <div class="goal-text-box">
+                            <h3 class="h3-title">Universal Accessibility</h3>
+                            <!-- Title of the fourth goal -->
+
+                            <p>The Program is crafted to be as accessible as it is useful, ensuring everyone can navigate and utilize our system with ease.</p>
+                            <!-- Description of the fourth goal -->
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 </section>
+
 <!--....................................................................................End Our Goals-->
 
-<!--....................................................................................Learn More Start-->
+<!--....................................................................................Participating Houses Start-->
 
 <div id="participating_houses" class="content-wrapper">
+    <!-- This wrapper div encompasses the entire "Learn More" section, 
+    identified by 'participating_houses' to allow direct navigation. -->
+    
     <div class="iframe-container">
+        <!-- Container for an iframe, designed to embed 
+        external content within the page. -->
+      
       <iframe class="airtable-embed" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shreCTQTimoURb6gu?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+      <!-- The iframe embeds content from Airtable, displaying information or data in a structured format. The 'backgroundColor=greenDusty' parameter customizes the background color of the embedded content. The frame is styled for transparency and bordered for clarity. -->
     </div>
+    
     <div class="text-container">
+        <!-- Container for additional textual 
+        content related to the embedded iframe. -->
+      
       <h2 class="iframe-title">Participating Houses</h2>
-      <!-- Additional content here -->
+      <!-- The title for the section, specifically introducing the content shown in the iframe. -->
     </div>
 </div>
 
-  
-  
+<!--..................................................................................Participating Houses Finish-->
 
 
-
-<!--....................................................................................Learn More Finish-->
-
-
-
-
-<!--.....................................................................................Footer Start-->
+<!------------------------------------------------------------------------------------Footer Section Start -->
 <section class="main-footer">
+    <!-- This section is the footer of the webpage, 
+    serving as a container for the website's footer content. -->
+
     <div class="container">
+        <!-- Centers the footer content and aligns 
+        it with the overall layout of the site. -->
+
         <div class="row">
+            <!-- Establishes a flex container to 
+            organize footer content into columns. -->
+
             <div class="col-lg-3 col-md-6">
+                <!-- The first column in the footer, 
+                designed for about or introductory information. -->
+
                 <div class="footer-about">
+                    <!-- Container for the about section of the footer. -->
+
                     <a href="index.html">
                         <img src="assets/images/logo.png" alt="Logo">
+                        <!-- Links back to the homepage via the logo. -->
                     </a>
+
                     <p>This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home.</p>
+                    <!-- Brief description or mission statement of the organization. -->
+
                     <div class="social-media">
+                        <!-- Container for social media links. -->
                         <ul>
+                            <!-- Unordered list for social media icons. -->
+
                             <li>
                                 <a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <!-- Placeholder link for the Facebook page. -->
                             </li>
                             <li>
                                 <a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <!-- Placeholder link for the Instagram page. -->
                             </li>
                             <li>
                                 <a href="javascript:void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <!-- Placeholder link for the Twitter page. -->
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3 col-md-6">
+                <!-- The second column in the footer, 
+                typically for navigation links or important site links. -->
+
                 <div class="our-links">
+                    <!-- Container for a list of useful links. -->
+
                     <h3 class="h3-title">Our Links</h3>
+                    <!-- Title for the links section. -->
+
                     <div class="line"></div>
+                    <!-- Visual divider or decorative line. -->
                     <ul>
+                        <!-- Unordered list for site navigation links. -->
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#about_us">About Us</a></li>
                         <li><a href="#vision">Our vision</a></li>
@@ -483,49 +803,87 @@
                         <li><a href="#goal">Our Goal</a></li>
                         <li><a href="#learnMoreModal" data-bs-toggle="modal" data-bs-target="#learnMoreModal">Learn More</a></li>
                         <li><a href="#participating_houses">Participating Houses</a></li>
-
-
                     </ul>
                 </div>
             </div>
+
             <div class="col-lg-3 col-md-6">
+                <!-- The third column in the footer for contact information. -->
+
                 <div class="contact-us">
+                    <!-- Container for the contact information. -->
+
                     <h3 class="h3-title">Contact Us</h3>
+                    <!-- Title for the contact section. -->
+
                     <div class="line"></div>
+                    <!-- Visual divider. -->
+
                     <ul>
+                        <!-- Unordered list for contact details. -->
+
                         <li>
                             <div class="contact-icon">
+                                <!-- Container for the contact icon, 
+                                such as a map marker. -->
+
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                             </div>
                             <div class="contact-text">
-                                2 Fort Road. South Portland, Maine 207-741-5927</a>
+                                <!-- Container for the actual contact information. -->
+                                2 Fort Road. South Portland, Maine 207-741-5927
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
+
             <div class="col-lg-3 col-md-6">
+                <!-- The fourth column in the footer for 
+                the map or location information. -->
+
                 <div class="map">
+                    <!-- Container for embedding a map. -->
+
                     <h3 class="h3-title">Location</h3>
+                    <!-- Title indicating this section is about the location. -->
+
                     <div class="line"></div>
+                    <!-- Decorative line. -->
+
                     <div class="map-box">
+                        <!-- Container for the embedded map. -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.0584249732065!2d-70.231657524282!3d43.64695277110246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb29dcc40d8dc07%3A0xf2216cb91f9a8d41!2sSouthern%20Maine%20Community%20College!5e0!3m2!1sen!2sus!4v1709570911882!5m2!1sen!2sus" width="100%" height="270" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Embedded Google Map showing the location. -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="copyright">
+        <!-- Footer's bottom area for copyright information. -->
+
         <div class="container">
+            <!-- Centers the content and 
+            aligns it with the footer layout. -->
+
             <div class="row justify-content-center">
+                <!-- Centers the copyright text within the footer. -->
+
                 <div class="col-lg-12">
+                    <!-- Full-width column for the copyright text. -->
+
                     <span>© 2024 Senior Capstone Team 1. All Rights Reserved.  <a href="index.html">Student Housing.</a> All rights reserved.</span>
+                    <!-- The actual copyright text, including a year, 
+                    team name, and a repeat of the site name. -->
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--.....................................................................................End Footer-->
+
 
 <!-- Jquery JS Link -->
 <script src="assets/js/jquery.min.js"></script>
@@ -559,23 +917,5 @@
       </div>
     </div>
   </div>
-  
-
-<!-- ...................................................................................Student Entry Password-->
-<!--
-<script>
-    function promptPassword() {
-        var password = prompt("Please enter the password to access the Student Entry page:");
-        if (password != null && password == "p@ssw0rd") { // Replace 'yourpassword' with the actual password
-            window.open('student-entry.html', '_blank').focus(); // Opens the specified page in a new tab or window
-        } else {
-            alert("Incorrect password.");
-        }
-    }
-    </script>
-
-</div>
--->
-<!-- ...................................................................................End Student Entry Password-->
 </body>
 </html>
