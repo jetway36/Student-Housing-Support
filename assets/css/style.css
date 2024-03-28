@@ -28,8 +28,15 @@
 }
 /*...........................................................................................Fonts CSS End*/
 
+/* =================================================================================================================
+   Common CSS Start: Base styles for smooth scrolling, default font, overflow 
+   handling, and primary color settings. This section provides foundational 
+   styling applied universally across the website.
+   =============================================================================================================== */
 
-/*...........................................................................................Common CSS Start*/
+
+/* General Document Styling: Smooth scrolling, default font, 
+overflow handling, and base color */
 html {
     scroll-behavior: smooth;
 }
@@ -42,53 +49,89 @@ body{
     color: #11364e;
 }
 
-/*...........................................................................................Scroll Bar Start*/
+/*----------------------------------------------------------------------------------Scroll bar start*/
 
+/*================================================================================================================== Customizes the scrollbar for web pages in both Chrome (WebKit) and Firefox (Moz), including the width of the scrollbar, the track color, and the thumb (the part you drag) color, which changes on hover.
+================================================================================================================== */
+
+/* Sets the width of the scrollbar for webkit 
+browsers (e.g., Chrome, Safari). */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
+/* Sets the width of the scrollbar for 
+Mozilla browsers (e.g., Firefox). */
 ::-moz-scrollbar {
     width: 10px;
 }
 
+/* Styles the track of the scrollbar for webkit browsers, 
+giving it a light grey color. */
 ::-webkit-scrollbar-track {
     background-color: #bfbfbf;
 }
 
+/* Styles the track of the scrollbar for Mozilla browsers, 
+giving it a light grey color. */
 ::-moz-scrollbar-track {
     background-color: #bfbfbf;
 }
 
+/* Styles the thumb of the scrollbar for webkit browsers, 
+making it orange with rounded corners. */
 ::-webkit-scrollbar-thumb {
     background-color: #ff6a32;
     border-radius: 10px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+/* Styles the thumb of the scrollbar for Mozilla browsers, 
+making it orange with rounded corners. */
 ::-moz-scrollbar-thumb {
     background-color: #ff6a32;
     border-radius: 10px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+/* Changes the thumb color to dark blue on hover for webkit browsers. */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #11364e;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+/* Changes the thumb color to dark blue on hover for Mozilla browsers. */
 ::-moz-scrollbar-thumb:hover {
     background-color: #11364e;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+
+/*...........................................................................................Scroll Bar End*/
+
+/* ==========================================================================
+   Basic Style Settings: This part of the code makes the website easier to 
+   use and more visually appealing. We're adjusting how things like links, 
+   input boxes (where you enter information), and buttons look to create a 
+   consistent style across the site. This includes removing the outline that 
+   appears when you click on something, ensuring images adjust to fit 
+   different screen sizes nicely, and setting the text and headings to 
+   sizes and colors that are easy to read and distinguish. These changes 
+   are all about making the website more user-friendly and ensuring it looks 
+   good on any device.
+   ========================================================================== */
+
+/* Link Styling: Makes all links on the website 
+look clean by removing underlines and outlines. */
 a,
 a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
 }
-/*...........................................................................................Scroll Bar End*/
+
+/* Form and Button Styling: Removes the outline from 
+inputs and buttons for a cleaner look. */
 input,
 input:focus,
 input:hover,
@@ -98,15 +141,21 @@ button:focus {
     outline: none;
 }
 
+/* Section Styling: Prevents any content from 
+overflowing its section boundaries. */
 section {
     overflow: hidden;
 }
 
+/* Image Styling: Ensures that all images are responsive, 
+fitting nicely into their containers without stretching out of bounds. */
 img {
     width: auto;
     max-width: 100%;
 }
 
+/* Paragraph Styling: Sets the standard font size, line height, 
+color, and spacing for text, making it easier to read. */
 p {
     font-size: 15px;
     line-height: 24px;
@@ -115,10 +164,14 @@ p {
     margin-bottom: 12px;
 }
 
+/* Dark Background Styling: Applies a dark background color 
+to elements for contrast or thematic design purposes. */
 .dark-bg {
     background-color: #252439;
 }
 
+/* Main Title Styling: Defines the appearance of the main titles 
+using a specific font, size, weight, and spacing for impactful headings. */
 .h1-title {
     font-family: 'Epilogue', sans-serif;
     font-size: 70px;
@@ -126,6 +179,8 @@ p {
     line-height: 100px;
 }
 
+/* Secondary Title Styling: Similar to main titles but slightly 
+smaller, for hierarchical text structuring and emphasis. */
 .h2-title{
     font-family: 'Epilogue', sans-serif;
     font-size: 65px;
@@ -135,6 +190,8 @@ p {
     padding-top: 12px;
 }
 
+/* Tertiary Title Styling: Used for subtitles or important 
+text that's slightly less prominent than the main or secondary titles. */
 .h3-title {
     font-family: 'Epilogue', sans-serif;
     color: #11364e;
@@ -143,6 +200,8 @@ p {
     font-weight: 700;
 }
 
+/* Subtitle Styling: Adds specific styling to subtitles for 
+clear differentiation from other text elements. */
 .h2-subtitle {
     position: relative;
     font-family: 'Epilogue', sans-serif;
@@ -155,12 +214,25 @@ p {
     display: inline-block;
 }
 
+/* Container Styling: Adjusts the positioning context of container 
+elements, helping with layout and z-index layering. */
 .container{
     position: relative;
     z-index: 5;
 }
 
-/*...........................................................................................Donate and Submit Now Button*/
+/*.....................................................................................Donate and Submit Now Button*/
+
+/* =================================================================================================================
+   This code makes the website easier and nicer to use. It improves how buttons and forms look and work, like making "Donate" and "Submit" buttons fun to interact with. It also makes filling out forms straightforward and keeps the look consistent. 
+   ============================================================================================================== */
+
+
+   /* This section of code makes the 'Donate Now' and similar buttons stand out 
+   by using eye-catching designs. These styles include a bold color, smooth 
+   animation when you hover over them, and a shape that grabs your attention. 
+   The goal is to make these buttons more noticeable and appealing, encouraging 
+   people to click on them and take important actions on the website. */
 .sec-btn {
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
@@ -181,6 +253,10 @@ p {
     z-index: 1;
 }
 
+/* This comment explains that when you move your mouse over 
+certain buttons, the button's background color will change. 
+This change is smooth and makes clicking the button more interesting. */
+
 .sec-btn:after {
     position: absolute;
     content: "";
@@ -195,13 +271,18 @@ p {
 }
 
 .sec-btn:hover {
-     color: #fff;
+    color: #fff;
 }
 
 .sec-btn:hover:after {
     top: 0;
     height: 100%;
 }
+
+/* This comment is about making important buttons like 'Donate Now' 
+very noticeable. It does this by using a strong color, making the 
+edges of the button round, and having the color change softly when 
+you hover your mouse over them. */
 
 .link-btn {
     display: inline-flex;
@@ -226,23 +307,11 @@ p {
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: -12px;
-    left: 0;
-    width: 100%;
-}
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
-    transform: scale(0.80);
-}
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
-    transform: scale(0.60);
-}
-
-.swiper-pagination-bullet {
-    background-color: #dd6a13;
-}
+/* This comment talks about styling the areas where you type in 
+information on the website so they look nice and match the website’s design. 
+It helps make sure that using these areas is easy and straightforward for everyone. */
 
 .form-input {
     width: 100%;
@@ -272,6 +341,32 @@ p {
     margin-bottom: 20px;
 }
 
+
+
+/* =================================================================================================================
+   Mobile Navigation Toggle and Hamburger Menu Animation:
+   This section is dedicated to styling and animating the mobile menu toggle button,
+   often represented as a hamburger icon. The '.toggle-button' is designed to be
+   a fixed element on the screen, providing users with a clear and accessible means
+   to interact with the mobile menu. It is styled with a distinct color, shape,
+   and positioned at a specific location on the screen to ensure visibility and
+   accessibility. The button remains hidden until it's needed, controlled by CSS
+   media queries that display the button on smaller screens.
+
+   The '.ham' class and related transformations ('.hamRotate', '.hamRotate180', etc.)
+   apply SVG-based animations to the hamburger icon, visually indicating when the
+   menu is opened or closed. These animations transform the simple lines of the
+   hamburger menu into an 'X' shape or rotate them, enhancing the user experience
+   by providing clear visual feedback on the menu state.
+
+   Additionally, a '.black-shadow' class is used to create a dimming effect on the
+   rest of the content when the mobile menu is active, further focusing the user's
+   attention on the menu options and improving overall usability on smaller screens.
+   ============================================================================================================== */
+
+
+/* Styles the mobile menu toggle button to be a fixed 
+element on the screen, hidden by default. */
 .toggle-button {
     position: fixed;
     top: 50%;
@@ -287,8 +382,10 @@ p {
     outline: none;
     display: none;
     z-index: 110;
-  }
-  
+}
+
+/* Adjusts the appearance of the toggle button's bars, 
+setting their size, color, and transition effects. */
 .toggle-button span {
     width: 30px;
     height: 3px;
@@ -300,9 +397,11 @@ p {
     opacity: 1;
     float: right;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-  }
-  
-/*.................................................................................Hamburger Button Mobile Start*/
+}
+
+ /* Sets the base styling for the hamburger icon, 
+ ensuring it's clickable and visually responsive. */
+ 
 .ham {
     position: absolute;
     top: 0;
@@ -316,37 +415,12 @@ p {
     user-select: none;
   }
 
-.toggle-menu .hamRotate {
-    transform: rotate(45deg);
-  }
-
-.toggle-menu .hamRotate180 {
-    transform: rotate(180deg);
-  }
-
-.line-ham {
-    fill: none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: #ffffff;
-    stroke-width: 5.5;
-    stroke-linecap: round;
-  }
-
-.ham8 .top {
-    stroke-dasharray: 40 160;
-  }
-
-.ham8 .middle {
-    stroke-dasharray: 40 142;
-    transform-origin: 50%;
-    transition: transform 400ms;
-  }
 
 .ham8 .bottom {
     stroke-dasharray: 40 85;
     transform-origin: 50%;
     transition: transform 400ms, stroke-dashoffset 400ms;
-  }
+}
 
 .toggle-menu .ham8 .top {
     stroke-dashoffset: -64px;
@@ -371,19 +445,39 @@ p {
     z-index: 90;
     display: none;
 }
-/*.................................................................................Hamburger Button Mobile end*/
 
 /*.................................................................................Donation Modal Start*/
+
+/* ==================================================================================================================
+   Modal Styling and Sticky Button Design:
+   A modal is a UI element that displays over the main application content, 
+   requiring user interaction before returning to the app.
+   This section is focused on customizing the appearance of modal headers and 
+   content within the site. It ensures the modal headers have no bottom border, 
+   centralizes their text alignment, and specifies styling for the close button 
+   to make it visually consistent and accessible. The modal content is adjusted 
+   to have no border radius for a sharp, modern look. Additionally, this section 
+   includes styling for a 'sticky-btn' intended for important site actions like 
+   donations, positioning it fixed at the bottom right of the viewport, making it 
+   easily accessible at all times.
+   =============================================================================================================== */
+
+/* Styles the modal header to center text with 
+no bottom border for a clean appearance. */
 .modal-header {
     border-bottom: none;
     text-align: center;
     display: block;
 }
 
+/* Ensures titles within modal headers are 
+centered for consistency and focus. */
 .modal-header .h3-title {
     text-align: center;
 }
 
+/* Customizes the modal close button with 
+absolute positioning and distinct styling. */
 .modal-header .btn-close {
     position: absolute;
     top: 30px;
@@ -400,25 +494,29 @@ p {
     content: none;
 }
 
+/* Removes default focus outline and shadow 
+from the close button for a cleaner look. */
 .modal-header .btn-close:focus {
     border: none;
     box-shadow: none;
 }
 
+/* Sets the modal content to have no border-radius 
+for a sharp-edge design. */
 .modal-content {
     border-radius: 0;
 }
 
-
-  
-/*..................Donation Button*/
+/* Positions a sticky donation button at the bottom-right 
+corner of the viewport for easy access. */
 .sticky-btn {
-    position:fixed;
+    position: fixed;
     bottom: 40px;
     right: 40px;
     z-index: 9999;
     display: block;
 }
+
 /*.................................................................................Donation Modal End*/
 
 
@@ -428,6 +526,13 @@ p {
 
 
 /*.................................................................................Loader CSS Start*/
+
+/*================================================================================================================== This section creates a loading animation that appears over the entire page. It centers a small, animated element to indicate that the page or a process is loading. The animation includes a main loader with a circle that changes size and color to grab the user's attention. 
+===================================================================================================================*/
+
+/* This section creates a full-page overlay with a white background 
+that appears when something is loading, like a page or data. */
+
 .loader-box-one {
     position: fixed;
     top: 0;
@@ -441,6 +546,7 @@ p {
     z-index: 999;
 }
 
+/* Positions the loader animation in the center of the overlay. */
 .loader {
     position: absolute;
     width: 40px;
@@ -449,6 +555,9 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+/* Styles the main part of the loader, giving it a circular 
+shape and a purple color, with a continuous size-changing animation. */
   .loader .center {
     position: absolute;
     width: 40px;
@@ -461,6 +570,9 @@ p {
     border-radius: 50%;
     animation: center 3.2s ease-in-out infinite;
   }
+
+/* Small circular elements that accompany the main loader, 
+adding visual complexity to the animation. */
   .loader .item {
     position: absolute;
     z-index: 0;
@@ -474,126 +586,22 @@ p {
     border-radius: 50%;
   }
 
+/* Ensures that any list within the loader-main class doesn't 
+have the default list styling, likely for further customization 
+or additional animated elements. */  
   .loader-main ul {
     list-style: none;
   }
-  /*
-  .item-1 {
-    animation: anim-1 3.2s ease-in-out infinite 0.2s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-1 {
-    0%, 60%, 100% {
-      transform: rotate(45deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(45deg) translateX(0) scale(1.5);
-    }
-  }
-  .item-2 {
-    animation: anim-2 3.2s ease-in-out infinite 0.4s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-2 {
-    0%, 60%, 100% {
-      transform: rotate(90deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(90deg) translateX(0) scale(1.5);
-    }
-  }
-  .item-3 {
-    animation: anim-3 3.2s ease-in-out infinite 0.6s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-3 {
-    0%, 60%, 100% {
-      transform: rotate(135deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(135deg) translateX(0) scale(1.5);
-    }
-  }
-  .item-4 {
-    animation: anim-4 3.2s ease-in-out infinite 0.8s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-4 {
-    0%, 60%, 100% {
-      transform: rotate(180deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(180deg) translateX(0) scale(1.5);
-    }
-  }
-  .item-5 {
-    animation: anim-5 3.2s ease-in-out infinite 1s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-5 {
-    0%, 60%, 100% {
-      transform: rotate(225deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(225deg) translateX(0) scale(1.5);
-    }
-  }
-  .item-6 {
-    animation: anim-6 3.2s ease-in-out infinite 1.2s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-6 {
-    0%, 60%, 100% {
-      transform: rotate(270deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(270deg) translateX(0) scale(1.5);
-    }
-  }
-  .item-7 {
-    animation: anim-7 3.2s ease-in-out infinite 1.4s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-7 {
-    0%, 60%, 100% {
-      transform: rotate(315deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(315deg) translateX(0) scale(1.5);
-    }
-  }
-  .item-8 {
-    animation: anim-8 3.2s ease-in-out infinite 1.6s;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes anim-8 {
-    0%, 60%, 100% {
-      transform: rotate(360deg) translateX(40px) scale(1);
-    }
-    10%, 50% {
-      transform: rotate(360deg) translateX(0) scale(1.5);
-    }
-  }
-  @keyframes center {
-    0%, 10%, 90%, 100% {
-      transform: scale(0.7);
-    }
-    45%, 55% {
-      transform: scale(1);
-    }
-  }
-  */
+
 /*.................................................................................Loader CSS End*/
 
 /*.................................................................................Header CSS Start*/
+
+/*================================================================================================================== This section styles the top part of the website, known as the header, which typically contains the logo, navigation menu, and sometimes a search icon or button. The code makes sure the header stays at the top of the page even when you scroll down (making it "sticky"), changes its appearance slightly in this sticky state for better visibility, and ensures the navigation menu and logo adjust nicely on different devices. It also includes specific styles for when you hover over menu items to improve user interaction by visually indicating which item is being selected.
+================================================================================================================== */
+
+/* Styles the top header to always stay visible 
+at the top of the page. */
 .site-header {
     position: fixed;
     top: 0;
@@ -603,6 +611,8 @@ p {
     transition: 0.3s;
 }
 
+/* Sticky Header Styling: Adjusts background 
+and shadow when header becomes sticky. */
 .site-header.sticky-header {
     background-color: rgb(255,255,255,0.8);
     box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
@@ -613,6 +623,8 @@ p {
     transition: 0.3s;
 }
 
+/* Navbar Toggler Styling: Styles the navbar 
+toggler button for mobile views. */
 .navbar-toggler {
     position: absolute;
     top: 50%;
@@ -620,6 +632,8 @@ p {
     right: 0;
 }
 
+/* Header Bottom Styling: Styles the bottom 
+part of the header including background and shadow. */
 .header-bottom {
     width: 100%;
     padding: 20px 0;
@@ -628,23 +642,34 @@ p {
     box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
 }
 
+/* Site Branding: Styles the logo within the 
+site header, ensuring it's displayed correctly 
+and scales with different screen sizes. */
 .site-branding a {
     display: inline-block;
     position: relative;
 }
-
 .site-branding a img {
     width: 100%;
 }
 
+/* Header Menu Alignment: Positions the header 
+menu to the right, preparing for navigation elements. */
 .header-menu{
     position: relative;
     text-align: right;
 }
+
+/* Main Navigation Base: Sets up the primary 
+navigation block, ensuring it's inline and ready 
+for menu items. */
 .main-navigation{
     display: inline-block;
 }
 
+/* Navigation List Style: Removes default list 
+styling for a clean navigation menu, setting a 
+foundation for further item styling. */
 .main-navigation ul {
     list-style: none;
     font-size: 0;
@@ -653,23 +678,31 @@ p {
     padding: 0;
 }
 
+/* First Navigation Item: Adjusts the margin and 
+padding of the first item for consistent spacing 
+in the navigation menu. */
 .main-navigation ul li:first-child {
     margin-left: 0;
     padding-left: 0;
 }
 
+/* Navigation Items: Standardizes font size, 
+line height, and spacing for navigation items, 
+ensuring a uniform appearance. */
 .main-navigation ul li {
-    font-size: 14px; /* Slightly smaller */
+    font-size: 14px; 
     line-height: 24px;
     display: inline-block;
-    margin-left: 10px; /* Reduced */
-    padding-left: 10px; /* Reduced */
+    margin-left: 10px; 
+    padding-left: 10px; 
     position: relative;
 }
 
-
+/* Navigation Links: Styles the navigation links 
+with specific font properties and transition effects 
+for interactive feedback. */
 .main-navigation ul li a {
-    font-size: 15px; /* Matched with li font-size */
+    font-size: 15px; 
     line-height: 24px;
     color: #11364e;
     font-weight: 500;
@@ -678,6 +711,9 @@ p {
 }
 
 
+/* Header Button Styling: Adjusts the header button 
+for visibility and accessibility, with emphasis on 
+spacing and typography. */
 .header-btn {
     display: inline-block;
     position: relative;
@@ -686,10 +722,16 @@ p {
     text-transform: uppercase;
 }
 
+/* Navigation Hover and Active Link Color: Enhances 
+navigation interactivity by changing link colors on 
+hover and active states. */
 .main-navigation ul li.sub-items:hover>a, .main-navigation ul li a:hover, .main-navigation ul li.active>a {
     color: #dd6a13;
 }
 
+/* Sub-Item Indicator Styling: Uses FontAwesome 
+icons as indicators for sub-items, positioning 
+them for visual guidance. */
 .main-navigation ul li.sub-items>a:before {
     content: "\f107";
     position: absolute;
@@ -701,25 +743,36 @@ p {
     transition: 0.3s;
 }
 
+/* Sticky Header Navigation Link Color: Ensures navigation 
+links and icons maintain visibility in sticky header mode. */
 .site-header.sticky-header .main-navigation ul li a, .site-header.sticky-header .search-icon a, .site-header.sticky-header .main-navigation ul li.sub-items>a:before {
     color: #11364e;
 }
 
+/* Sub-Item Padding Adjustment: Ensures adequate spacing 
+around navigation sub-item indicators for clarity. */
 .main-navigation ul li.sub-items>a {
     padding-right: 15px;
     position: relative;
 }
 
+/* Hover Transform for Sub-Items: Introduces a rotation effect 
+on hover for sub-item indicators to signal dropdown capability. */
 .main-navigation ul li.sub-items:hover>a:before, .main-navigation ul li a:hover:before {
     transform: translate(0,-50%) rotate(-180deg);
     transition: 0.3s;
 }
 
+/* First Child Navigation Item Adjustment: Removes margin and 
+padding from the first navigation item for alignment purposes. */
 .main-navigation ul li:first-child {
     margin-left: 0;
     padding: 0;
 }
 
+/* Sub-Menu Positioning and Styling: Defines the appearance 
+and behavior of dropdown sub-menus, including positioning, 
+size, and animations. */
 .main-navigation ul li ul.sub-menu {
     position: absolute;
     top: 100%;
@@ -734,11 +787,17 @@ p {
     z-index: 150;
 }
 
+/* Sub-Menu Display on Hover: Controls the display of 
+sub-menus, ensuring they are shown when their parent item 
+is hovered over. */
 .main-navigation ul li:hover ul.sub-menu {
     display: block;
     animation: swip_up 0.3s linear 1;
 }
 
+/* Swip Up Animation: Defines a smooth animation for 
+ub-menus to enhance visual interaction by 
+transitioning them into view. */
 @keyframes swip_up {
     from {
         transform: translate(0, 20px);
@@ -750,6 +809,9 @@ p {
     }
 }
 
+/* Sub-Menu Item Styling: Establishes the foundational 
+styles for sub-menu items, focusing on display, alignment, 
+and separators. */
 .main-navigation ul li ul.sub-menu li {
     display: block !important;
     text-align: left;
@@ -757,50 +819,56 @@ p {
     border-bottom: 1px solid #ebebeb;
 }
 
+/* First and Last Sub-Menu Item Padding: Adjusts the padding 
+for the first item for better visual spacing and removes 
+the bottom border for the last item. */
 .main-navigation ul li ul.sub-menu li:first-child {
    padding-left: 24px;
 }
-
 .main-navigation ul li ul.sub-menu li:last-child {
     border-bottom: none;
 }
 
+/* Sub-Menu Link Styling: Sets the default and hover states 
+for sub-menu links, including padding, color, and transition effects. */
 .main-navigation ul li ul.sub-menu li a {
     display: block;
     padding: 10px 7px;
 }
-
 .main-navigation ul li ul.sub-menu li a {
     display: block;
     color: #050d36;
     padding: 5px 15px;
     transition: 0.3s;
 }
-
 .main-navigation ul li ul.sub-menu li a:hover {
     color: #dd6a13;
     transition: 0.3s;
 }
 
+/* Hover State Color Change: Alters the color of navigation 
+links on hover and active states to provide visual feedback. */
 .main-navigation ul li.sub-items:hover>a, .main-navigation ul li a:hover, .main-navigation ul li.active>a {
     color: #dd6a13;
 }
-
 .site-header.sticky-header .main-navigation ul li.sub-items:hover>a, .site-header.sticky-header .main-navigation ul li a:hover, .site-header.sticky-header .main-navigation ul li.active>a, .site-header.sticky-header .main-navigation ul li.sub-items:hover>a:before, .site-header.sticky-header .main-navigation ul li a:hover:before, .site-header.sticky-header .main-navigation ul li.active>a:before, .site-header.sticky-header .main-navigation ul li ul.sub-menu li a:hover {
     color: #dd6a13;
 }
 
+/* Sticky Header Adjustments: Modifies the header's top 
+margin and padding to accommodate the sticky state transitions. */
 .sticky-header .header-top {
     margin-top: -45px;
     transition: 0.3s;
 }
-
 .sticky-header .header-bottom {
     padding: 5px 0px;
     animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
     transition: 0.3s;
 }
 
+/* Header Slide Down Animation: Animates the header to 
+smoothly transition into view when entering its sticky state. */
 @keyframes headerSlideDown {
     0% {
       margin-top: -150px;
@@ -808,13 +876,18 @@ p {
     100% {
       margin-top: 0;
     }
-  }
+}
 
+/* Sticky Header Navigation Link Color: Ensures navigation 
+links within a sticky header have consistent coloration 
+for readability. */
 .sticky-header .main-navigation ul li a {
     color: #051136;
     transition: 0.3s;
 }
 
+/* Sticky Logo Transition: Manages the appearance and opacity 
+transition of the logo in the sticky header state for brand visibility. */
 .site-branding a img.sticky-logo {
     position: absolute;
     top: 0;
@@ -823,7 +896,6 @@ p {
     opacity: 0;
     z-index: 1;
 }
-
 .site-header.sticky-header .site-branding a img.sticky-logo {
     opacity: 1;
     transition: 0.3s;
@@ -832,7 +904,14 @@ p {
 
 /*.......................................................................................Header CSS End*/
 
+
 /*.......................................................................................Banner First Section Front page CSS Start*/
+
+/* This section styles the main banner, making it a full-screen feature with a centered, non-repeating background that covers the entire area for visual appeal. A semi-transparent overlay is applied for text contrast. Text elements within `.banner-content` are centralized and styled for readability, with specific adjustments for positioning and presentation. An `.banner-overlay` is included for additional styling options at the banner's base, ensuring the banner is both striking and functional. */
+
+/* Main Banner Base: Sets up the banner to occupy the 
+full viewport height, centers the background image, 
+and ensures it covers the entire area. */
 .main-banner {
     position: relative;
     width: 100%;
@@ -843,6 +922,8 @@ p {
     background-size: cover;
 }
 
+/* Main Banner Overlay: Adds a semi-transparent overlay 
+to enhance text readability against the background image. */
 .main-banner::before {
     content: "";
     position: absolute;
@@ -853,53 +934,75 @@ p {
     height: 100%;
 }
 
+/* Banner Text Color: Ensures high contrast for text 
+(titles and paragraphs) against the banner's background. */
 .banner-content .h1-title, .banner-content p {
     color: #ffffff;
 }
 
+/* Banner Content Positioning: Centers the banner's content 
+vertically and horizontally, optimizing its visual impact. */
 .banner-content {
     padding: 300px 0;
     text-align: center;
-
 }
 
+/* Paragraph Styling: Controls the width of paragraphs to 
+enhance readability and aesthetic appeal. */
 .banner-content p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Banner Overlay Positioning: Provides a foundation for 
+additional decorative or functional elements at the banner's base. */
 .banner-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
 }
-
-
 /*.......................................................................................Banner CSS End*/
 
+
+
 /*.......................................................................................About Us Start*/
+
+/* This section sets up the "About Us" part of the site, using space efficiently for a clean introduction to the team or company. Pictures are arranged to display effectively across different devices, and there's a special counter to showcase the team's experience or achievements in an engaging way. The text area is thoughtfully spaced out to improve readability and visual appeal. Overall, this part aims to provide a friendly and clear overview of who the company or team is, ensuring visitors receive all the essential information in an attractive layout. */
+
+
+/* Main About Us Section: Styles the overall layout and 
+spacing of the "About Us" section, creating a balanced and 
+visually appealing introduction to the company or team. */
 .main-about-us {
     padding-bottom: 120px;
     padding-top: 120px;
 }
 
+/* About Image Flex Container: Sets up a flexible display 
+container for images related to the "About Us" content, 
+allowing for responsive alignment and spacing. */
 .about-img {
     display: flex;
 }
 
-.about-img2 {
+/* Additional About Images: Adjusts margin for specific 
+about images, ensuring consistent alignment and distribution 
+within the flex container. */
+.about-img2, .about-img4 {
     margin-top: 0px;
 }
 
-.about-img4 {
-    margin-top: 0px;
-}
-
+/* About Image Box: Defines a relative positioning context for 
+elements within each image box, used for overlaying additional 
+content or effects. */
 .about-img-box {
     position: relative;
 }
 
+/* About Experience Counter: Creates a visually distinct counter 
+or badge overlay on the about images, indicating years of experience 
+or other significant figures. */
 .about-experience {
     position: absolute;
     background-color: #032640;
@@ -912,25 +1015,41 @@ p {
     box-shadow: 6px 6px 60px 0px rgba(17,54,78,0.3);
 }
 
+/* Experience Title Styling: Styles the numerical value and accompanying 
+text within the experience counter for high visibility and impact. */
+.about-experience .h2-title, .about-experience .h2-title span {
+    color: #ffffff;
+}
 .about-experience .h2-title {
     font-size: 50px;
     line-height: 28px;
-    color: #ffffff;
     padding: 0;
 }
-
 .about-experience .h2-title span {
     font-size: 18px;
     line-height: 0px;
-    color: #ffffff;
 }
 
+/* About Content Box Padding: Applies padding to the content boxes 
+within the "About Us" section, ensuring text and other elements are 
+neatly aligned and readable. */
 .about-content-box {
     padding-left: 30px;
 }
+
 /*.......................................................................................About Us End*/
 
 /*.......................................................................................Service CSS Start*/
+/* Section: Main Service Styling
+This section defines the styling for a block designated as `.main-service`, 
+which could be a section on a website dedicated to showcasing services offered. 
+The background, padding, and text alignment properties are set to create 
+a visually appealing layout. */
+
+
+/* Defines the overall appearance and spacing for 
+the main service section, including a neutral background 
+and center alignment for background images. */
 .main-service {
     background-color: #f9f9f9;
     padding-top: 120px;
@@ -940,10 +1059,15 @@ p {
     background-repeat: no-repeat;
 }
 
+/* Centers the text of subtitles and service titles 
+within the main service section for emphasis and readability. */
 .main-service .subtitle, .service-title {
     text-align: center;
 }
 
+/* Styles individual service boxes with a white 
+background and shadow for depth, and includes a 
+transition effect for interaction cues. */
 .service-box {
     background-color: #ffffff;
     box-shadow: 0px 18px 26px -10px rgba(0,0,0,0.1);
@@ -952,64 +1076,101 @@ p {
     min-height: 580px;
 }
 
+/* Enhances the shadow effect on hover to indicate 
+interactivity and focus on individual service boxes. */
 .service-box:hover {
     box-shadow: 0px 18px 26px -10px rgba(0,0,0,0.2);
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+
+/* Styles the padding around the text within service 
+boxes for comfortable spacing. */
 .service-text-box{
     padding: 30px;
 }
 
+/* Arranges title elements within the service box 
+side by side and centers them vertically for a 
+cohesive look. */
 .service-title-box {
     display: flex;
     align-items: center;
 }
 
+/* Adds space to the right of the service icons 
+to separate them from the text, enhancing clarity 
+and visual appeal. */
 .service-icon {
     margin-right: 25px;
 }
 
+/* Adjusts the top margin for paragraphs within the 
+service text box to ensure consistent spacing between 
+text elements. */
 .service-text-box p {
     margin-top: 10px;
 }
 
+/* Applies bottom padding to the service slider, 
+creating space between the slider items and other content. */
 .service-slider {
     padding-bottom: 50px;
 }
 
+/* Ensures images in the service section are 
+clipped to their containers and block displayed 
+for consistent alignment. */
 .service-img {
     overflow: hidden;
     display: block;
 }
 
+/* Styles images within service boxes to take 
+full width of their container and enables a subtle 
+zoom effect on hover. */
 .service-img>img {
     width: 100%;
     transform: scale(1);
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
 }
 
+/* Enhances the hover effect on service box images by 
+scaling them up slightly for a dynamic, interactive feel. */
 .service-box:hover .service-img>img {
     transform: scale(1.05);
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
 }
 
+/* Applies a transition effect to the service box titles, 
+preparing them for interaction-based styling changes. */
 .service-box .service-text-box a .h2-title {
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
 }
 
+/* Changes the color of the service box titles on hover 
+to a distinctive shade, adding an interactive cue to the user. */
 .service-box:hover .h3-title {
     color: #dd6a13 !important;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
+
 /*.......................................................................................Service CSS End*/
 
 /*.......................................................................................Vision CSS Start*/
+/* This CSS block is dedicated to styling the "Vision" section of a website, emphasizing the organization's core values and goals through visual and textual content. It ensures the section is visually distinct and engaging, with specific styles for video presentation and concise text formatting. */
+
+/* Defines the styling for the main vision section, 
+ensuring ample space above and below for a clear, 
+focused presentation. */
 .main-vision{
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+/* Styles the container for the vision video, adding margin, 
+background color, padding, and a subtle shadow for 
+emphasis and visual depth. */
 .vision-video {
     margin-left: 20px;
     background-color: #dd6a13;
@@ -1017,16 +1178,27 @@ p {
     box-shadow: 20px 30px 60px 0px rgba(221,106,19,0.4);
 }
 
+/* Ensures that paragraphs within the vision content 
+have no bottom margin, creating a tight, cohesive block of text. */
 .vision-content p {
     margin-bottom: 0;
 }
+
 /*.......................................................................................Vision CSS End*/
 
 /*.......................................................................................Goal CSS Start*/
+/* This CSS block focuses on the "Main Goal" section of a website, creating a visually striking area to highlight the organization's primary objectives. It employs a combination of positioning, color, and animation to draw attention to the goals and make the section dynamic and engaging. */
+
+/* Establishes the base positioning context for the 
+.main-goal section, allowing for absolute positioning 
+of pseudo-elements and other child elements. */
 .main-goal {
     position: relative;
 }
 
+/* Creates a full-size overlay for the .main-goal section 
+with a solid background color, serving as a backdrop to 
+enhance readability and focus on the content. */
 .main-goal:before {
     content: "";
     position: absolute;
@@ -1037,16 +1209,23 @@ p {
     top: 0;
 }
 
+/* Adds substantial padding around the content of the goal 
+section to ensure it is clearly separated from other elements 
+on the page, enhancing focus. */
 .goal-content-box {
     padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 30px;
 }
 
+/* Styles the title within the goal section to ensure high 
+visibility against the dark background. */
 .goal-title .h2-title {
     color: #ffffff;
 }
 
+/* Removes default list styling from ul elements within the 
+goal content box for a clean, custom appearance. */
 .goal-content-box ul {
     text-decoration: none;
     list-style: none;
@@ -1054,16 +1233,23 @@ p {
     padding-left: 0;
 }
 
+/* Adjusts the layout of list items to display flexibly with 
+space between the icon and text content, aligning items 
+for visual coherence. */
 .goal-content-box ul li {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
 }
 
+/* Removes the bottom margin from the last list item to 
+maintain consistent spacing within the container. */
 .goal-content-box ul li:last-child {
     margin-bottom: 0;
 }
 
+/* Styles the icon in the goal list for visual impact, 
+setting size, background color, and centering the icon content. */
 .goal-icon {
     width: 80px;
     height: 80px;
@@ -1074,10 +1260,14 @@ p {
     justify-content: center;
 }
 
+/* Applies an animation effect to the icon on hover to add 
+interaction feedback, making the goals section more dynamic. */
 .goal-content-box ul li:hover .goal-icon svg {
     animation: hvr-buzz-out 0.75s linear 1;
 }
 
+/* Sets up a large, fixed-position image to visually complement 
+the goal content, enhancing the thematic connection to the goals discussed. */
 .goal-img {
     position: absolute;
     left: 0;
@@ -1089,193 +1279,85 @@ p {
     background-position: center;
 }
 
-@keyframes hvr-buzz-out {
-    10% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
 
-    20% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
-    }
 
-    30% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
-
-    40% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
-    }
-
-    50% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
-    }
-
-    60% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
-    }
-
-    70% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
-    }
-
-    80% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
-    }
-
-    90% {
-        -webkit-transform: translateX(1px) rotate(0);
-        transform: translateX(1px) rotate(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(-1px) rotate(0);
-        transform: translateX(-1px) rotate(0);
-    }
-}
-
+/* Sets the text color of titles and paragraphs within 
+the `.goal-text-box` to white, ensuring readability 
+against darker backgrounds. */
 .goal-text-box .h3-title, .goal-text-box p {
     color: #ffffff;
 }
 
+/* Adjusts the width of the `.goal-text-box` 
+to be the full container width minus 100px, allowing 
+for padding or margins that separate content visually. */
 .goal-text-box {
     width: calc(100% - 100px);
 }
 /*.......................................................................................Goal CSS End*/
 
-/*.......................................................................................Looking Ahead CSS Start
-.main-look-adead {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.look-content {
-    margin-right: 30px;
-}
-
-.look-bar-box {
-    position: relative;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-}
-
-.look-bar-box {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-}
-
-.look-bar-box {
-    border-bottom: 2px solid #d7d7d7;
-}
-
-.look-bar-percent {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-}
-
-.look-bar-percent {
-    color: #10161b;
-}
-
-.look-bar-percent .h3-title {
-    margin-bottom: 0;
-}
-
-.look-bar {
-    width: 100%;
-    position: relative;
-}
-
-.look-bar {
-    height: 10px;
-}
-
-.look-bar:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0,-50%);
-    width: 100%;
-    height: 100%;
-}
-
-.look-bar:before {
-    background-color: rgb(221,106,19,0.2);
-}
-
-.look-bar-inner {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0,-50%);
-    width: 0;
-    height: 100%;
-    overflow: visible;
-    box-shadow: 0px 10px 30px 0px rgb(221,106,19,0.5);
-}
-
-.look-bar-inner:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0,-50%);
-    width: 100%;
-    height: 100%;
-    background-color: #dd6a13;
-}
-
-.look-shape {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0%,-50%);
-}
-/*.......................................................................................Looking Ahead CSS End*/
 
 /*.......................................................................................Join Now CSS Start*/
+/* This section is designed to style a "Join Now" or call-to-action area, emphasizing a 
+welcoming and engaging space for users to take the next step in engagement with the site 
+through a combination of background styling and content spacing. */
+
+/* Sets the background color and vertical padding of the 
+main "Join Now" section, creating a light and airy space 
+that invites user action. */
 .main-join-now {
     background-color: #f4f6fd;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+/* Adjusts the left margin of the content within 
+the "Join Now" section to ensure it is properly aligned 
+and visually balanced. */
 .join-now-content {
     margin-left: 30px;
 }
 
+/* Ensures paragraphs within the "Join Now" content have 
+no bottom margin, creating a compact and focused 
+call-to-action message. */
 .join-now-content p {
     margin-bottom: 0;
 }
 /*.......................................................................................Join Now CSS End*/
 
+
 /*.......................................................................................Footer CSS Start*/
-.main-footer {
+
+/* This extensive section is dedicated to styling the footer of the website, known as `.main-footer`. It covers various aspects like the footer's background, typography, social media links presentation, additional links and contact information, and even a map box for location details. The use of color, padding, and flexbox layouts ensures a visually appealing and functional footer area. This section also includes interactive elements such as hover effects for social media icons and contact details, emphasizing user engagement. Additionally, the footer concludes with copyright information, styled for clarity and aesthetic consistency with the overall design. */
+
+/* Section: Main Footer
+This block sets the foundation of the footer, 
+including its background color and top padding, 
+creating a distinct section at the bottom of the page. */
+   .main-footer {
     background-color: #11364e;
     padding-top: 120px;
 }
 
+/* Styles paragraphs within the footer's about section, 
+setting their margin and color for readability against
+the footer's dark background. */
 .footer-about p {
     margin-top: 30px;
     color: #ffffff;
 }
 
+/* Social Media Links Section
+Adjusts the positioning of social media links, creating 
+space above them to separate from other content. */
 .social-media {
     margin-top: 30px;
 }
 
+/* Defines the layout for social media icons using flexbox, 
+aligning items centrally and removing default list styling 
+for a clean look. */
 .social-media ul {
     display: flex;
     align-items: center;
@@ -1285,14 +1367,19 @@ p {
     margin-bottom: 0;
 }
 
+/* Sets the margin between individual social media icons for 
+even spacing, with the last icon having no right margin to 
+maintain alignment. */
 .social-media ul li {
     margin-right: 10px;
 }
-
 .social-media ul li:last-child {
     margin-right: 0;
 }
 
+/* Styles individual social media icons, specifying dimensions, 
+color, and a circular background, with a transition effect 
+for interactive feedback. */
 .social-media ul li a {
     width: 40px;
     height: 40px;
@@ -1305,16 +1392,26 @@ p {
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+/* Enhances the hover effect on social media icons, swapping 
+their color and background for a visually engaging interaction cue. */
 .social-media ul li a:hover {
     color: #dd6a13;
     background-color: #ffffff;
 }
 
+
+/* Section: Footer Links and Contacts
+   This segment is focused on enhancing the footer's link and contact information areas, employing color, spacing, and interactive elements for clarity and user engagement. */
+
+/* Titles within the footer's various sections (Our Links, Contact Us, Map) 
+are styled for high contrast against the footer's dark background. */
 .our-links .h3-title, .contact-us .h3-title, .map .h3-title {
     color: #ffffff;
 }
 
-.our-links ul,.contact-us ul {
+/* Styles for lists within the Our Links and Contact Us sections, 
+removing default list styling for a clean, modern appearance. */
+.our-links ul, .contact-us ul {
     list-style: none;
     text-decoration: none;
     margin-top: 30px;
@@ -1322,10 +1419,15 @@ p {
     padding-left: 0;
 }
 
+/* Ensures consistent spacing between list items in the 
+Our Links section for neat, orderly presentation. */
 .our-links ul li {
     margin-bottom: 20px;
 }
 
+/* Contact Us list items are displayed flexibly to 
+align icons and text, with a smooth transition effect 
+for interactive elements. */
 .contact-us ul li {
     margin-bottom: 20px;
     display: flex;
@@ -1333,35 +1435,50 @@ p {
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+/* Removes the bottom margin from the last item in 
+Our Links list for uniform spacing at the list's end. */
 .our-links ul li:last-child {
     margin-bottom: 0;
 }
 
+/* Links within the Our Links section are styled for 
+visibility and include a hover effect that shifts the 
+text and changes its color. */
 .our-links ul li a {
     color: #ffffff;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
-
 .our-links ul li a:hover {
     color: #dd6a13;
     padding-left: 8px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+/* A decorative line element used within the Our Links 
+section to visually separate content or highlight specific areas. */
 .line {
     width: 80px;
     height: 2px;
     background-color: #dd6a13;
 }
 
+/* General padding adjustments for the Our Links container, 
+with variations for service-specific styling for 
+differentiation or emphasis. */
 .our-links {
     padding: 0 80px;
 }
-
 .our-links.service {
     padding: 0 50px;
 }
 
+
+/* Section: Contact Information Icons and Text
+   Tailors the appearance and behavior of contact information within the footer, focusing on icon styling, text layout, and interactive effects to facilitate user interaction and engagement. */
+
+/* Styles the contact icons with a specific size, color, 
+and circular shape, centering the icon for visual 
+consistency and appeal. */
 .contact-icon {
     width: 40px;
     height: 40px;
@@ -1373,34 +1490,59 @@ p {
     margin-right: 15px;
 }
 
+/* Ensures the icons within contact icons have a 
+contrasting color and a readable size, enhancing 
+visibility against the button background. */
 .contact-icon i {
     color: #ffffff;
     font-size: 18px;
 }
 
+/* Adjusts the width of the contact text to account 
+for the icon's space, ensuring text and icons are 
+neatly aligned within each list item. */
 .contact-us ul li .contact-text {
     width: calc(100% - 60px);
 }
 
+/* Styles the contact text for readability with specific 
+color and line height, including a transition effect 
+for smoother visual feedback. */
 .contact-us ul li .contact-text  {
     color: #ffffff;
     line-height: 24px;
-    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+    /*transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;*/
 }
 
+/* Introduces an interactive hover effect for links within 
+the contact text, changing the color to highlight interactivity. */
 .contact-us ul li:hover .contact-text a {
     color: #dd6a13;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
+/* Applies a 'buzz' animation to the icon on hover, 
+adding an engaging visual cue to the contact information's interactivity. */
+/*
 .contact-us ul li:hover .contact-icon i {
     animation: hvr-buzz-out 0.75s linear 1;
 }
+*/
 
+/* Section: Map and Copyright Information
+   This part of the CSS focuses on the presentation of the map integration and the copyright statement in the footer, ensuring they are both visually integrated and compliant with the overall footer design. */
+
+/* Adjusts the positioning of the map box, 
+giving it a top margin to separate it from preceding 
+content, ensuring clear division of sections. */
 .map-box {
     margin-top: 30px;
 }
 
+/* Defines the styling for the copyright section, 
+including its padding, margin for separation, 
+background color for distinction, and centered text 
+alignment for uniformity. */
 .copyright {
     padding: 20px 0;
     margin-top: 120px;
@@ -1408,92 +1550,136 @@ p {
     text-align: center;
 }
 
+/* Ensures the text within the copyright section is 
+colored white for readability against the dark background. */
 .copyright span {
     color: #ffffff;
 }
 
+/* Styles links within the copyright text to have an underline 
+for clarity as clickable elements */
 .copyright span a {
     text-decoration: underline;
     color: #dd6a13;
 }
+
 /*.......................................................................................Footer CSS End*/
 
 /*.....................................................................Media Query Responsive CSS Start*/
 
+/* Responsive Design Adjustments for Various Screen Sizes
+   These media queries adjust layout and typography based on the screen width to enhance readability and usability on smaller devices like tablets and mobile phones. */
+
+/* Adjustments for screens with a maximum width of 1399px, 
+targeting navigation spacing, title sizes, and content padding 
+to optimize layout for slightly smaller screens. */
 @media screen and (max-width: 1399px) {
+    /* Reduces margin and padding for navigation list 
+    items for tighter navigation layout. */
     .main-navigation ul li {
         margin-left: 16px;
         padding-left: 16px;
     }
 
+    /* Adjusts the main title font size and line height 
+    for improved readability on smaller screens. */
     .h1-title {
         font-size: 60px;
         line-height: 70px;
     }
 
+    /* Modifies the width of paragraph text within the 
+    banner content for better alignment and readability. */
     .banner-content p {
         width: 70%;
     }
 
+    /* Scales down the size of secondary titles to 
+    maintain visual hierarchy and readability. */
     .h2-title {
         font-size: 50px;
         line-height: 65px;
     }
 
+    /* Adjusts padding around link lists in the footer 
+    to better fit the reduced screen width. */
     .our-links {
         padding: 0 60px;
     }
-
 }
 
+/* Further adjustments for screens with a maximum width of 1199px, refining layout, text sizes, and spacing for optimal mobile viewing. */
+
 @media screen and (max-width: 1199px) {
+    /* Further reduces margin and padding for 
+    navigation list items to suit narrower screens. */
     .main-navigation ul li {
         margin-left: 12px;
         padding-left: 12px;
     }
 
+    /* Decreases the main title font size and line height 
+    to fit smaller displays without overwhelming the viewer. */
     .h1-title {
         font-size: 50px;
         line-height: 65px;
     }
 
+    /* Adjusts the top margin of paragraph text within the 
+    banner content, spacing it more appropriately relative 
+    to other elements. */
     .banner-content p {
         margin-top: 20px;
     }
 
+    /* Modifies padding for background elements to adjust to screen 
+    size changes, ensuring key visual elements remain visible. */
     .parallax-bg {
         padding: 370px 0;
     }
 
+    /* Resizes secondary titles to ensure they remain proportionate 
+    to the overall design on smaller screens. */
     .h2-title {
         font-size: 40px;
         line-height: 55px;
     }
 
+    /* Adjusts tertiary title sizes for consistency and 
+    clarity in hierarchical information presentation. */
     .h3-title {
         font-size: 20px;
         line-height: 30px;
     }
 
+    /* Ensures service icons within the service section scale 
+    correctly to maintain visual balance and functionality. */
     .service-icon svg {
         width: 100%;
     }
 
+    /* Reduces padding in the video presentation area to maintain 
+    content focus and balance on smaller screens. */
     .vision-video {
         padding: 20px;
     }
 
+    /* Adjusts subtitle font sizes and line heights for clear 
+    readability and information hierarchy. */
     .h2-subtitle {
         font-size: 18px;
         line-height: 18px;
     }
 
+    /* Updates padding around link lists in the footer for optimal 
+    spacing and accessibility on smaller devices. */
     .our-links {
         padding: 0 50px;
     }
 }
 
-
+/* Media Query for Maximum Width of 991px
+   Adapts the site header for optimal display and usability on smaller screens, such as tablets in portrait orientation, enhancing the visual consistency and user interface of the navigation area. */
 @media screen and (max-width: 991px) {
 
 .site-header, .site-header.sticky-header {
@@ -1507,30 +1693,50 @@ p {
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
+/* Adjustments for Header Elements in Responsive Design
+   This section aims to refine header elements for better visibility and accessibility on smaller screens, focusing on structural adjustments, mobile navigation visibility, and branding consistency. */
+
+/* Makes the header's bottom part transparent and removes 
+any shadow for a cleaner, more integrated look within the 
+site's overall design on smaller screens. */
 .header-bottom {
     background-color: transparent;
     box-shadow: none;
 }
 
+/* Allows the logo image within the site branding area 
+to adjust its width automatically, ensuring it remains 
+proportionate and clear across devices. */
 .site-branding a img {
     width: auto;
 }
 
+/* Adjusts the sticky header's bottom padding and disables 
+animations for a smoother transition and reduced visual 
+clutter on scroll. */
 .sticky-header .header-bottom {
     padding: 23px 0px;
     animation: none;
     transition: 0.3s;
 }
 
+/* Expands the container within the site header to full 
+width with padding on the sides, optimizing space usage 
+and element alignment on smaller screens. */
 .site-header .container {
     max-width: 100%;
     padding: 0 30px;
 }
 
+/* Ensures the mobile navigation toggle button is always visible, 
+facilitating easy access to the menu in a mobile context. */
 .toggle-button {
     display: block;
 }
 
+/* Fixes the site branding to the top left of the viewport with 
+specified dimensions, maintaining visibility and brand presence 
+without interfering with content or navigation. */
 .site-branding {
     position: fixed;
     top: 15px;
@@ -1541,10 +1747,18 @@ p {
     align-items: center;
 }
 
+/* Ensures the branding link element spans the entire width of 
+its container, optimizing the clickable area for user interaction. */
 .site-branding a {
     width: 100%;
 }
 
+
+/* This part makes the main menu stick to the top of the page and stay there, 
+even when you scroll down. It starts off hidden to the side. 
+The menu stretches all the way from the top to the bottom of the screen, 
+has a dark blue color, and its text is in the middle. If there's a lot of stuff 
+in the menu and it doesn't all fit on the screen, you can scroll up and down to see everything. */
 .main-navigation ul {
     position: fixed;
     top: 0;
@@ -1562,19 +1776,30 @@ p {
     z-index: 100;
 }
 
+/* This part is about making space for special decorations or pictures 
+that can go right before or after the smaller menus 
+(like the ones that pop out of the main menu). 
+It's like setting up invisible placeholders where you can add cool stuff later. */
+
 .main-navigation ul li ul::before {
   content: "";
   position: relative;
 }
-
 .main-navigation ul li ul::after {
   content: "";
   position: relative;
 }
 
+/* This line makes sure the bottom part of the header stretches to fill 
+the whole height of the area it's in, from top to bottom. */
+
 .header-bottom {
     height: 100%;
 }
+
+/* This part changes the main menu to make it completely see-through and ready to use. 
+It does this by sliding the menu into view and making it fully visible 
+when we use a special switch called .toggle-menu. */
 
 .main-navigation.toggle-menu ul {
     right: 0;
@@ -1582,32 +1807,36 @@ p {
     z-index: 100;
 }
 
+/* This part makes the scroll bar on the side of the main menu disappear. 
+It does this by making the scroll bar super thin (so thin it's invisible) and clear, 
+so the menu looks neat and tidy without any scroll bar showing. */
+
 .main-navigation>ul::-webkit-scrollbar-thumb {
     width: 0;
     background: transparent;
 }
-
 .main-navigation>ul::-webkit-scrollbar {
     width: 0;
 }
-
 .main-navigation>ul::-webkit-scrollbar-track {
     width: 0;
     background: transparent;
 }
 
+/* This bit makes each item in the main menu look nice and move smoothly into place. 
+At first, these items are hidden, then they slide in with a bit of space around them 
+and take a little time to fully appear, making it easier to read and look at. */
 .main-navigation ul li {
+
     display: block;
     margin: -50px 0 10px 0;
     padding: 10px 40px 20px 40px;
     opacity: 0;
     transition: 0.5s;
 }
-
 .main-navigation ul li:first-child {
     padding: 10px 40px 20px 40px;
 }
-
 .main-navigation.toggle-menu ul li {
     text-align: left;
     border-bottom: solid 1px rgb(225, 225, 225,0.2);
@@ -1616,15 +1845,18 @@ p {
     transition: 0.5s;
     transition-delay: 0.4s;
 }
-
 .main-navigation ul li:last-child {
     border-bottom: none;
 }
-
 .main-navigation ul li:last-child a {
     display: inline-block;
     margin: 0 auto;
 }
+
+/* This part changes how the links in the menu look. 
+It makes the text a certain size and space between lines, and sets the color to white. 
+It also has special looks for when the menu sticks to the top of the page 
+and when you're looking at different sections. */
 
 .site-header.sticky-header .main-navigation ul li a, .site-header.sticky-header .search-icon a, .site-header.sticky-header .main-navigation ul li.sub-items>a:before {
     color: #ffffff;
@@ -1634,14 +1866,16 @@ p {
     line-height: 28px;
     color: #ffffff;
 }
-
 .main-navigation ul li.sub-items>a:before {
     color: #ffffff;   
 }
-
 .main-navigation ul li.sub-items.active>a:before {
     color: #ff5219;   
 }
+
+/* This part takes care of how the drop-down menus in the navigation bar work and look. 
+It keeps them hidden until you need them, and then they appear or change 
+style when you hover over them or click on them. */
 
 .main-navigation ul li ul.dropdown-menu,
 .main-navigation ul li:hover ul.dropdown-menu {
@@ -1659,22 +1893,18 @@ p {
     transition: 0s;
     display: none;
 }
-
 .main-navigation ul li ul.dropdown-menu li {
     text-align: left;
     border: none;
     padding: 0 16px;
     margin-bottom: 10px;
 }
-
 .main-navigation ul li ul.dropdown-menu li:first-child {
     padding-left: 16px;
 }
-
 .main-navigation ul li ul.dropdown-menu li:last-child {
     margin-bottom: 0;
 }
-
 .main-navigation ul li ul.dropdown-menu li a {
     color: #ffffff;
     padding: 0;
@@ -1682,37 +1912,53 @@ p {
     line-height: 24px;
 }
 
+/* This section makes the smaller menu items and their drop-down lists more interactive. 
+When you move your mouse over them or click on them, they change shape or color 
+to let you know they're active or you're hovering over them. */
+
 .main-navigation ul li.sub-items:hover>a:before, 
 .main-navigation ul li a:hover:before {
     transform: translate(0,-50%) rotate(0deg);
     color: #ff5219;
 }
-
 .main-navigation ul li.sub-items.active-dropdown-menu>a:before {
     transform: translate(0,-50%) rotate(-180deg);
     color: #ff5219;
 }
 
+
+/* Hides the top part of the header 
+so it doesn't show up on the page. */
 .header-top {
     display: none;
 }
 
+/* Hides social media links or buttons
+ so they won't appear on the page. */
 .Social-midea {
     display: none;
 }
 
+/* Hides contact information in the header, 
+like phone numbers or email addresses. */
 .header-contact {
     display: none;
 }
 
+/* Hides any buttons in the header, 
+making them invisible on the page. */
 .header-btn {
     display: none;
 }
 
+/* Shows the toggle button, making it 
+visible for users to click on. */
 .toggle-button {
     display: block;
 }
 
+/* Changes the look of each item in the menu when the 
+menu is opened: aligns text to the left and adds a light underline. */
 .main-navigatione.toggle-menu ul li {
     text-align: left;
     border-bottom: solid 1px rgb(225, 225, 225,0.2);
@@ -1722,6 +1968,8 @@ p {
     transition-delay: 0.4s;
 }
 
+/* Sets up how sub-menus appear when you hover over them, 
+initially hidden then displayed on hover. */
 .main-navigation ul li ul.sub-menu, .main-navigation ul li:hover ul.sub-menu {
     position: relative;
     top: 0;
@@ -1738,79 +1986,111 @@ p {
     display: none;
 }
 
+/* Removes the bottom border from sub-menu 
+items for a cleaner look. */
 .main-navigation ul li ul.sub-menu li {
     border-bottom: none;
 }
 
+/* Adjusts the padding for the first and all 
+sub-menu items to align content properly. */
 .main-navigation ul li ul.sub-menu li:first-child, .main-navigation ul li ul.sub-menu li {
     padding-left: 0;
     padding-right: 0;
 }
 
+/* Sets the text color of links in sub-menus to white. */
 .main-navigation ul li ul.sub-menu li a {
     color: #ffffff;
 }
 
+/* Changes the link color to orange when you 
+hover over them, making them stand out. */
 .main-navigation ul li ul.sub-menu li a:hover {
     color:#dd6a13;
 }
 
+/* Styles the main title, making it larger 
+and spaced out for readability. */
 .h1-title {
     font-size: 30px;
     line-height: 45px;
 }
 
+/* Ensures the paragraph in the banner content 
+takes up the full width available. */
 .banner-content p {
     width: 100%;
 }
 
+/* Styles a button with a specific height and 
+padding for a prominent appearance. */
 .sec-btn {
     height: 50px;
     padding: 12px 35px;
 }
 
+/* Adds significant padding around 
+sections for a spacious layout. */
 .main-about-us, .main-vision, .main-look-adead, .main-join-now {
     padding-bottom: 80px;
     padding-top: 80px;
 }
 
+/* Adjusts the content box in the about section 
+for proper alignment without extra space. */
 .about-content-box {
     padding-left: 0;
     margin-top: 50px;
 }
 
+/* Styles secondary titles similarly to 
+the main title for consistency. */
 .h2-title {
     font-size: 30px;
     line-height: 45px;
 }
 
+/* Styles the subtitles with a smaller 
+font size for distinction from titles. */
 .h2-subtitle {
     font-size: 16px;
     line-height: 16px;
 }
 
+/* Aligns video and join-now content correctly 
+without extra spacing on the sides. */
 .vision-video, .join-now-content {
     margin-left: 0;
     margin-top: 50px;
 }
 
+/* Sets the goal image to cover the full width 
+and a fixed height for a striking visual. */
 .goal-img {
     position: relative;
     width: 100%;
     height: 892px;
 }
 
+
+/* Adds padding around the goal 
+content box for a balanced layout. */
 .goal-content-box {
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 0;
 }
 
+/* Ensures the look content has the 
+right spacing for visual separation. */
 .look-content {
     margin-right: 0;
     margin-bottom: 50px;
 }
 
+/* Makes a button stick to the bottom-right 
+corner of the screen for easy access. */
 .sticky-btn {
     display: block;
     position: fixed;
@@ -1818,88 +2098,115 @@ p {
     right: 30px;
 }
 
+/* Adds spacing above the contact and 
+map sections for a clear layout. */
 .contact-us, .map {
     margin-top: 50px;
 }
 
+/* Adds padding at the top of the footer 
+for spacing from content above. */
 .main-footer {
     padding-top: 80px;
 }
 
+/* Spaces out the copyright notice 
+from the content above for clarity. */
 .copyright {
     margin-top: 80px;
 }
 
+/* Ensures services boxes are evenly 
+spaced for a neat appearance. */
 .service-box {
     margin-bottom: 30px;
 }
 
+/* Adds padding to the top and bottom of the
+main services section for emphasis and readability. */
 .main-service {
     padding-top: 80px;
     padding-bottom: 90px;
 }
+
 }
 
 
+/* When the screen size is smaller than 768 pixels (like tablets and mobile phones in portrait mode): */
 @media screen and (max-width: 767px) {
+    /* Makes the footer's about section have some space at the bottom. */
     .footer-about {
         margin-bottom: 50px;
     }
 
+    /* Removes any padding from our links 
+    section for a tighter layout. */
     .our-links {
         padding: 0;
     }
 }
 
+/* For screens smaller than 576 pixels (like smaller smartphones): */
 @media screen and (max-width: 575px) {
-
+    /* Adjusts the container padding 
+    to have some space on the sides. */
     .container {
         padding: 0 30px;
     }
 
+    /* Centers the banner content and makes it 
+    take up 80% of the container's width. */
     .banner-content {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
+    /* Changes the size of the h3 titles to be 
+    smaller for better readability on small screens. */
     .h3-title {
         font-size: 18px;
         line-height: 18px;
     }
-
 }
 
+/* Specifically for screens that are 375 pixels wide (very small devices like some older phones): */
 @media screen and (max-width: 375px) {
-
+    /* Adjusts the size of the navigation buttons 
+    in the main banner for smaller screens. */
     .main-banner .swiper-button-prev, .main-banner .swiper-button-next {
         height: 30px;
         width: 30px;
     }
 
+    /* Makes the icons on the navigation buttons 
+    smaller and changes their color to a dark blue. */
     .main-banner .swiper-button-prev:after, .main-banner .swiper-button-next:after {
         font-size: 15px;
         color: #11364e;
     }
 
+    /* Expands the banner content to fill 
+    the entire width of its container. */
     .banner-content {
         width: 100%;
     }
 
-    .h1-title {
+    /* Adjusts the size of the main and secondary 
+    titles to fit better on very small screens. */
+    .h1-title, .h2-title {
         font-size: 25px;
         line-height: 40px;
     }
 
-    .h2-title {
-        font-size: 25px;
-        line-height: 40px;
-    }
-
+    /* Ensures list items in the goals section are 
+    displayed one after the other, not side by side. */
     .goal-content-box ul li {
         display: block;
     }
 
+    /* Makes goal icons smaller and removes any space 
+    to the right, adding some space below each. */
     .goal-icon {
         width: 80px;
         height: 80px;
@@ -1907,77 +2214,93 @@ p {
         margin-bottom: 20px;
     }
 
+    /* Ensures the text box next to the goal icons 
+    takes up the full width available to it. */
     .goal-text-box {
         width: 100%;
     }
-
 }
+
 /*.......................................................................................Responsive CSS End*/
 
-/*.....................................participationg houses Mobile................*/
+/* ..........................................Styling for mobile version of Participating Houses navigation */
 
-
-
-
+/* Changes the color of icons inside 
+the main navigation to white. */
 .main-navigation button i{
     color: white;
 }
+
+/* Hides the 'close' icon (represented by times symbol) 
+in the main navigation by default. */
 .main-navigation i.fa-times{
     display: none;
 }
+
+/* Shows the 'menu' icon (represented by bars symbol) 
+in the main navigation by default. */
 .main-navigation i.fa-bars{
     display: block;
 }
+
+/* Shows the 'close' icon when the menu is open 
+(toggle menu state is active). */
 .main-navigation.toggle-menu i.fa-times{
     display: block;
 }
+
+/* Hides the 'menu' icon when the menu is open 
+(toggle menu state is active). */
 .main-navigation.toggle-menu i.fa-bars{
     display: none;
 }
 
+/* Removes the border from the iframe used for showing location, 
+making it blend seamlessly into the page. */
 #location-iframe{
     border:0;
 }
+
+/* Styles the operator sign-up iframe with a transparent background 
+and a light grey border for a subtle, stylish look. */
 #operator-sign-up-iframe{
     background: transparent; border: 1px solid #ccc;
 }
-/*............................................new new new for Learn More form..........................*/
-/*
-.iframe-scroll-container {
-    height: 460px; 
-    overflow-y: auto; 
-    overflow-x: hidden; 
-}
 
-.iframe-scroll-container {
-    height: auto; 
-    overflow-y: hidden; 
-    overflow-x: hidden; 
-}
-*/
+
+
+/*....................................................................Participating Houses Text Box*/
+
+/* This styles a container for iframes, like videos or maps, giving it an orange background, some space around its content, and making sure the padding is considered part of its total width. */
+
 .iframe-container {
     background-color: #dd6a13; /* Your current background color */
     padding: 30px;
     box-sizing: border-box; /* Includes padding in the width */
-  }
-  
- /* This container holds both the iframe and text containers side by side */
+}
+
+/* Styles a wrapper that holds both iframe and text together, 
+ensuring they align properly without overflowing. */
 .content-wrapper {
     width: 100%;
     overflow: hidden; /* This will clear the floats within this container */
-  }
-  
-  /* This container is for the iframe */
-  .iframe-container {
+}
+
+/* Again styles the iframe container (repeated from above), 
+focusing on its size, padding, and background. 
+It floats to the left, taking up 60% of the available space. */
+.iframe-container {
     float: left;
-    width: 60%; /* Adjusted to 60% as per your requirement */
+    width: 50%; /* Adjusted to 60% as per your requirement */
     padding: 30px;
     box-sizing: border-box; /* Padding is included in the width */
     background-color: #dd6a13; /* Your chosen background color */
-  }
-  
-  /* This container is for the text content */
-  .text-container {
+}
+
+/* Sets up a container for text that sits beside the iframe. 
+It takes up the remaining 40% of space, centers its content, 
+and matches the iframe's height for a tidy appearance. */
+.text-container {
     float: right;
     width: 40%; /* Adjusted to take the remaining space beside the iframe container */
     padding: 30px;
@@ -1987,43 +2310,61 @@ p {
     justify-content: center; /* Centers content vertically in the container */
     align-items: center; /* Centers content horizontally in the container */
     height: 533px; /* Should match the height of your iframe for alignment */
-  }
-  
-  
-  .iframe-title {
-    font-size: 66px; /* Change this value to the desired font size */
-    margin: 0; /* Removes default margin */
-  }
-  
-  
-  
+}
 
+/* Applies a large font size to the title above the iframe, 
+removing any default margin for a clean look. */
+.iframe-title {
+    font-size: 66px; /* Change this value to the desired font size */
+    font-weight: 800;
+    font-family: 'Epilogue', sans-serif;
+    margin: 0; /* Removes default margin */
+}
+
+  
+  
+  /* Sets the background of the main banner area to a specific image, 
+making the banner visually appealing with a custom photo. */
 .main-banner{
     background-image: url(../images/slide-1.jpg);
 }
 
+/* Applies a unique background image to the main service section, 
+enhancing its look with a themed background. */
 .main-service{
     background-image: url(../images/service-bg.jpg);
 }
 
+/* For the goal section within the main goal area, sets a special 
+background image, visually representing the goals or achievements. */
 .main-goal .goal-img{
     background-image: url(../images/goal-img.jpg);
 }
 
+/* For screens up to 768px wide (like tablets and phones): */
 @media screen and (max-width: 768px) {
+    /* Sets iframe and text boxes to full width with padding, 
+    removing float for a neater display. */
     .iframe-container, .text-container {
-      width: 100%; /* Make both elements full width */
-      float: none; 
-      padding: 15px; /* Add some padding for better spacing */
+      width: 100%; /* Full width */
+      float: none;
+      padding: 15px; /* Adds padding */
     }
+
+    /* Positions iframe below text for easier mobile viewing. */
     .iframe-container {
-      order: 2; /* Ensure the iframe is positioned after the text on smaller screens */
+      order: 2; /* Iframe after text */
     }
+
+    /* Text is shown first, above the iframe. */
     .text-container {
-      order: 1; /* Ensure the text is positioned before the iframe on smaller screens */
+      order: 1; /* Text before iframe */
     }
+
+    /* Changes layout to stack elements vertically for better mobile experience. */
     .content-wrapper {
       display: flex;
-      flex-direction: column; /* Stack the child elements vertically */
+      flex-direction: column; /* Vertical stacking */
     }
-  }
+}
+
