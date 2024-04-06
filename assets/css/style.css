@@ -10,10 +10,12 @@
 7.service css
 8.Vision CSS
 9.Goal CSS
-10.Looking Ahead
+10.Participating Houses css
+11.Footer css
+12.Media Queries css
 =====================*/
 
-/*..........................................................................................Fonts CSS Start*/
+/*.......................................................................................#1 Fonts CSS Start*/
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
@@ -27,6 +29,8 @@
     font-display: swap;
 }
 /*...........................................................................................Fonts CSS End*/
+
+/*...........................................................................................#2 Common CSS*/
 
 /* =================================================================================================================
    Common CSS Start: Base styles for smooth scrolling, default font, overflow 
@@ -525,7 +529,7 @@ corner of the viewport for easy access. */
 /*.................................................................................Common CSS End*/
 
 
-/*.................................................................................Loader CSS Start*/
+/*.................................................................................#3 Loader CSS Start*/
 
 /*================================================================================================================== This section creates a loading animation that appears over the entire page. It centers a small, animated element to indicate that the page or a process is loading. The animation includes a main loader with a circle that changes size and color to grab the user's attention. 
 ===================================================================================================================*/
@@ -622,6 +626,8 @@ and shadow when header becomes sticky. */
     -ms-backdrop-filter: blur(20px);
     transition: 0.3s;
 }
+
+/*................................................................................#4 NavBar*/
 
 /* Navbar Toggler Styling: Styles the navbar 
 toggler button for mobile views. */
@@ -905,7 +911,7 @@ transition of the logo in the sticky header state for brand visibility. */
 /*.......................................................................................Header CSS End*/
 
 
-/*.......................................................................................Banner First Section Front page CSS Start*/
+/*.......................................................................................#5 Banner First Section Front page CSS Start*/
 
 /* This section styles the main banner, making it a full-screen feature with a centered, non-repeating background that covers the entire area for visual appeal. A semi-transparent overlay is applied for text contrast. Text elements within `.banner-content` are centralized and styled for readability, with specific adjustments for positioning and presentation. An `.banner-overlay` is included for additional styling options at the banner's base, ensuring the banner is both striking and functional. */
 
@@ -966,7 +972,7 @@ additional decorative or functional elements at the banner's base. */
 
 
 
-/*.......................................................................................About Us Start*/
+/*........................................................................................#6 About Us Start*/
 
 /* This section sets up the "About Us" part of the site, using space efficiently for a clean introduction to the team or company. Pictures are arranged to display effectively across different devices, and there's a special counter to showcase the team's experience or achievements in an engaging way. The text area is thoughtfully spaced out to improve readability and visual appeal. Overall, this part aims to provide a friendly and clear overview of who the company or team is, ensuring visitors receive all the essential information in an attractive layout. */
 
@@ -1039,7 +1045,7 @@ neatly aligned and readable. */
 
 /*.......................................................................................About Us End*/
 
-/*.......................................................................................Service CSS Start*/
+/*.......................................................................................#7 Service CSS Start*/
 /* Section: Main Service Styling
 This section defines the styling for a block designated as `.main-service`, 
 which could be a section on a website dedicated to showcasing services offered. 
@@ -1157,7 +1163,7 @@ to a distinctive shade, adding an interactive cue to the user. */
 
 /*.......................................................................................Service CSS End*/
 
-/*.......................................................................................Vision CSS Start*/
+/*.......................................................................................#8 Vision CSS Start*/
 /* This CSS block is dedicated to styling the "Vision" section of a website, emphasizing the organization's core values and goals through visual and textual content. It ensures the section is visually distinct and engaging, with specific styles for video presentation and concise text formatting. */
 
 /* Defines the styling for the main vision section, 
@@ -1186,7 +1192,7 @@ have no bottom margin, creating a tight, cohesive block of text. */
 
 /*.......................................................................................Vision CSS End*/
 
-/*.......................................................................................Goal CSS Start*/
+/*.......................................................................................#9 Goal CSS Start*/
 /* This CSS block focuses on the "Main Goal" section of a website, creating a visually striking area to highlight the organization's primary objectives. It employs a combination of positioning, color, and animation to draw attention to the goals and make the section dynamic and engaging. */
 
 /* Establishes the base positioning context for the 
@@ -1327,7 +1333,7 @@ call-to-action message. */
 /*.......................................................................................Join Now CSS End*/
 
 
-/*.......................................................................................Footer CSS Start*/
+/*.......................................................................................#11 Footer CSS Start*/
 
 /* This extensive section is dedicated to styling the footer of the website, known as `.main-footer`. It covers various aspects like the footer's background, typography, social media links presentation, additional links and contact information, and even a map box for location details. The use of color, padding, and flexbox layouts ensures a visually appealing and functional footer area. This section also includes interactive elements such as hover effects for social media icons and contact details, emphasizing user engagement. Additionally, the footer concludes with copyright information, styled for clarity and aesthetic consistency with the overall design. */
 
@@ -1565,7 +1571,7 @@ for clarity as clickable elements */
 
 /*.......................................................................................Footer CSS End*/
 
-/*.....................................................................Media Query Responsive CSS Start*/
+/*.....................................................................#12 Media Query Responsive Design CSS Start*/
 
 /* Responsive Design Adjustments for Various Screen Sizes
    These media queries adjust layout and typography based on the screen width to enhance readability and usability on smaller devices like tablets and mobile phones. */
@@ -2129,9 +2135,6 @@ main services section for emphasis and readability. */
     padding-bottom: 90px;
 }
 
-}
-
-
 /* When the screen size is smaller than 768 pixels (like tablets and mobile phones in portrait mode): */
 @media screen and (max-width: 767px) {
     /* Makes the footer's about section have some space at the bottom. */
@@ -2220,8 +2223,9 @@ main services section for emphasis and readability. */
         width: 100%;
     }
 }
+}
 
-/*.......................................................................................Responsive CSS End*/
+/*...............................................................................Media Queries and Responsive Design CSS End*/
 
 /* ..........................................Styling for mobile version of Participating Houses navigation */
 
@@ -2269,7 +2273,7 @@ and a light grey border for a subtle, stylish look. */
 
 
 
-/*....................................................................Participating Houses Text Box*/
+/*........................................................................#10 Participating Houses Text Box*/
 
 /* This styles a container for iframes, like videos or maps, giving it an orange background, some space around its content, and making sure the padding is considered part of its total width. */
 
