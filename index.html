@@ -16,6 +16,8 @@ The lang attribute specifies the language of the document's content, in this cas
     <!-- The <title> tag specifies the title of the document, 
     shown in the browser's title bar or tab. -->
 
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- The <meta> viewport element ensures the website is displayed
     correctly on all devices by controlling the page's dimensions and scaling. -->
@@ -58,7 +60,7 @@ The lang attribute specifies the language of the document's content, in this cas
 <body>
 <!------------------------------------------------------------------------------------------Donation Button Section -->
 <div class="sticky-btn">
-    <a href="#staticBackdrop" class="sec-btn" data-bs-toggle="modal" title="Book Now">Donation</a>
+    <a href="#staticBackdrop" class="sec-btn" data-bs-toggle="modal" title="Book Now" data-translate="donate_button">Donation</a>
 </div>
 <!-- This section creates a sticky donation button that's always 
 visible to users. When clicked, it opens a modal for donations. -->
@@ -86,10 +88,31 @@ containing the navigation bar and the site logo. -->
             </div>
             <!-- Displays the website's logo and serves 
             as a link back to the homepage. -->
+           
 <!----------------------------------------------------------------------------------------End of Site Logo Section -->
 
 <!----------------------------------------------------------------------------------------Start Header Hamburger Menu Mobile Section -->
             <div class="col-lg-10">
+              <div class="language-selector" style="margin-left: auto;">
+                <select id="languageSwitcher">
+                    <option value="en">English</option>
+                    <option value="zh-CN">Chinese (Simplified)</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="ar">Arabic</option>
+                    <option value="bn">Bengali</option>
+                    <option value="ru">Russian</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="id">Indonesian</option>
+                    <option value="ur">Urdu</option>
+                    <option value="de">German</option>
+                    <option value="ja">Japanese</option>
+                    <option value="sw">Swahili</option>
+                    <option value="pa">Punjabi</option>
+                    <option value="te">Telugu</option>
+                </select>
+            </div>
                 <div class="header-menu">
                     <nav class="main-navigation">
                         <button class="toggle-button">
@@ -101,27 +124,31 @@ containing the navigation bar and the site logo. -->
                         <div class="mobile-menu-box">
                             <ul class="menu">
                         <!-- The menu list includes links to various sections of the site like Home, About Us, Services, and more. Sub-menus provide additional navigation options. -->
-                                <li class="sub-items"><a href="index.html" title="Home">Home</a>
+                                <li class="sub-items"><a href="index.html" title="Home"  data-translate="nav_home">Home</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#about_us" title="About Us">About Us</a></li>
-                                        <li><a href="#service" title="Services">Services</a></li>
-                                        <li><a href="#vision" title="Our Vision">Our Vision</a></li>
-                                        <li><a href="#goal" title="Our Goals">Our Goal</a></li>
-                                        <li><a href="#participating_houses">Participating Houses</a></li>
+                                        <li><a href="#about_us" title="About Us" data-translate="nav_about_us">About Us</a></li>
+                                        <li><a href="#service" title="Services" data-translate="nav_services">Services</a></li>
+                                        <li><a href="#vision" title="Our Vision" data-translate="nav_our_vision">Our Vision</a></li>
+                                        <li><a href="#goal" title="Our Goals" data-translate="our_goal">Our Goal</a></li>
+                                        <li><a href="#participating_houses" data-translate="participating_ houses">Participating Houses</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#learnMoreModal" data-bs-toggle="modal" title="Learn More">Learn More</a></li>
-                                <li class="sub-items"><a href="javascript:void(0);" title="Contact Us">Contact Us</a>
+                                <li><a href="#learnMoreModal" data-bs-toggle="modal" title="Learn More" data-translate="learn_more">Learn More</a></li>
+                                <li class="sub-items"><a href="javascript:void(0);" title="Contact Us" data-translate="nav_contact_us">Contact Us</a>
                                     <ul class="sub-menu">
-                                        <li><a href="mailto:mikejhiggins@smccme.edu" title="Michael Higgins">Michael Higgins</a></li>
-                                        <li><a href="mailto:xinqian@smccme.edu" title="Xin Qian">Xin Qian</a></li>
-                                        <li><a href="mailto:blakemilliano@smccme.edu" title="Blake Illiano">Blake Illiano</a></li>
-                                        <li><a href="mailto:joycesimbi@smccme.edu" title="Joyce Simbi">Joyce Simbi</a></li>
-                                        <li><a href="mailto:Petercrosasco@smccme.edu" title="Peter Rosasco (Manager)">Peter Rosasco (Manager)</a></li>
-                                    </ul>
+                                        <li><a href="mailto:mikejhiggins@smccme.edu" title="Michael Higgins" data-translate="contact_michael">Michael Higgins</a></li>
+                                        <li><a href="mailto:xinqian@smccme.edu" title="Xin Qian" data-translate="contact_xin">Xin Qian</a></li>
+                                        <li><a href="mailto:blakemilliano@smccme.edu" title="Blake Illiano"
+                                          data-translate="contact_blake">Blake Illiano</a></li>
+                                  <li><a href="mailto:joycesimbi@smccme.edu" title="Joyce Simbi"
+                                          data-translate="contact_joyce">Joyce Simbi</a></li>
+                                  <li><a href="mailto:Petercrosasco@smccme.edu"
+                                          title="Peter Rosasco (Manager)"
+                                          data-translate="contact_peter">Peter Rosasco (Manager)</a></li>
+                              </ul>
                                 </li>
-                                <li> <a href="https://forms.fillout.com/t/1D3iiiohGVus" title="Student Entry" target="_blank">Student Entry</a></li>
-                                <li> <a href="#sign-up" data-bs-toggle="modal" title="Operator Sign up">Operator Sign Up</a></li>
+                                <li> <a href="https://forms.fillout.com/t/1D3iiiohGVus" title="Student Entry"   data-translate="nav_student_entry" target="_blank">Student Entry</a></li>
+                                <li> <a href="#sign-up" data-bs-toggle="modal" title="Operator Sign up" data-translate="nav_operator_signup">Operator Sign Up</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -160,7 +187,7 @@ containing the navigation bar and the site logo. -->
         body, and potentially a footer. -->
   
         <div class="modal-header">
-          <h3 class="h3-title" id="staticBackdropLabel">Make A Donation</h3>
+          <h3 class="h3-title" id="staticBackdropLabel" data-translate="modal_title_donate">Make A Donation</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <!-------------------------------------------------------------------------------Start of Modal Header -->
           <!-- This section contains the title of the modal and 
@@ -178,49 +205,49 @@ containing the navigation bar and the site logo. -->
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-box">
-                        <input type="text" name="FirstName" class="form-input" placeholder="First Name" required="">
+                        <input type="text" name="FirstName" class="form-input" placeholder="First Name" required="" data-translate="input_first_name">
                         <!-- Form field for entering the first name. -->
                       </div>
                     </div>
   
                     <div class="col-md-12">
                       <div class="form-box">
-                        <input type="text" name="LastName" class="form-input" placeholder="Last Name" required="">
+                        <input type="text" name="LastName" class="form-input" placeholder="Last Name" required="" data-translate="input_last_name">
                         <!-- Form field for entering the last name. -->
                       </div>
                     </div>
   
                     <div class="col-md-12">
                       <div class="form-box">
-                        <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="">
+                        <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="" data-translate="input_email">
                         <!-- Form field for entering the email address. -->
                       </div>
                     </div>
   
                     <div class="col-md-12">
                       <div class="form-box">
-                        <input type="text" name="PhoneNo" class="form-input" placeholder="Phone No." required="">
+                        <input type="text" name="PhoneNo" class="form-input" placeholder="Phone No." required="" data-translate="input_phone">
                         <!-- Form field for entering the phone number. -->
                       </div>
                     </div>
   
                     <div class="col-md-12">
                       <div class="form-box">
-                        <input type="text" name="Donation Amount" class="form-input" placeholder="Donation Amount" aria-label="Amount (to the nearest dollar)" required="">
+                        <input type="text" name="Donation Amount" class="form-input" placeholder="Donation Amount" aria-label="Amount (to the nearest dollar)" required=""  data-translate="input_donation_amount">
                         <!-- Form field for entering the donation amount. -->
                       </div>
                     </div>
   
                     <div class="col-12">
                       <div class="form-box">
-                        <textarea class="form-input" placeholder="Message..."></textarea>
+                        <textarea class="form-input" placeholder="Message..."  data-translate="textarea_message"></textarea>
                         <!-- Text area for additional messages from the donor. -->
                       </div>
                     </div>
   
                     <div class="col-12">
                       <div class="form-box mb-0">
-                        <button type="submit" class="sec-btn"><span>Donate Now</span></button>
+                        <button type="submit" class="sec-btn" data-translate="button_donate_now"><span>Donate Now</span></button>
                         <!-- Submission button for the form. -->
                       </div>
                     </div>
@@ -259,7 +286,7 @@ containing the navigation bar and the site logo. -->
         into header and body sections for clarity and organization. -->
   
         <div class="modal-header">
-          <h3 class="h3-title" id="sign-up-to">Operator Sign Up</h3>
+          <h3 class="h3-title" id="sign-up-to" data-translate="modal_title_signup">Operator Sign Up</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <!-- The modal header contains the title 'Operator Sign Up' 
           and a button to close the modal. The close button improves user 
@@ -279,7 +306,8 @@ containing the navigation bar and the site logo. -->
                 from Airtable, which can dynamically resize based 
                 on the content's height. -->
 
-                <iframe id="operator-sign-up-iframe" class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shrK6wZQ0lS0L0ohZ?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" height="1018.090909"></iframe>
+                <iframe id="operator-sign-up-iframe" class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appyn7FaXKYGabtGw/shrK6wZQ0lS0L0ohZ?backgroundColor=greenDusty" frameborder="0" onmousewheel="" width="100%" height="1018.090909" 
+                ></iframe>
                 <!-- The iframe embeds a form from Airtable for operator sign-up. 
                 It is styled to match the modal's design and is set to 
                 be responsive to screen size changes. -->
@@ -315,8 +343,8 @@ containing the navigation bar and the site logo. -->
           width of the row, making it centrally located. -->
           
           <div class="banner-content">
-            <h1 class="h1-title">Building strength, stability, and self-reliance through shelter</h1>
-            <p>Supporting students with housing solutions cultivates an environment conducive to academic success and personal development. It alleviates one of the major stressors in student life, allowing them to focus more fully on their studies and future aspirations.</p>
+            <h1 class="h1-title" data-translate="banner_title">Building strength, stability, and self-reliance through shelter</h1>
+            <p data-translate="banner_text" > Supporting students with housing solutions cultivates an environment conducive to academic success and personal development. It alleviates one of the major stressors in student life, allowing them to focus more fully on their studies and future aspirations.</p>
             <!-- The banner content houses the main message and supporting text, 
             designed to engage visitors and convey the core message or value 
             proposition of the site or organization. -->
@@ -394,14 +422,19 @@ containing the navigation bar and the site logo. -->
             <!-- Container for the about us text, including title and description. -->
             
             <div class="subtitle">
-              <h2 class="h2-subtitle">About Us</h2>
+              
               <!-- Subtitle for the section. -->
             </div>
             
-            <h2 class="h2-title">Welcome to Student Housing Support Program</h2>
-            <!-- Main title welcoming visitors and introducing the program. -->
-            
-            <p>This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home. At the heart of our mission lies the commitment to alleviate the housing burden on students, ensuring they can focus on their academic and personal growth without the stress of securing safe, reliable accommodation.</p>
+            <h2 class="h2-subtitle" data-translate="about_us_subtitle">About Us</h2>
+                        </div>
+                        <h2 class="h2-title" data-translate="about_us_title">Welcome to Student Housing Support Program
+                        </h2>
+                        <p data-translate="about_us_description">This is a groundbreaking initiative dedicated to
+                            fostering accessible and affordable housing solutions for students pursuing higher education
+                            away from home. At the heart of our mission lies the commitment to alleviate the housing
+                            burden on students, ensuring they can focus on their academic and personal growth without
+                            the stress of securing safe, reliable accommodation.</p>
             <!-- Paragraph detailing the mission and objectives of the program. -->
             
           </div>
@@ -429,11 +462,11 @@ containing the navigation bar and the site logo. -->
                     <!-- Holds the main title and subtitle for the services section. -->
 
                     <div class="subtitle">
-                        <h2 class="h2-subtitle">Services</h2>
+                        <h2 class="h2-subtitle" data-translate="services_subtitle">Services</h2>
                         <!-- The subtitle provides an introductory context to the services offered. -->
 
                     </div>
-                    <h2 class="h2-title">What We Do</h2>
+                    <h2 class="h2-title" data-translate="services_title" >What We Do</h2>
                     <!-- The main title that introduces the section's focus on the organization's services. -->
                 </div>
             </div>
@@ -463,12 +496,12 @@ containing the navigation bar and the site logo. -->
                                 in this case, data security. -->
 
                             </div>
-                            <a href="javascript:void(0);"><h3 class="h3-title">Secure Data Management</h3></a>
+                            <a href="javascript:void(0);"><h3 class="h3-title" data-translate="secure_data_managment">Secure Data Management</h3></a>
                             <!-- The title of the service, clickable for potentially 
                             expanding the information or linking to more details. -->
 
                         </div>
-                        <p>We prioritize the confidentiality and integrity of data with a secure client data entry portal, safeguarding information in compliance with the highest data protection standards.</p>
+                        <p data-translate="service_1_description">We prioritize the confidentiality and integrity of data with a secure client data entry portal, safeguarding information in compliance with the highest data protection standards.</p>
                         <!-- Describes the service, emphasizing its focus on data security and confidentiality. -->
                     </div>
                 </div>
@@ -492,11 +525,11 @@ containing the navigation bar and the site logo. -->
                                 focus on efficiency or process improvement. -->
 
                             </div>
-                            <a href="javascript:void(0);"><h3 class="h3-title">Streamlined Operations</h3></a>
+                            <a href="javascript:void(0);"><h3 class="h3-title"data-translate="streamlined_operations">Streamlined Operations</h3></a>
                             <!-- Title for the second service, potentially linkable for more information. -->
 
                         </div>
-                        <p>Through an efficient backend database powered by Airtable and automated financial processes, we ensure that housing support organizations can operate more effectively, focusing their resources on what truly matters – helping students.</p>
+                        <p data-translate="service_2_description">Through an efficient backend database powered by Airtable and automated financial processes, we ensure that housing support organizations can operate more effectively, focusing their resources on what truly matters – helping students.</p>
                         <!-- Details the objectives and methods of the service, 
                         highlighting operational efficiency. -->
 
@@ -521,12 +554,12 @@ containing the navigation bar and the site logo. -->
                                 relevant to the service provided. -->
 
                             </div>
-                            <a href="javascript:void(0);"><h3 class="h3-title">Accessible Technology</h3></a>
+                            <a href="javascript:void(0);"><h3 class="h3-title" data-translate="accessible_technology">Accessible Technology</h3></a>
                             <!-- Service title, suggesting the use of 
                             technology to enhance accessibility. -->
 
                         </div>
-                        <p>Our platform is designed with every user in mind. With an intuitive interface and Fillout Forms for easy data entry, we cater to users of all technical backgrounds, including those with disabilities, ensuring no one is left behind.</p>
+                        <p data-translate="service_3_description">Our platform is designed with every user in mind. With an intuitive interface and Fillout Forms for easy data entry, we cater to users of all technical backgrounds, including those with disabilities, ensuring no one is left behind.</p>
                         <!-- Explains how the service makes technology accessible 
                         to a wide range of users, emphasizing inclusivity. -->
                     </div>
@@ -562,14 +595,14 @@ containing the navigation bar and the site logo. -->
                         <!-- Holds the title and subtitle for the vision section. -->
 
                         <div class="subtitle">
-                            <h2 class="h2-subtitle">Our Vision</h2>
+                            <h2 class="h2-subtitle" data-translate="vision_subtitle">Our Vision</h2>
                             <!-- Provides a heading that introduces the subject of the vision. -->
                         </div>
-                        <h2 class="h2-title">We Aim To Create More connection</h2>
+                        <h2 class="h2-title" data-translate="vision_title">We Aim To Create More connection</h2>
                         <!-- The main statement of the vision, emphasizing the 
                         goal of creating more connections. -->
                     </div>
-                    <p>To empower student housing support organizations with state-of-the-art technology, simplifying and enhancing the way they operate. By integrating innovative tools with a human-centered approach, we aim to create a more connected, supportive community for students in need of housing assistance.</p>
+                    <p data-translate="vision_description">To empower student housing support organizations with state-of-the-art technology, simplifying and enhancing the way they operate. By integrating innovative tools with a human-centered approach, we aim to create a more connected, supportive community for students in need of housing assistance.</p>
                     <!-- A detailed explanation of the vision, outlining how technology 
                     and a human-centered approach can improve student housing support. -->
                 </div>
@@ -627,12 +660,12 @@ containing the navigation bar and the site logo. -->
                         <!-- Container for the title of the goals section. -->
 
                         <div class="subtitle">
-                            <h2 class="h2-subtitle">Our Goals</h2>
+                            <h2 class="h2-subtitle" data-translate="goals_subtitle">Our Goals</h2>
                             <!-- Subtitle of the section, providing 
                             an introductory heading. -->
                         </div>
 
-                        <h2 class="h2-title">What Is Our Motto</h2>
+                        <h2 class="h2-title" data-translate="goals_title" >What Is Our Motto</h2>
                         <!-- Main title expressing the overarching 
                         motto or principle guiding the goals. -->
                     </div>
@@ -652,10 +685,10 @@ containing the navigation bar and the site logo. -->
                             </div>
 
                             <div class="goal-text-box">
-                                <h3 class="h3-title">Ease of Use</h3>
+                                <h3 class="h3-title" data-translate="goal_1_title">Ease of Use</h3>
                                 <!-- Title for the first goal. -->
 
-                                <p>We're dedicated to providing a straightforward, efficient registration process for organizations, making it easier than ever to join our cause.</p>
+                                <p data-translate="goal_1_description">We're dedicated to providing a straightforward, efficient registration process for organizations, making it easier than ever to join our cause.</p>
                                 <!-- Description of the first goal, 
                                 emphasizing simplicity and efficiency. -->
                             </div>
@@ -666,9 +699,9 @@ containing the navigation bar and the site logo. -->
                                 <!-- Icon representing the second goal -->
                             </div>
                             <div class="goal-text-box">
-                                <h3 class="h3-title">Accuracy and Integrity</h3>
+                                <h3 class="h3-title" data-translate="goal_2_title">Accuracy and Integrity</h3>
                                 <!-- Title of the second goal -->
-                                <p>By automating tracking and implementing rigorous data accuracy audits, we maintain the reliability of client and financial data, a cornerstone of our trustworthiness.</p>
+                                <p data-translate="goal_2_description">By automating tracking and implementing rigorous data accuracy audits, we maintain the reliability of client and financial data, a cornerstone of our trustworthiness.</p>
                             <!-- Description of the second goal -->
                             </div>
                         </li>
@@ -678,9 +711,9 @@ containing the navigation bar and the site logo. -->
                             <!-- Icon representing the third goal -->
                         </div>
                         <div class="goal-text-box">
-                            <h3 class="h3-title">Informed Decision-Making</h3>
+                            <h3 class="h3-title" data-translate="goal_3_title">Informed Decision-Making</h3>
                             <!-- Title of the third goal -->
-                            <p>Our commitment to delivering real-time data and flexible reporting tools enables organizations to make insightful decisions that directly benefit students.</p>
+                            <p data-translate="goal_3_description">Our commitment to delivering real-time data and flexible reporting tools enables organizations to make insightful decisions that directly benefit students.</p>
                             <!-- Description of the third goal -->
                         </div>
                     </li>
@@ -690,10 +723,10 @@ containing the navigation bar and the site logo. -->
                             <!-- Icon representing the fourth goal -->
                         </div>
                         <div class="goal-text-box">
-                            <h3 class="h3-title">Universal Accessibility</h3>
+                            <h3 class="h3-title" data-translate="goal_4_title">Universal Accessibility</h3>
                             <!-- Title of the fourth goal -->
 
-                            <p>The Program is crafted to be as accessible as it is useful, ensuring everyone can navigate and utilize our system with ease.</p>
+                            <p data-translate="goal_4_description">The Program is crafted to be as accessible as it is useful, ensuring everyone can navigate and utilize our system with ease.</p>
                             <!-- Description of the fourth goal -->
                         </div>
                     </li>
@@ -727,7 +760,7 @@ containing the navigation bar and the site logo. -->
         <!-- Container for additional textual 
         content related to the embedded iframe. -->
       
-      <h2 class="iframe-title">Participating Houses</h2>
+      <h2 class="iframe-title" data-translate="participating_houses">Participating Houses</h2>
       <!-- The title for the section, specifically introducing 
       the content shown in the iframe. -->
     </div>
@@ -761,7 +794,7 @@ containing the navigation bar and the site logo. -->
                         <!-- Links back to the homepage via the logo. -->
                     </a>
 
-                    <p>This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home.</p>
+                    <p data-translate="footer_about_description">This is a groundbreaking initiative dedicated to fostering accessible and affordable housing solutions for students pursuing higher education away from home.</p>
                     <!-- Brief description or mission statement of the organization. -->
 
                     <div class="social-media">
@@ -793,20 +826,20 @@ containing the navigation bar and the site logo. -->
                 <div class="our-links">
                     <!-- Container for a list of useful links. -->
 
-                    <h3 class="h3-title">Our Links</h3>
+                    <h3 class="h3-title" data-translate="footer_links_title">Our Links</h3>
                     <!-- Title for the links section. -->
 
                     <div class="line"></div>
                     <!-- Visual divider or decorative line. -->
                     <ul>
                         <!-- Unordered list for site navigation links. -->
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about_us">About Us</a></li>
-                        <li><a href="#vision">Our vision</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#goal">Our Goal</a></li>
-                        <li><a href="#learnMoreModal" data-bs-toggle="modal" data-bs-target="#learnMoreModal">Learn More</a></li>
-                        <li><a href="#participating_houses">Participating Houses</a></li>
+                        <li><a href="index.html" data-translate="footer_home">Home</a></li>
+                            <li><a href="#about_us" data-translate="footer_about_us">About Us</a></li>
+                            <li><a href="#vision" data-translate="footer_vision">Our vision</a></li>
+                            <li><a href="#service" data-translate="footer_service">Service</a></li>
+                            <li><a href="#goal" data-translate="footer_goal">Our Goal</a></li>
+                        <li><a href="#learnMoreModal" data-bs-toggle="modal" data-bs-target="#learnMoreModal"data-translate="learn_more">Learn More</a></li>
+                        <li><a href="#participating_houses" data-translate="participating_houses">Participating Houses</a></li>
                     </ul>
                 </div>
             </div>
@@ -817,7 +850,7 @@ containing the navigation bar and the site logo. -->
                 <div class="contact-us">
                     <!-- Container for the contact information. -->
 
-                    <h3 class="h3-title">Contact Us</h3>
+                    <h3 class="h3-title" data-translate="footer_contact_title" >Contact Us</h3>
                     <!-- Title for the contact section. -->
 
                     <div class="line"></div>
@@ -833,7 +866,7 @@ containing the navigation bar and the site logo. -->
 
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                             </div>
-                            <div class="contact-text">
+                            <div class="contact-text" data-translate="2_fort_road_south_portland,_maine_207-741-5927">
                                 <!-- Container for the actual contact information. -->
                                 2 Fort Road. South Portland, Maine 207-741-5927
                             </div>
@@ -849,7 +882,7 @@ containing the navigation bar and the site logo. -->
                 <div class="map">
                     <!-- Container for embedding a map. -->
 
-                    <h3 class="h3-title">Location</h3>
+                    <h3 class="h3-title" data-translate="footer_map_title">Location</h3>
                     <!-- Title indicating this section is about the location. -->
 
                     <div class="line"></div>
@@ -878,7 +911,9 @@ containing the navigation bar and the site logo. -->
                 <div class="col-lg-12">
                     <!-- Full-width column for the copyright text. -->
 
-                    <span>© 2024 Senior Capstone Team 1. All Rights Reserved.  <a href="index.html">Student Housing.</a> All rights reserved.</span>
+                    <span data-translate="footer_copyright">© 2024 Senior Capstone Team 1. All Rights Reserved. <a
+                      href="index.html" data-translate="footer_student_housing">Student Housing.</a> All
+                  rights reserved.</span>
                     <!-- The actual copyright text, including a year, 
                     team name, and a repeat of the site name. -->
                 </div>
@@ -911,7 +946,7 @@ containing the navigation bar and the site logo. -->
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title h3-title" id="learnMoreModalTitle">Learn More Details</h3>
+            <h3 class="modal-title h3-title" id="learnMoreModalTitle" data-translate="learn_more_details">Learn More Details</h3>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           
@@ -921,5 +956,88 @@ containing the navigation bar and the site logo. -->
       </div>
     </div>
   </div>
+  <script>
+  document.getElementById('languageSwitcher').addEventListener('change', function () {
+    translatePage(this.value);
+});
+
+function translateText(text, targetLanguage, callback) {
+    const apiKey = 'AIzaSyD8xL0jmgWwyMOpdPyp8Wa_8NlsJ6vgT-s'; // Your actual API key
+    const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            q: text,
+            target: targetLanguage
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.data && data.data.translations) {
+            callback(data.data.translations[0].translatedText);
+        } else {
+            throw new Error(data.error.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error translating text:', error);
+    });
+}
+
+
+function translatePage(lang) {
+    document.querySelectorAll("[data-translate]").forEach(el => {
+        const originalText = el.getAttribute("data-original-text") || el.textContent;
+        // Store the original text if not done before
+        if (!el.getAttribute("data-original-text")) {
+            el.setAttribute("data-original-text", originalText);
+        }
+        translateText(originalText, lang, translatedText => {
+            // Use DOMParser to parse the translated string and decode HTML entities
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(`<!doctype html><body>${translatedText}`, 'text/html');
+            const decodedText = doc.body.textContent;
+
+            // Set the decoded text as the content of your element
+            el.textContent = decodedText;
+        });
+    });
+}
+
+
+// Detect user's country with their IP and set initial language
+fetch('https://ipinfo.io/json?token=0e79f50c234fcb')
+.then(response => response.json())
+.then(data => {
+    const countryToLang = {
+        'CN': 'zh-CN', 'IN': 'hi', 'ES': 'es', 'FR': 'fr', 'AE': 'ar', 'BD': 'bn', 
+        'RU': 'ru', 'BR': 'pt', 'ID': 'id', 'PK': 'ur', 'DE': 'de', 'JP': 'ja', 
+        'KE': 'sw', 'PK': 'pa', 'IN': 'te'
+    };
+    const lang = countryToLang[data.country] || 'en'; // Default to English if country not matched
+    translatePage(lang);
+    document.getElementById('languageSwitcher').value = lang;
+})
+.catch(error => console.error('Error fetching user country:', error));
+
+window.onload = () => {
+    const defaultLang = document.getElementById('languageSwitcher').value;
+    translatePage(defaultLang);
+};
+</script>
+<script>
+  document.getElementById('checkbox').addEventListener('change', function() {
+      if(this.checked) {
+          document.body.classList.add('dark-mode');
+      } else {
+          document.body.classList.remove('dark-mode');
+      }
+  });
+  </script>
+  
 </body>
 </html>

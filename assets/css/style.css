@@ -54,7 +54,6 @@ body{
 }
 
 /*----------------------------------------------------------------------------------Scroll bar start*/
-
 /*================================================================================================================== Customizes the scrollbar for web pages in both Chrome (WebKit) and Firefox (Moz), including the width of the scrollbar, the track color, and the thumb (the part you drag) color, which changes on hover.
 ================================================================================================================== */
 
@@ -906,6 +905,84 @@ transition of the logo in the sticky header state for brand visibility. */
     opacity: 1;
     transition: 0.3s;
 }
+.col-lg-10 {
+    display:inline;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100px;  /* Ensure the container is never too short */
+    position:relative;  /* Needed for z-index to work properly */
+    z-index: 1;  /* Ensure this is higher than other content that might overlap */
+}
+
+.language-selector {
+    width: auto;
+    z-index: 2;  /* Higher z-index to keep it on top */
+}
+/* Toggle Switch Styles */
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input { 
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark Theme Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #ddd;
+}
+
+.dark-mode .header-bottom, .dark-mode .site-branding a {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Additional elements should have their dark mode styles adjusted similarly */
 
 
 /*.......................................................................................Header CSS End*/
@@ -2223,6 +2300,7 @@ main services section for emphasis and readability. */
         width: 100%;
     }
 }
+
 }
 
 /*...............................................................................Media Queries and Responsive Design CSS End*/
