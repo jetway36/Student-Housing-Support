@@ -919,6 +919,47 @@ transition of the logo in the sticky header state for brand visibility. */
     width: auto;
     z-index: 2;  /* Higher z-index to keep it on top */
 }
+
+
+/* Theme Styles */
+.body-default {
+    background-color: #fff;
+    color: #333;
+}
+
+.body-light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.body-dark {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.body-hotdog {
+    background-color: #ff2e2e; /* Bright red */
+    color: #fffc00; /* Bright yellow */
+}
+
+.body-ocean {
+    background-color: #a2d5f2;
+    color: #027373;
+}
+
+.body-sunset {
+    background-color: #ff9e2c;
+    color: #762f07;
+}
+
+.body-forest {
+    background-color: #228b22;
+    color: #fffaf0;
+}
+/* End of Theme Styles */
+
+
+
 /* Toggle Switch Styles */
 
 .theme-switch-wrapper {
@@ -971,7 +1012,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* Dark Theme Styles */
+/* Dark Theme Styles 
 body.dark-mode {
     background-color: #333;
     color: #ddd;
@@ -1026,7 +1067,7 @@ to enhance text readability against the background image. */
 /* Banner Content Positioning: Centers the banner's content 
 vertically and horizontally, optimizing its visual impact. */
 .banner-content {
-    padding: 300px 0;
+    padding: 150px 0;
     text-align: center;
 }
 
@@ -2449,4 +2490,3 @@ background image, visually representing the goals or achievements. */
       flex-direction: column; /* Vertical stacking */
     }
 }
-
