@@ -1,4 +1,3 @@
-
 /* =========
 --- CSS INDEX ---
 1.Fonts CSS
@@ -19,15 +18,16 @@
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), 
-    url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), 
-    url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), 
-    url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), 
-    url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),
+        url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),
+        url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),
+        url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 /*...........................................................................................Fonts CSS End*/
 
 /*...........................................................................................#2 Common CSS*/
@@ -45,7 +45,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden !important;
     font-size: 15px;
@@ -184,7 +184,7 @@ using a specific font, size, weight, and spacing for impactful headings. */
 
 /* Secondary Title Styling: Similar to main titles but slightly 
 smaller, for hierarchical text structuring and emphasis. */
-.h2-title{
+.h2-title {
     font-family: 'Epilogue', sans-serif;
     font-size: 65px;
     line-height: 80px;
@@ -219,7 +219,7 @@ clear differentiation from other text elements. */
 
 /* Container Styling: Adjusts the positioning context of container 
 elements, helping with layout and z-index layering. */
-.container{
+.container {
     position: relative;
     z-index: 5;
 }
@@ -231,7 +231,7 @@ elements, helping with layout and z-index layering. */
    ============================================================================================================== */
 
 
-   /* This section of code makes the 'Donate Now' and similar buttons stand out 
+/* This section of code makes the 'Donate Now' and similar buttons stand out 
    by using eye-catching designs. These styles include a bold color, smooth 
    animation when you hover over them, and a shape that grabs your attention. 
    The goal is to make these buttons more noticeable and appealing, encouraging 
@@ -402,9 +402,9 @@ setting their size, color, and transition effects. */
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
- /* Sets the base styling for the hamburger icon, 
+/* Sets the base styling for the hamburger icon, 
  ensuring it's clickable and visually responsive. */
- 
+
 .ham {
     position: absolute;
     top: 0;
@@ -416,7 +416,7 @@ setting their size, color, and transition effects. */
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
 
 
 .ham8 .bottom {
@@ -427,15 +427,15 @@ setting their size, color, and transition effects. */
 
 .toggle-menu .ham8 .top {
     stroke-dashoffset: -64px;
-  }
+}
 
 .toggle-menu .ham8 .middle {
     transform: rotate(90deg);
-  }
+}
 
 .toggle-menu .ham8 .bottom {
     stroke-dashoffset: -64px;
- }
+}
 
 .black-shadow {
     position: fixed;
@@ -557,11 +557,11 @@ that appears when something is loading, like a page or data. */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 /* Styles the main part of the loader, giving it a circular 
 shape and a purple color, with a continuous size-changing animation. */
-  .loader .center {
+.loader .center {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -572,11 +572,11 @@ shape and a purple color, with a continuous size-changing animation. */
     transform: translate(-50%, 50%);
     border-radius: 50%;
     animation: center 3.2s ease-in-out infinite;
-  }
+}
 
 /* Small circular elements that accompany the main loader, 
 adding visual complexity to the animation. */
-  .loader .item {
+.loader .item {
     position: absolute;
     z-index: 0;
     width: 10px;
@@ -587,14 +587,14 @@ adding visual complexity to the animation. */
     margin: auto;
     background: #ff6a32;
     border-radius: 50%;
-  }
+}
 
 /* Ensures that any list within the loader-main class doesn't 
 have the default list styling, likely for further customization 
-or additional animated elements. */  
-  .loader-main ul {
+or additional animated elements. */
+.loader-main ul {
     list-style: none;
-  }
+}
 
 /*.................................................................................Loader CSS End*/
 
@@ -617,8 +617,8 @@ at the top of the page. */
 /* Sticky Header Styling: Adjusts background 
 and shadow when header becomes sticky. */
 .site-header.sticky-header {
-    background-color: rgb(255,255,255,0.8);
-    box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
+    background-color: rgb(255, 255, 255, 0.8);
+    box-shadow: 6px 6px 60px 0px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     -moz-backdrop-filter: blur(20px);
@@ -644,7 +644,7 @@ part of the header including background and shadow. */
     padding: 20px 0;
     transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
     background-color: #ffffff;
-    box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
+    box-shadow: 6px 6px 60px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Site Branding: Styles the logo within the 
@@ -654,13 +654,14 @@ and scales with different screen sizes. */
     display: inline-block;
     position: relative;
 }
+
 .site-branding a img {
     width: 100%;
 }
 
 /* Header Menu Alignment: Positions the header 
 menu to the right, preparing for navigation elements. */
-.header-menu{
+.header-menu {
     position: relative;
     text-align: right;
 }
@@ -668,7 +669,7 @@ menu to the right, preparing for navigation elements. */
 /* Main Navigation Base: Sets up the primary 
 navigation block, ensuring it's inline and ready 
 for menu items. */
-.main-navigation{
+.main-navigation {
     display: inline-block;
 }
 
@@ -695,11 +696,11 @@ in the navigation menu. */
 line height, and spacing for navigation items, 
 ensuring a uniform appearance. */
 .main-navigation ul li {
-    font-size: 14px; 
+    font-size: 14px;
     line-height: 24px;
     display: inline-block;
-    margin-left: 10px; 
-    padding-left: 10px; 
+    margin-left: 10px;
+    padding-left: 10px;
     position: relative;
 }
 
@@ -707,7 +708,7 @@ ensuring a uniform appearance. */
 with specific font properties and transition effects 
 for interactive feedback. */
 .main-navigation ul li a {
-    font-size: 15px; 
+    font-size: 15px;
     line-height: 24px;
     color: #11364e;
     font-weight: 500;
@@ -730,7 +731,9 @@ spacing and typography. */
 /* Navigation Hover and Active Link Color: Enhances 
 navigation interactivity by changing link colors on 
 hover and active states. */
-.main-navigation ul li.sub-items:hover>a, .main-navigation ul li a:hover, .main-navigation ul li.active>a {
+.main-navigation ul li.sub-items:hover>a,
+.main-navigation ul li a:hover,
+.main-navigation ul li.active>a {
     color: #dd6a13;
 }
 
@@ -742,7 +745,7 @@ them for visual guidance. */
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     font-family: 'FontAwesome';
     font-size: 16px;
     transition: 0.3s;
@@ -750,7 +753,9 @@ them for visual guidance. */
 
 /* Sticky Header Navigation Link Color: Ensures navigation 
 links and icons maintain visibility in sticky header mode. */
-.site-header.sticky-header .main-navigation ul li a, .site-header.sticky-header .search-icon a, .site-header.sticky-header .main-navigation ul li.sub-items>a:before {
+.site-header.sticky-header .main-navigation ul li a,
+.site-header.sticky-header .search-icon a,
+.site-header.sticky-header .main-navigation ul li.sub-items>a:before {
     color: #11364e;
 }
 
@@ -763,8 +768,9 @@ around navigation sub-item indicators for clarity. */
 
 /* Hover Transform for Sub-Items: Introduces a rotation effect 
 on hover for sub-item indicators to signal dropdown capability. */
-.main-navigation ul li.sub-items:hover>a:before, .main-navigation ul li a:hover:before {
-    transform: translate(0,-50%) rotate(-180deg);
+.main-navigation ul li.sub-items:hover>a:before,
+.main-navigation ul li a:hover:before {
+    transform: translate(0, -50%) rotate(-180deg);
     transition: 0.3s;
 }
 
@@ -786,7 +792,7 @@ size, and animations. */
     height: auto;
     background: #ffffff;
     border-radius: 4px;
-    box-shadow: 1px 1px 60px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 60px rgba(0, 0, 0, 0.1);
     display: none;
     transition: 0.3s;
     z-index: 150;
@@ -808,6 +814,7 @@ transitioning them into view. */
         transform: translate(0, 20px);
         opacity: 0;
     }
+
     to {
         transform: translate(0, 0);
         opacity: 1;
@@ -828,8 +835,9 @@ and separators. */
 for the first item for better visual spacing and removes 
 the bottom border for the last item. */
 .main-navigation ul li ul.sub-menu li:first-child {
-   padding-left: 24px;
+    padding-left: 24px;
 }
+
 .main-navigation ul li ul.sub-menu li:last-child {
     border-bottom: none;
 }
@@ -840,12 +848,14 @@ for sub-menu links, including padding, color, and transition effects. */
     display: block;
     padding: 10px 7px;
 }
+
 .main-navigation ul li ul.sub-menu li a {
     display: block;
     color: #050d36;
     padding: 5px 15px;
     transition: 0.3s;
 }
+
 .main-navigation ul li ul.sub-menu li a:hover {
     color: #dd6a13;
     transition: 0.3s;
@@ -853,10 +863,19 @@ for sub-menu links, including padding, color, and transition effects. */
 
 /* Hover State Color Change: Alters the color of navigation 
 links on hover and active states to provide visual feedback. */
-.main-navigation ul li.sub-items:hover>a, .main-navigation ul li a:hover, .main-navigation ul li.active>a {
+.main-navigation ul li.sub-items:hover>a,
+.main-navigation ul li a:hover,
+.main-navigation ul li.active>a {
     color: #dd6a13;
 }
-.site-header.sticky-header .main-navigation ul li.sub-items:hover>a, .site-header.sticky-header .main-navigation ul li a:hover, .site-header.sticky-header .main-navigation ul li.active>a, .site-header.sticky-header .main-navigation ul li.sub-items:hover>a:before, .site-header.sticky-header .main-navigation ul li a:hover:before, .site-header.sticky-header .main-navigation ul li.active>a:before, .site-header.sticky-header .main-navigation ul li ul.sub-menu li a:hover {
+
+.site-header.sticky-header .main-navigation ul li.sub-items:hover>a,
+.site-header.sticky-header .main-navigation ul li a:hover,
+.site-header.sticky-header .main-navigation ul li.active>a,
+.site-header.sticky-header .main-navigation ul li.sub-items:hover>a:before,
+.site-header.sticky-header .main-navigation ul li a:hover:before,
+.site-header.sticky-header .main-navigation ul li.active>a:before,
+.site-header.sticky-header .main-navigation ul li ul.sub-menu li a:hover {
     color: #dd6a13;
 }
 
@@ -866,6 +885,7 @@ margin and padding to accommodate the sticky state transitions. */
     margin-top: -45px;
     transition: 0.3s;
 }
+
 .sticky-header .header-bottom {
     padding: 5px 0px;
     animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
@@ -876,10 +896,11 @@ margin and padding to accommodate the sticky state transitions. */
 smoothly transition into view when entering its sticky state. */
 @keyframes headerSlideDown {
     0% {
-      margin-top: -150px;
+        margin-top: -150px;
     }
+
     100% {
-      margin-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -901,62 +922,30 @@ transition of the logo in the sticky header state for brand visibility. */
     opacity: 0;
     z-index: 1;
 }
+
 .site-header.sticky-header .site-branding a img.sticky-logo {
     opacity: 1;
     transition: 0.3s;
 }
+
 .col-lg-10 {
-    display:inline;
+    display: inline;
     justify-content: center;
     align-items: center;
     height: 100%;
-    min-height: 100px;  /* Ensure the container is never too short */
-    position:relative;  /* Needed for z-index to work properly */
-    z-index: 1;  /* Ensure this is higher than other content that might overlap */
+    min-height: 100px;
+    /* Ensure the container is never too short */
+    position: relative;
+    /* Needed for z-index to work properly */
+    z-index: 1;
+    /* Ensure this is higher than other content that might overlap */
 }
 
 .language-selector {
     width: auto;
-    z-index: 2;  /* Higher z-index to keep it on top */
+    z-index: 2;
+    /* Higher z-index to keep it on top */
 }
-
-
-/* Theme Styles */
-.body-default {
-    background-color: #fff;
-    color: #333;
-}
-
-.body-light {
-    background-color: #f8f9fa;
-    color: #212529;
-}
-
-.body-dark {
-    background-color: #343a40;
-    color: #f8f9fa;
-}
-
-.body-hotdog {
-    background-color: #ff2e2e; /* Bright red */
-    color: #fffc00; /* Bright yellow */
-}
-
-.body-ocean {
-    background-color: #a2d5f2;
-    color: #027373;
-}
-
-.body-sunset {
-    background-color: #ff9e2c;
-    color: #762f07;
-}
-
-.body-forest {
-    background-color: #228b22;
-    color: #fffaf0;
-}
-/* End of Theme Styles */
 
 
 
@@ -976,8 +965,8 @@ transition of the logo in the sticky header state for brand visibility. */
     height: 34px;
 }
 
-.theme-switch input { 
-    display:none;
+.theme-switch input {
+    display: none;
 }
 
 .slider {
@@ -1004,11 +993,11 @@ transition of the logo in the sticky header state for brand visibility. */
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(26px);
 }
 
@@ -1051,7 +1040,7 @@ to enhance text readability against the background image. */
 .main-banner::before {
     content: "";
     position: absolute;
-    background-color: rgb(21, 25, 45,0.68);
+    background-color: rgb(21, 25, 45, 0.68);
     top: 0;
     left: 0;
     width: 100%;
@@ -1060,7 +1049,8 @@ to enhance text readability against the background image. */
 
 /* Banner Text Color: Ensures high contrast for text 
 (titles and paragraphs) against the banner's background. */
-.banner-content .h1-title, .banner-content p {
+.banner-content .h1-title,
+.banner-content p {
     color: #ffffff;
 }
 
@@ -1086,6 +1076,7 @@ additional decorative or functional elements at the banner's base. */
     bottom: 0;
     left: 0;
 }
+
 /*.......................................................................................Banner CSS End*/
 
 
@@ -1113,7 +1104,8 @@ allowing for responsive alignment and spacing. */
 /* Additional About Images: Adjusts margin for specific 
 about images, ensuring consistent alignment and distribution 
 within the flex container. */
-.about-img2, .about-img4 {
+.about-img2,
+.about-img4 {
     margin-top: 0px;
 }
 
@@ -1136,19 +1128,22 @@ or other significant figures. */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 6px 6px 60px 0px rgba(17,54,78,0.3);
+    box-shadow: 6px 6px 60px 0px rgba(17, 54, 78, 0.3);
 }
 
 /* Experience Title Styling: Styles the numerical value and accompanying 
 text within the experience counter for high visibility and impact. */
-.about-experience .h2-title, .about-experience .h2-title span {
+.about-experience .h2-title,
+.about-experience .h2-title span {
     color: #ffffff;
 }
+
 .about-experience .h2-title {
     font-size: 50px;
     line-height: 28px;
     padding: 0;
 }
+
 .about-experience .h2-title span {
     font-size: 18px;
     line-height: 0px;
@@ -1185,7 +1180,8 @@ and center alignment for background images. */
 
 /* Centers the text of subtitles and service titles 
 within the main service section for emphasis and readability. */
-.main-service .subtitle, .service-title {
+.main-service .subtitle,
+.service-title {
     text-align: center;
 }
 
@@ -1194,7 +1190,7 @@ background and shadow for depth, and includes a
 transition effect for interaction cues. */
 .service-box {
     background-color: #ffffff;
-    box-shadow: 0px 18px 26px -10px rgba(0,0,0,0.1);
+    box-shadow: 0px 18px 26px -10px rgba(0, 0, 0, 0.1);
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     width: 100%;
     min-height: 580px;
@@ -1203,14 +1199,14 @@ transition effect for interaction cues. */
 /* Enhances the shadow effect on hover to indicate 
 interactivity and focus on individual service boxes. */
 .service-box:hover {
-    box-shadow: 0px 18px 26px -10px rgba(0,0,0,0.2);
+    box-shadow: 0px 18px 26px -10px rgba(0, 0, 0, 0.2);
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
 
 /* Styles the padding around the text within service 
 boxes for comfortable spacing. */
-.service-text-box{
+.service-text-box {
     padding: 30px;
 }
 
@@ -1256,26 +1252,26 @@ zoom effect on hover. */
 .service-img>img {
     width: 100%;
     transform: scale(1);
-    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
 /* Enhances the hover effect on service box images by 
 scaling them up slightly for a dynamic, interactive feel. */
 .service-box:hover .service-img>img {
     transform: scale(1.05);
-    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
 /* Applies a transition effect to the service box titles, 
 preparing them for interaction-based styling changes. */
 .service-box .service-text-box a .h2-title {
-    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s; 
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
 /* Changes the color of the service box titles on hover 
 to a distinctive shade, adding an interactive cue to the user. */
 .service-box:hover .h3-title {
-    color: #dd6a13 !important;
+    color: #dd6a13;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 
@@ -1287,7 +1283,7 @@ to a distinctive shade, adding an interactive cue to the user. */
 /* Defines the styling for the main vision section, 
 ensuring ample space above and below for a clear, 
 focused presentation. */
-.main-vision{
+.main-vision {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -1299,7 +1295,7 @@ emphasis and visual depth. */
     margin-left: 20px;
     background-color: #dd6a13;
     padding: 30px;
-    box-shadow: 20px 30px 60px 0px rgba(221,106,19,0.4);
+    box-shadow: 20px 30px 60px 0px rgba(221, 106, 19, 0.4);
 }
 
 /* Ensures that paragraphs within the vision content 
@@ -1408,7 +1404,8 @@ the goal content, enhancing the thematic connection to the goals discussed. */
 /* Sets the text color of titles and paragraphs within 
 the `.goal-text-box` to white, ensuring readability 
 against darker backgrounds. */
-.goal-text-box .h3-title, .goal-text-box p {
+.goal-text-box .h3-title,
+.goal-text-box p {
     color: #ffffff;
 }
 
@@ -1418,6 +1415,7 @@ for padding or margins that separate content visually. */
 .goal-text-box {
     width: calc(100% - 100px);
 }
+
 /*.......................................................................................Goal CSS End*/
 
 
@@ -1448,6 +1446,7 @@ call-to-action message. */
 .join-now-content p {
     margin-bottom: 0;
 }
+
 /*.......................................................................................Join Now CSS End*/
 
 
@@ -1459,7 +1458,7 @@ call-to-action message. */
 This block sets the foundation of the footer, 
 including its background color and top padding, 
 creating a distinct section at the bottom of the page. */
-   .main-footer {
+.main-footer {
     background-color: #11364e;
     padding-top: 120px;
 }
@@ -1497,6 +1496,7 @@ maintain alignment. */
 .social-media ul li {
     margin-right: 10px;
 }
+
 .social-media ul li:last-child {
     margin-right: 0;
 }
@@ -1529,13 +1529,16 @@ their color and background for a visually engaging interaction cue. */
 
 /* Titles within the footer's various sections (Our Links, Contact Us, Map) 
 are styled for high contrast against the footer's dark background. */
-.our-links .h3-title, .contact-us .h3-title, .map .h3-title {
+.our-links .h3-title,
+.contact-us .h3-title,
+.map .h3-title {
     color: #ffffff;
 }
 
 /* Styles for lists within the Our Links and Contact Us sections, 
 removing default list styling for a clean, modern appearance. */
-.our-links ul, .contact-us ul {
+.our-links ul,
+.contact-us ul {
     list-style: none;
     text-decoration: none;
     margin-top: 30px;
@@ -1572,6 +1575,7 @@ text and changes its color. */
     color: #ffffff;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
+
 .our-links ul li a:hover {
     color: #dd6a13;
     padding-left: 8px;
@@ -1592,6 +1596,7 @@ differentiation or emphasis. */
 .our-links {
     padding: 0 80px;
 }
+
 .our-links.service {
     padding: 0 50px;
 }
@@ -1632,7 +1637,7 @@ neatly aligned within each list item. */
 /* Styles the contact text for readability with specific 
 color and line height, including a transition effect 
 for smoother visual feedback. */
-.contact-us ul li .contact-text  {
+.contact-us ul li .contact-text {
     color: #ffffff;
     line-height: 24px;
     /*transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;*/
@@ -1698,6 +1703,7 @@ for clarity as clickable elements */
 targeting navigation spacing, title sizes, and content padding 
 to optimize layout for slightly smaller screens. */
 @media screen and (max-width: 1399px) {
+
     /* Reduces margin and padding for navigation list 
     items for tighter navigation layout. */
     .main-navigation ul li {
@@ -1735,6 +1741,7 @@ to optimize layout for slightly smaller screens. */
 /* Further adjustments for screens with a maximum width of 1199px, refining layout, text sizes, and spacing for optimal mobile viewing. */
 
 @media screen and (max-width: 1199px) {
+
     /* Further reduces margin and padding for 
     navigation list items to suit narrower screens. */
     .main-navigation ul li {
@@ -1806,588 +1813,693 @@ to optimize layout for slightly smaller screens. */
    Adapts the site header for optimal display and usability on smaller screens, such as tablets in portrait orientation, enhancing the visual consistency and user interface of the navigation area. */
 @media screen and (max-width: 991px) {
 
-.site-header, .site-header.sticky-header {
-    background: rgb(255,255,255,0.8);
-    height: 100px;
-    padding: 0;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    -moz-backdrop-filter: blur(20px);
-    -ms-backdrop-filter: blur(20px);
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
+    .site-header,
+    .site-header.sticky-header {
+        background: rgb(255, 255, 255, 0.8);
+        height: 100px;
+        padding: 0;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        -moz-backdrop-filter: blur(20px);
+        -ms-backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
 
-/* Adjustments for Header Elements in Responsive Design
+    /* Adjustments for Header Elements in Responsive Design
    This section aims to refine header elements for better visibility and accessibility on smaller screens, focusing on structural adjustments, mobile navigation visibility, and branding consistency. */
 
-/* Makes the header's bottom part transparent and removes 
+    /* Makes the header's bottom part transparent and removes 
 any shadow for a cleaner, more integrated look within the 
 site's overall design on smaller screens. */
-.header-bottom {
-    background-color: transparent;
-    box-shadow: none;
-}
+    .header-bottom {
+        background-color: transparent;
+        box-shadow: none;
+    }
 
-/* Allows the logo image within the site branding area 
+    /* Allows the logo image within the site branding area 
 to adjust its width automatically, ensuring it remains 
 proportionate and clear across devices. */
-.site-branding a img {
-    width: auto;
-}
+    .site-branding a img {
+        width: auto;
+    }
 
-/* Adjusts the sticky header's bottom padding and disables 
+    /* Adjusts the sticky header's bottom padding and disables 
 animations for a smoother transition and reduced visual 
 clutter on scroll. */
-.sticky-header .header-bottom {
-    padding: 23px 0px;
-    animation: none;
-    transition: 0.3s;
-}
+    .sticky-header .header-bottom {
+        padding: 23px 0px;
+        animation: none;
+        transition: 0.3s;
+    }
 
-/* Expands the container within the site header to full 
+    /* Expands the container within the site header to full 
 width with padding on the sides, optimizing space usage 
 and element alignment on smaller screens. */
-.site-header .container {
-    max-width: 100%;
-    padding: 0 30px;
-}
+    .site-header .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
 
-/* Ensures the mobile navigation toggle button is always visible, 
+    /* Ensures the mobile navigation toggle button is always visible, 
 facilitating easy access to the menu in a mobile context. */
-.toggle-button {
-    display: block;
-}
+    .toggle-button {
+        display: block;
+    }
 
-/* Fixes the site branding to the top left of the viewport with 
+    /* Fixes the site branding to the top left of the viewport with 
 specified dimensions, maintaining visibility and brand presence 
 without interfering with content or navigation. */
-.site-branding {
-    position: fixed;
-    top: 15px;
-    left: 30px;
-    width: 200px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-}
+    .site-branding {
+        position: fixed;
+        top: 15px;
+        left: 30px;
+        width: 200px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
 
-/* Ensures the branding link element spans the entire width of 
+    /* Ensures the branding link element spans the entire width of 
 its container, optimizing the clickable area for user interaction. */
-.site-branding a {
-    width: 100%;
-}
+    .site-branding a {
+        width: 100%;
+    }
 
 
-/* This part makes the main menu stick to the top of the page and stay there, 
+    /* This part makes the main menu stick to the top of the page and stay there, 
 even when you scroll down. It starts off hidden to the side. 
 The menu stretches all the way from the top to the bottom of the screen, 
 has a dark blue color, and its text is in the middle. If there's a lot of stuff 
 in the menu and it doesn't all fit on the screen, you can scroll up and down to see everything. */
-.main-navigation ul {
-    position: fixed;
-    top: 0;
-    right: -400px;
-    width: 320px;
-    height: 100vh;
-    max-height: 100vh;
-    overflow: auto;
-    background: #11364e;
-    text-align: center;
-    padding: 100px 0 30px;
-    box-shadow: -30px 0 30px rgba(0,0,0,0.1);
-    transition: 0.5s;
-    opacity: 0;
-    z-index: 100;
-}
+    .main-navigation ul {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: auto;
+        background: #11364e;
+        text-align: center;
+        padding: 100px 0 30px;
+        box-shadow: -30px 0 30px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 100;
+    }
 
-/* This part is about making space for special decorations or pictures 
+    /* This part is about making space for special decorations or pictures 
 that can go right before or after the smaller menus 
 (like the ones that pop out of the main menu). 
 It's like setting up invisible placeholders where you can add cool stuff later. */
 
-.main-navigation ul li ul::before {
-  content: "";
-  position: relative;
-}
-.main-navigation ul li ul::after {
-  content: "";
-  position: relative;
-}
+    .main-navigation ul li ul::before {
+        content: "";
+        position: relative;
+    }
 
-/* This line makes sure the bottom part of the header stretches to fill 
+    .main-navigation ul li ul::after {
+        content: "";
+        position: relative;
+    }
+
+    /* This line makes sure the bottom part of the header stretches to fill 
 the whole height of the area it's in, from top to bottom. */
 
-.header-bottom {
-    height: 100%;
-}
+    .header-bottom {
+        height: 100%;
+    }
 
-/* This part changes the main menu to make it completely see-through and ready to use. 
+    /* This part changes the main menu to make it completely see-through and ready to use. 
 It does this by sliding the menu into view and making it fully visible 
 when we use a special switch called .toggle-menu. */
 
-.main-navigation.toggle-menu ul {
-    right: 0;
-    opacity: 1;
-    z-index: 100;
-}
+    .main-navigation.toggle-menu ul {
+        right: 0;
+        opacity: 1;
+        z-index: 100;
+    }
 
-/* This part makes the scroll bar on the side of the main menu disappear. 
+    /* This part makes the scroll bar on the side of the main menu disappear. 
 It does this by making the scroll bar super thin (so thin it's invisible) and clear, 
 so the menu looks neat and tidy without any scroll bar showing. */
 
-.main-navigation>ul::-webkit-scrollbar-thumb {
-    width: 0;
-    background: transparent;
-}
-.main-navigation>ul::-webkit-scrollbar {
-    width: 0;
-}
-.main-navigation>ul::-webkit-scrollbar-track {
-    width: 0;
-    background: transparent;
-}
+    .main-navigation>ul::-webkit-scrollbar-thumb {
+        width: 0;
+        background: transparent;
+    }
 
-/* This bit makes each item in the main menu look nice and move smoothly into place. 
+    .main-navigation>ul::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .main-navigation>ul::-webkit-scrollbar-track {
+        width: 0;
+        background: transparent;
+    }
+
+    /* This bit makes each item in the main menu look nice and move smoothly into place. 
 At first, these items are hidden, then they slide in with a bit of space around them 
 and take a little time to fully appear, making it easier to read and look at. */
-.main-navigation ul li {
+    .main-navigation ul li {
 
-    display: block;
-    margin: -50px 0 10px 0;
-    padding: 10px 40px 20px 40px;
-    opacity: 0;
-    transition: 0.5s;
-}
-.main-navigation ul li:first-child {
-    padding: 10px 40px 20px 40px;
-}
-.main-navigation.toggle-menu ul li {
-    text-align: left;
-    border-bottom: solid 1px rgb(225, 225, 225,0.2);
-    margin-top: 0;   
-    opacity: 1;
-    transition: 0.5s;
-    transition-delay: 0.4s;
-}
-.main-navigation ul li:last-child {
-    border-bottom: none;
-}
-.main-navigation ul li:last-child a {
-    display: inline-block;
-    margin: 0 auto;
-}
+        display: block;
+        margin: -50px 0 10px 0;
+        padding: 10px 40px 20px 40px;
+        opacity: 0;
+        transition: 0.5s;
+    }
 
-/* This part changes how the links in the menu look. 
+    .main-navigation ul li:first-child {
+        padding: 10px 40px 20px 40px;
+    }
+
+    .main-navigation.toggle-menu ul li {
+        text-align: left;
+        border-bottom: solid 1px rgb(225, 225, 225, 0.2);
+        margin-top: 0;
+        opacity: 1;
+        transition: 0.5s;
+        transition-delay: 0.4s;
+    }
+
+    .main-navigation ul li:last-child {
+        border-bottom: none;
+    }
+
+    .main-navigation ul li:last-child a {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    /* This part changes how the links in the menu look. 
 It makes the text a certain size and space between lines, and sets the color to white. 
 It also has special looks for when the menu sticks to the top of the page 
 and when you're looking at different sections. */
 
-.site-header.sticky-header .main-navigation ul li a, .site-header.sticky-header .search-icon a, .site-header.sticky-header .main-navigation ul li.sub-items>a:before {
-    color: #ffffff;
-}
-.main-navigation ul li a {
-    font-size: 18px;
-    line-height: 28px;
-    color: #ffffff;
-}
-.main-navigation ul li.sub-items>a:before {
-    color: #ffffff;   
-}
-.main-navigation ul li.sub-items.active>a:before {
-    color: #ff5219;   
-}
+    .site-header.sticky-header .main-navigation ul li a,
+    .site-header.sticky-header .search-icon a,
+    .site-header.sticky-header .main-navigation ul li.sub-items>a:before {
+        color: #ffffff;
+    }
 
-/* This part takes care of how the drop-down menus in the navigation bar work and look. 
+    .main-navigation ul li a {
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+    }
+
+    .main-navigation ul li.sub-items>a:before {
+        color: #ffffff;
+    }
+
+    .main-navigation ul li.sub-items.active>a:before {
+        color: #ff5219;
+    }
+
+    /* This part takes care of how the drop-down menus in the navigation bar work and look. 
 It keeps them hidden until you need them, and then they appear or change 
 style when you hover over them or click on them. */
 
-.main-navigation ul li ul.dropdown-menu,
-.main-navigation ul li:hover ul.dropdown-menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    display: block;
-    animation: none;
-    padding: 0;
-    margin-top: 10px;
-    transition: 0s;
-    display: none;
-}
-.main-navigation ul li ul.dropdown-menu li {
-    text-align: left;
-    border: none;
-    padding: 0 16px;
-    margin-bottom: 10px;
-}
-.main-navigation ul li ul.dropdown-menu li:first-child {
-    padding-left: 16px;
-}
-.main-navigation ul li ul.dropdown-menu li:last-child {
-    margin-bottom: 0;
-}
-.main-navigation ul li ul.dropdown-menu li a {
-    color: #ffffff;
-    padding: 0;
-    font-size: 15px;
-    line-height: 24px;
-}
+    .main-navigation ul li ul.dropdown-menu,
+    .main-navigation ul li:hover ul.dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        display: block;
+        animation: none;
+        padding: 0;
+        margin-top: 10px;
+        transition: 0s;
+        display: none;
+    }
 
-/* This section makes the smaller menu items and their drop-down lists more interactive. 
+    .main-navigation ul li ul.dropdown-menu li {
+        text-align: left;
+        border: none;
+        padding: 0 16px;
+        margin-bottom: 10px;
+    }
+
+    .main-navigation ul li ul.dropdown-menu li:first-child {
+        padding-left: 16px;
+    }
+
+    .main-navigation ul li ul.dropdown-menu li:last-child {
+        margin-bottom: 0;
+    }
+
+    .main-navigation ul li ul.dropdown-menu li a {
+        color: #ffffff;
+        padding: 0;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* This section makes the smaller menu items and their drop-down lists more interactive. 
 When you move your mouse over them or click on them, they change shape or color 
 to let you know they're active or you're hovering over them. */
 
-.main-navigation ul li.sub-items:hover>a:before, 
-.main-navigation ul li a:hover:before {
-    transform: translate(0,-50%) rotate(0deg);
-    color: #ff5219;
-}
-.main-navigation ul li.sub-items.active-dropdown-menu>a:before {
-    transform: translate(0,-50%) rotate(-180deg);
-    color: #ff5219;
-}
+    .main-navigation ul li.sub-items:hover>a:before,
+    .main-navigation ul li a:hover:before {
+        transform: translate(0, -50%) rotate(0deg);
+        color: #ff5219;
+    }
+
+    .main-navigation ul li.sub-items.active-dropdown-menu>a:before {
+        transform: translate(0, -50%) rotate(-180deg);
+        color: #ff5219;
+    }
 
 
-/* Hides the top part of the header 
+    /* Hides the top part of the header 
 so it doesn't show up on the page. */
-.header-top {
-    display: none;
-}
+    .header-top {
+        display: none;
+    }
 
-/* Hides social media links or buttons
+    /* Hides social media links or buttons
  so they won't appear on the page. */
-.Social-midea {
-    display: none;
-}
+    .Social-midea {
+        display: none;
+    }
 
-/* Hides contact information in the header, 
+    /* Hides contact information in the header, 
 like phone numbers or email addresses. */
-.header-contact {
-    display: none;
-}
+    .header-contact {
+        display: none;
+    }
 
-/* Hides any buttons in the header, 
+    /* Hides any buttons in the header, 
 making them invisible on the page. */
-.header-btn {
-    display: none;
-}
+    .header-btn {
+        display: none;
+    }
 
-/* Shows the toggle button, making it 
+    /* Shows the toggle button, making it 
 visible for users to click on. */
-.toggle-button {
-    display: block;
-}
-
-/* Changes the look of each item in the menu when the 
-menu is opened: aligns text to the left and adds a light underline. */
-.main-navigatione.toggle-menu ul li {
-    text-align: left;
-    border-bottom: solid 1px rgb(225, 225, 225,0.2);
-    margin-top: 0;
-    opacity: 1;
-    transition: 0.5s;
-    transition-delay: 0.4s;
-}
-
-/* Sets up how sub-menus appear when you hover over them, 
-initially hidden then displayed on hover. */
-.main-navigation ul li ul.sub-menu, .main-navigation ul li:hover ul.sub-menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    display: block;
-    animation: none;
-    padding: 0;
-    margin-top: 10px;
-    transition: 0s;
-    display: none;
-}
-
-/* Removes the bottom border from sub-menu 
-items for a cleaner look. */
-.main-navigation ul li ul.sub-menu li {
-    border-bottom: none;
-}
-
-/* Adjusts the padding for the first and all 
-sub-menu items to align content properly. */
-.main-navigation ul li ul.sub-menu li:first-child, .main-navigation ul li ul.sub-menu li {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Sets the text color of links in sub-menus to white. */
-.main-navigation ul li ul.sub-menu li a {
-    color: #ffffff;
-}
-
-/* Changes the link color to orange when you 
-hover over them, making them stand out. */
-.main-navigation ul li ul.sub-menu li a:hover {
-    color:#dd6a13;
-}
-
-/* Styles the main title, making it larger 
-and spaced out for readability. */
-.h1-title {
-    font-size: 30px;
-    line-height: 45px;
-}
-
-/* Ensures the paragraph in the banner content 
-takes up the full width available. */
-.banner-content p {
-    width: 100%;
-}
-
-/* Styles a button with a specific height and 
-padding for a prominent appearance. */
-.sec-btn {
-    height: 50px;
-    padding: 12px 35px;
-}
-
-/* Adds significant padding around 
-sections for a spacious layout. */
-.main-about-us, .main-vision, .main-look-adead, .main-join-now {
-    padding-bottom: 80px;
-    padding-top: 80px;
-}
-
-/* Adjusts the content box in the about section 
-for proper alignment without extra space. */
-.about-content-box {
-    padding-left: 0;
-    margin-top: 50px;
-}
-
-/* Styles secondary titles similarly to 
-the main title for consistency. */
-.h2-title {
-    font-size: 30px;
-    line-height: 45px;
-}
-
-/* Styles the subtitles with a smaller 
-font size for distinction from titles. */
-.h2-subtitle {
-    font-size: 16px;
-    line-height: 16px;
-}
-
-/* Aligns video and join-now content correctly 
-without extra spacing on the sides. */
-.vision-video, .join-now-content {
-    margin-left: 0;
-    margin-top: 50px;
-}
-
-/* Sets the goal image to cover the full width 
-and a fixed height for a striking visual. */
-.goal-img {
-    position: relative;
-    width: 100%;
-    height: 892px;
-}
-
-
-/* Adds padding around the goal 
-content box for a balanced layout. */
-.goal-content-box {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 0;
-}
-
-/* Ensures the look content has the 
-right spacing for visual separation. */
-.look-content {
-    margin-right: 0;
-    margin-bottom: 50px;
-}
-
-/* Makes a button stick to the bottom-right 
-corner of the screen for easy access. */
-.sticky-btn {
-    display: block;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
-
-/* Adds spacing above the contact and 
-map sections for a clear layout. */
-.contact-us, .map {
-    margin-top: 50px;
-}
-
-/* Adds padding at the top of the footer 
-for spacing from content above. */
-.main-footer {
-    padding-top: 80px;
-}
-
-/* Spaces out the copyright notice 
-from the content above for clarity. */
-.copyright {
-    margin-top: 80px;
-}
-
-/* Ensures services boxes are evenly 
-spaced for a neat appearance. */
-.service-box {
-    margin-bottom: 30px;
-}
-
-/* Adds padding to the top and bottom of the
-main services section for emphasis and readability. */
-.main-service {
-    padding-top: 80px;
-    padding-bottom: 90px;
-}
-
-/* When the screen size is smaller than 768 pixels (like tablets and mobile phones in portrait mode): */
-@media screen and (max-width: 767px) {
-    /* Makes the footer's about section have some space at the bottom. */
-    .footer-about {
-        margin-bottom: 50px;
-    }
-
-    /* Removes any padding from our links 
-    section for a tighter layout. */
-    .our-links {
-        padding: 0;
-    }
-}
-
-/* For screens smaller than 576 pixels (like smaller smartphones): */
-@media screen and (max-width: 575px) {
-    /* Adjusts the container padding 
-    to have some space on the sides. */
-    .container {
-        padding: 0 30px;
-    }
-
-    /* Centers the banner content and makes it 
-    take up 80% of the container's width. */
-    .banner-content {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Changes the size of the h3 titles to be 
-    smaller for better readability on small screens. */
-    .h3-title {
-        font-size: 18px;
-        line-height: 18px;
-    }
-}
-
-/* Specifically for screens that are 375 pixels wide (very small devices like some older phones): */
-@media screen and (max-width: 375px) {
-    /* Adjusts the size of the navigation buttons 
-    in the main banner for smaller screens. */
-    .main-banner .swiper-button-prev, .main-banner .swiper-button-next {
-        height: 30px;
-        width: 30px;
-    }
-
-    /* Makes the icons on the navigation buttons 
-    smaller and changes their color to a dark blue. */
-    .main-banner .swiper-button-prev:after, .main-banner .swiper-button-next:after {
-        font-size: 15px;
-        color: #11364e;
-    }
-
-    /* Expands the banner content to fill 
-    the entire width of its container. */
-    .banner-content {
-        width: 100%;
-    }
-
-    /* Adjusts the size of the main and secondary 
-    titles to fit better on very small screens. */
-    .h1-title, .h2-title {
-        font-size: 25px;
-        line-height: 40px;
-    }
-
-    /* Ensures list items in the goals section are 
-    displayed one after the other, not side by side. */
-    .goal-content-box ul li {
+    .toggle-button {
         display: block;
     }
 
-    /* Makes goal icons smaller and removes any space 
-    to the right, adding some space below each. */
-    .goal-icon {
-        width: 80px;
-        height: 80px;
-        margin-right: 0;
-        margin-bottom: 20px;
+    /* Changes the look of each item in the menu when the 
+menu is opened: aligns text to the left and adds a light underline. */
+    .main-navigatione.toggle-menu ul li {
+        text-align: left;
+        border-bottom: solid 1px rgb(225, 225, 225, 0.2);
+        margin-top: 0;
+        opacity: 1;
+        transition: 0.5s;
+        transition-delay: 0.4s;
     }
 
-    /* Ensures the text box next to the goal icons 
-    takes up the full width available to it. */
-    .goal-text-box {
+    /* Sets up how sub-menus appear when you hover over them, 
+initially hidden then displayed on hover. */
+    .main-navigation ul li ul.sub-menu,
+    .main-navigation ul li:hover ul.sub-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        display: block;
+        animation: none;
+        padding: 0;
+        margin-top: 10px;
+        transition: 0s;
+        display: none;
+    }
+
+    /* Removes the bottom border from sub-menu 
+items for a cleaner look. */
+    .main-navigation ul li ul.sub-menu li {
+        border-bottom: none;
+    }
+
+    /* Adjusts the padding for the first and all 
+sub-menu items to align content properly. */
+    .main-navigation ul li ul.sub-menu li:first-child,
+    .main-navigation ul li ul.sub-menu li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Sets the text color of links in sub-menus to white. */
+    .main-navigation ul li ul.sub-menu li a {
+        color: #ffffff;
+    }
+
+    /* Changes the link color to orange when you 
+hover over them, making them stand out. */
+    .main-navigation ul li ul.sub-menu li a:hover {
+        color: #dd6a13;
+    }
+
+    /* Styles the main title, making it larger 
+and spaced out for readability. */
+    .h1-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    /* Ensures the paragraph in the banner content 
+takes up the full width available. */
+    .banner-content p {
         width: 100%;
     }
-}
+
+    /* Styles a button with a specific height and 
+padding for a prominent appearance. */
+    .sec-btn {
+        height: 50px;
+        padding: 12px 35px;
+    }
+
+    /* Adds significant padding around 
+sections for a spacious layout. */
+    .main-about-us,
+    .main-vision,
+    .main-look-adead,
+    .main-join-now {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    /* Adjusts the content box in the about section 
+for proper alignment without extra space. */
+    .about-content-box {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    /* Styles secondary titles similarly to 
+the main title for consistency. */
+    .h2-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    /* Styles the subtitles with a smaller 
+font size for distinction from titles. */
+    .h2-subtitle {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    /* Aligns video and join-now content correctly 
+without extra spacing on the sides. */
+    .vision-video,
+    .join-now-content {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    /* Sets the goal image to cover the full width 
+and a fixed height for a striking visual. */
+    .goal-img {
+        position: relative;
+        width: 100%;
+        height: 892px;
+    }
+
+
+    /* Adds padding around the goal 
+content box for a balanced layout. */
+    .goal-content-box {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 0;
+    }
+
+    /* Ensures the look content has the 
+right spacing for visual separation. */
+    .look-content {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    /* Makes a button stick to the bottom-right 
+corner of the screen for easy access. */
+    .sticky-btn {
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    /* Adds spacing above the contact and 
+map sections for a clear layout. */
+    .contact-us,
+    .map {
+        margin-top: 50px;
+    }
+
+    /* Adds padding at the top of the footer 
+for spacing from content above. */
+    .main-footer {
+        padding-top: 80px;
+    }
+
+    /* Spaces out the copyright notice 
+from the content above for clarity. */
+    .copyright {
+        margin-top: 80px;
+    }
+
+    /* Ensures services boxes are evenly 
+spaced for a neat appearance. */
+    .service-box {
+        margin-bottom: 30px;
+    }
+
+    /* Adds padding to the top and bottom of the
+main services section for emphasis and readability. */
+    .main-service {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    /* When the screen size is smaller than 768 pixels (like tablets and mobile phones in portrait mode): */
+    @media screen and (max-width: 767px) {
+
+        /* Makes the footer's about section have some space at the bottom. */
+        .footer-about {
+            margin-bottom: 50px;
+        }
+
+        /* Removes any padding from our links 
+    section for a tighter layout. */
+        .our-links {
+            padding: 0;
+        }
+    }
+
+    /* For screens smaller than 576 pixels (like smaller smartphones): */
+    @media screen and (max-width: 575px) {
+
+        /* Adjusts the container padding 
+    to have some space on the sides. */
+        .container {
+            padding: 0 30px;
+        }
+
+        /* Centers the banner content and makes it 
+    take up 80% of the container's width. */
+        .banner-content {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Changes the size of the h3 titles to be 
+    smaller for better readability on small screens. */
+        .h3-title {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+
+    /* Specifically for screens that are 375 pixels wide (very small devices like some older phones): */
+    @media screen and (max-width: 375px) {
+
+        /* Adjusts the size of the navigation buttons 
+    in the main banner for smaller screens. */
+        .main-banner .swiper-button-prev,
+        .main-banner .swiper-button-next {
+            height: 30px;
+            width: 30px;
+        }
+
+        /* Makes the icons on the navigation buttons 
+    smaller and changes their color to a dark blue. */
+        .main-banner .swiper-button-prev:after,
+        .main-banner .swiper-button-next:after {
+            font-size: 15px;
+            color: #11364e;
+        }
+
+        /* Expands the banner content to fill 
+    the entire width of its container. */
+        .banner-content {
+            width: 100%;
+        }
+
+        /* Adjusts the size of the main and secondary 
+    titles to fit better on very small screens. */
+        .h1-title,
+        .h2-title {
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+        /* Ensures list items in the goals section are 
+    displayed one after the other, not side by side. */
+        .goal-content-box ul li {
+            display: block;
+        }
+
+        /* Makes goal icons smaller and removes any space 
+    to the right, adding some space below each. */
+        .goal-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Ensures the text box next to the goal icons 
+    takes up the full width available to it. */
+        .goal-text-box {
+            width: 100%;
+        }
+    }
 
 }
+
+/*...............................................................................Media Queries and Responsive Design CSS Start*/
+/* Base styles to ensure logo and dropdowns are inline */
+.site-branding {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically center items in the navbar */
+    justify-content: space-between;
+    /* Distribute space between logo and dropdowns */
+}
+
+/* Logo should maintain its size and not disappear */
+.site-branding img {
+    max-width: 100%;
+    /* Limit logo size to its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Dropdowns placement and spacing */
+.theme-selector,
+.language-selector {
+    margin: 0 10px;
+    /* Add some margin around dropdowns */
+}
+
+/* Media query adjustments */
+@media screen and (max-width: 979px) {
+
+    /* Ensure the site branding doesn't grow beyond necessary */
+    .col-lg-2 {
+        flex: 0 0 auto;
+    }
+
+    /* Center dropdowns between logo and hamburger menu */
+    .theme-selector,
+    .language-selector {
+        text-align: center;
+        /* Center align the dropdowns */
+        flex-grow: 1;
+        /* Allow dropdowns to take available space */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust the flex direction for the site branding container on smaller screens */
+    .site-branding {
+        flex-direction: column;
+        /* Stack logo and dropdowns vertically */
+    }
+
+    /* Stack the dropdowns below the logo */
+    .theme-selector,
+    .language-selector {
+        width: 100%;
+        /* Full width */
+        margin-top: 10px;
+        /* Space between logo and dropdowns */
+        order: 3;
+        /* Place the dropdowns below the logo */
+    }
+}
+
+@media screen and (max-width: 758px) {
+    /* Specific tweaks for very small screens, if necessary */
+}
+
+
+/*...............................................................................Media Queries and Responsive Design End*/
+
 
 /*...............................................................................Media Queries and Responsive Design CSS End*/
+
 
 /* ..........................................Styling for mobile version of Participating Houses navigation */
 
 /* Changes the color of icons inside 
 the main navigation to white. */
-.main-navigation button i{
+.main-navigation button i {
     color: white;
 }
 
 /* Hides the 'close' icon (represented by times symbol) 
 in the main navigation by default. */
-.main-navigation i.fa-times{
+.main-navigation i.fa-times {
     display: none;
 }
 
 /* Shows the 'menu' icon (represented by bars symbol) 
 in the main navigation by default. */
-.main-navigation i.fa-bars{
+.main-navigation i.fa-bars {
     display: block;
 }
 
 /* Shows the 'close' icon when the menu is open 
 (toggle menu state is active). */
-.main-navigation.toggle-menu i.fa-times{
+.main-navigation.toggle-menu i.fa-times {
     display: block;
 }
 
 /* Hides the 'menu' icon when the menu is open 
 (toggle menu state is active). */
-.main-navigation.toggle-menu i.fa-bars{
+.main-navigation.toggle-menu i.fa-bars {
     display: none;
 }
 
 /* Removes the border from the iframe used for showing location, 
 making it blend seamlessly into the page. */
-#location-iframe{
-    border:0;
+#location-iframe {
+    border: 0;
 }
 
 /* Styles the operator sign-up iframe with a transparent background 
 and a light grey border for a subtle, stylish look. */
-#operator-sign-up-iframe{
-    background: transparent; border: 1px solid #ccc;
+#operator-sign-up-iframe {
+    background: transparent;
+    border: 1px solid #ccc;
 }
 
 
@@ -2397,16 +2509,19 @@ and a light grey border for a subtle, stylish look. */
 /* This styles a container for iframes, like videos or maps, giving it an orange background, some space around its content, and making sure the padding is considered part of its total width. */
 
 .iframe-container {
-    background-color: #dd6a13; /* Your current background color */
+    background-color: #dd6a13;
+    /* Your current background color */
     padding: 30px;
-    box-sizing: border-box; /* Includes padding in the width */
+    box-sizing: border-box;
+    /* Includes padding in the width */
 }
 
 /* Styles a wrapper that holds both iframe and text together, 
 ensuring they align properly without overflowing. */
 .content-wrapper {
     width: 100%;
-    overflow: hidden; /* This will clear the floats within this container */
+    overflow: hidden;
+    /* This will clear the floats within this container */
 }
 
 /* Again styles the iframe container (repeated from above), 
@@ -2414,10 +2529,13 @@ focusing on its size, padding, and background.
 It floats to the left, taking up 60% of the available space. */
 .iframe-container {
     float: left;
-    width: 50%; /* Adjusted to 60% as per your requirement */
+    width: 50%;
+    /* Adjusted to 60% as per your requirement */
     padding: 30px;
-    box-sizing: border-box; /* Padding is included in the width */
-    background-color: #dd6a13; /* Your chosen background color */
+    box-sizing: border-box;
+    /* Padding is included in the width */
+    background-color: #dd6a13;
+    /* Your chosen background color */
 }
 
 /* Sets up a container for text that sits beside the iframe. 
@@ -2425,68 +2543,276 @@ It takes up the remaining 40% of space, centers its content,
 and matches the iframe's height for a tidy appearance. */
 .text-container {
     float: right;
-    width: 40%; /* Adjusted to take the remaining space beside the iframe container */
+    width: 40%;
+    /* Adjusted to take the remaining space beside the iframe container */
     padding: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically in the container */
-    align-items: center; /* Centers content horizontally in the container */
-    height: 533px; /* Should match the height of your iframe for alignment */
+    justify-content: center;
+    /* Centers content vertically in the container */
+    align-items: center;
+    /* Centers content horizontally in the container */
+    height: 533px;
+    /* Should match the height of your iframe for alignment */
 }
 
 /* Applies a large font size to the title above the iframe, 
 removing any default margin for a clean look. */
 .iframe-title {
-    font-size: 66px; /* Change this value to the desired font size */
+    font-size: 66px;
+    /* Change this value to the desired font size */
     font-weight: 800;
     font-family: 'Epilogue', sans-serif;
-    margin: 0; /* Removes default margin */
+    margin: 0;
+    /* Removes default margin */
 }
 
-  
-  
-  /* Sets the background of the main banner area to a specific image, 
+
+
+/* Sets the background of the main banner area to a specific image, 
 making the banner visually appealing with a custom photo. */
-.main-banner{
+.main-banner {
     background-image: url(../images/slide-1.jpg);
 }
 
 /* Applies a unique background image to the main service section, 
 enhancing its look with a themed background. */
-.main-service{
+.main-service {
     background-image: url(../images/service-bg.jpg);
 }
 
 /* For the goal section within the main goal area, sets a special 
 background image, visually representing the goals or achievements. */
-.main-goal .goal-img{
+.main-goal .goal-img {
     background-image: url(../images/goal-img.jpg);
 }
 
 /* For screens up to 768px wide (like tablets and phones): */
 @media screen and (max-width: 768px) {
+
     /* Sets iframe and text boxes to full width with padding, 
     removing float for a neater display. */
-    .iframe-container, .text-container {
-      width: 100%; /* Full width */
-      float: none;
-      padding: 15px; /* Adds padding */
+    .iframe-container,
+    .text-container {
+        width: 100%;
+        /* Full width */
+        float: none;
+        padding: 15px;
+        /* Adds padding */
     }
 
     /* Positions iframe below text for easier mobile viewing. */
     .iframe-container {
-      order: 2; /* Iframe after text */
+        order: 2;
+        /* Iframe after text */
     }
 
     /* Text is shown first, above the iframe. */
     .text-container {
-      order: 1; /* Text before iframe */
+        order: 1;
+        /* Text before iframe */
     }
 
     /* Changes layout to stack elements vertically for better mobile experience. */
     .content-wrapper {
-      display: flex;
-      flex-direction: column; /* Vertical stacking */
+        display: flex;
+        flex-direction: column;
+        /* Vertical stacking */
     }
 }
+
+/* Theme Styles */
+.body-default {
+    background-color: #fff;
+    color: #333;
+    /* Standard dark text for light background */
+}
+
+/* Hotdog Stand Theme Styles */
+.body-hotdog,
+.body-hotdog .service-text-box {
+    background-color: #ff2e2e; /* Bright red */
+    color: #fffc00; /* Bright yellow */
+}
+
+.body-hotdog .main-goal:before {
+    background-color: #215c09a4; /* Dark green, semi-transparent */
+}
+
+.body-hotdog .service-box:hover .h3-title,
+.body-hotdog .contact-us ul li:hover .contact-text a {
+    color: #fffc00; /* Bright yellow */
+}
+
+.body-hotdog p,
+.body-hotdog .h1-title,
+.body-hotdog .h2-title,
+.body-hotdog .h3-title,
+.body-hotdog .h4-title,
+.body-hotdog .h5-title,
+.body-hotdog .h6-title,
+.body-hotdog .h1-subtitle, 
+.body-hotdog .h2-subtitle, 
+.body-hotdog .h3-subtitle, 
+.body-hotdog .h4-subtitle, 
+.body-hotdog .h5-subtitle, 
+.body-hotdog .h6-subtitle,
+.body-hotdog .our-links a,
+.body-hotdog .a:hover,
+.body-hotdog .contact-us ul li .contact-text,
+.body-hotdog .iframe-title {
+    color: #fedc2a; /* Slightly muted yellow for better readability */
+}
+
+/* Ocean Theme Styles */
+.body-ocean,
+.body-ocean .service-text-box {
+    background-color: #a2d5f2; /* Light blue */
+    color: #027373; /* Dark cyan */
+}
+
+.body-ocean .main-goal:before {
+    background-color: #7daed6; /* Lighter blue for visual contrast */
+}
+
+.body-ocean .service-box:hover .h3-title {
+    color: #027373; /* Dark cyan */
+}
+
+.body-ocean p,
+.body-ocean .h1-title,
+.body-ocean .h2-title,
+.body-ocean .h3-title,
+.body-ocean .h4-title,
+.body-ocean .h5-title,
+.body-ocean .h6-title,
+.body-ocean .h1-subtitle, 
+.body-ocean .h2-subtitle, 
+.body-ocean .h3-subtitle, 
+.body-ocean .h4-subtitle, 
+.body-ocean .h5-subtitle, 
+.body-ocean .h6-subtitle,
+.body-ocean .our-links a,
+.body-ocean .a:hover,
+.body-ocean .contact-text,
+.body-ocean .contact-us ul li .contact-text,
+.body-ocean .iframe-title {
+    color: #05595b; /* Darker shade of cyan */
+}
+
+/* Sunset Theme Styles */
+.body-sunset,
+.body-sunset .service-text-box {
+    background-color: #ff9e2c; /* Bright orange */
+    color: #762f07; /* Dark brown */
+}
+
+.body-sunset .main-goal:before {
+    background-color: #943011; /* Muted orange for contrast */
+}
+
+.body-sunset .service-box:hover .h3-title {
+    color: #762f07; /* Dark brown */
+}
+
+.body-sunset p,
+.body-sunset .h1-title,
+.body-sunset .h2-title,
+.body-sunset .h3-title,
+.body-sunset .h4-title,
+.body-sunset .h5-title,
+.body-sunset .h6-title,
+.body-sunset .h1-subtitle, 
+.body-sunset .h2-subtitle, 
+.body-sunset .h3-subtitle, 
+.body-sunset .h4-subtitle, 
+.body-sunset .h5-subtitle, 
+.body-sunset .h6-subtitle,
+.body-sunset .our-links a,
+.body-sunset .a:hover,
+.body-sunset .contact-text,
+.body-sunset .contact-us ul li .contact-text,
+.body-sunset .iframe-title {
+    color: #d86b49; /* Lighter brown */
+}
+
+/* Forest Theme Styles */
+.body-forest,
+.body-forest .service-text-box {
+    background-color: #228b22; /* Forest green */
+    color: #fffaf0; /* Off-white */
+}
+
+.body-forest .main-goal:before {
+    background-color: #1c7220; /* Darker green for visual contrast */
+}
+
+.body-forest .service-box:hover .h3-title {
+    color: #fffaf0; /* Off-white */
+}
+
+.body-forest p,
+.body-forest .h1-title,
+.body-forest .h2-title,
+.body-forest .h3-title,
+.body-forest .h4-title,
+.body-forest .h5-title,
+.body-forest .h6-title,
+.body-forest .h1-subtitle, 
+.body-forest .h2-subtitle, 
+.body-forest .h3-subtitle, 
+.body-forest .h4-subtitle, 
+.body-forest .h5-subtitle, 
+.body-forest .h6-subtitle,
+.body-forest .our-links a,
+.body-forest .a:hover,
+.body-forest .contact-text,
+.body-forest .contact-us ul li .contact-text,
+.body-forest .iframe-title {
+    color: #c7e6c7; /* Lighter green, ensuring legibility */
+}
+
+/* Dark Theme Styles */
+.body-dark,
+.body-dark .service-text-box {
+    background-color: #343a40; /* Dark grey */
+    color: #f8f9fa; /* White text for dark background */
+}
+
+.body-dark .main-goal:before {
+    background-color: #2c3237; /* Slightly lighter grey for visual contrast */
+}
+
+.body-dark .service-box:hover .h3-title {
+    color: #f8f9fa; /* White */
+}
+
+.body-dark p,
+
+.body-dark .h2-title,
+.body-dark .h3-title,
+.body-dark .h4-title,
+.body-dark .h5-title,
+.body-dark .h6-title,
+.body-dark .h1-subtitle, 
+.body-dark .h2-subtitle, 
+.body-dark .h3-subtitle, 
+.body-dark .h4-subtitle, 
+.body-dark .h5-subtitle, 
+.body-dark .h6-subtitle,
+.body-dark .our-links a,
+.body-dark .a:hover,
+.body-dark .contact-text,
+.body-dark .contact-us ul li .contact-text,
+.body-dark .iframe-title {
+    color: #000000; /* Light grey for paragraph text, ensuring legibility */
+}
+
+.body-dark .p-title,
+.body-dark .h1-title{
+    color: #c7c7c7
+}
+
+
+/* End of Theme Styles */
